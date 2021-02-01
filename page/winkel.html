@@ -1,0 +1,269 @@
+ <!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/444de97735.js" crossorigin="anonymous"></script>
+
+
+    <title>Flogateau</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="topnav">        <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+        <a href="#"><i class="fas fa-shopping-basket"></i></a>
+        <div id="myLinks">
+          <a href="../index.html">Home</a>
+          <a href="./product.html">Producten</a>
+          <a href="./about.html">Over mij</a>
+          <a href="./contact.html">Contact</a>
+                  
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>                     <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+
+      <nav class="navDesktop">
+            <ul>
+              <li><a href="../index.html" >Home</a></li>
+              <li><a href="./product.html">Producten</a></li>
+              <img src="../img/Flogateautransparant.png" alt="Logo transparant"/>
+              <li><a href="./about.html">Over mij</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          <p>
+            <a href="./winkel.html"><i style="margin-right:25px;" class="fas fa-shopping-basket"></i></a>
+          </p>
+      </nav>
+
+    </header>
+
+    <main>
+      <section class="formulierWinkel">
+        <h1>Bestelling</h1>
+        <form action="winkel.php" method="POST" class="winkelform">
+
+            <section class="alles">
+              <div class="voornaamWinkel">
+                <label for="voornaam">Voornaam</label>
+                <input type="text" id="voornaam" name="voornaam" required />
+              </div>
+              
+              <div class="naamWinkel">
+                  <label for="naam">Naam</label>
+                  <input type="text" id="naam" name="naam" required />
+              </div>
+
+              <div class="e-mailWinkel">
+                  <label for="e-mail">E-mail</label>
+                  <input type="e-mail" id="e-mail" name="e-mail" required />
+              </div>
+
+              <div class="telefoonWinkel">
+                  <label for="phone">Telefoon</label>
+                  <input type="phone" id="phone" name="phone" required />
+              </div>
+                
+             <div class="artikelsWinkel">
+                <label for="artikels">Artikels</label>
+                <table>
+                    <tbody>
+                      <tr>
+                        <td>1x</td>
+                        <td>Bokkepootjes</td>
+                        <td>€5</td>
+                      </tr>
+    
+                      <tr>
+                        <td>1x</td>
+                        <td>Appel Frangipane</td>
+                        <td>€12</td>
+                      </tr>
+    
+                      <tr>
+                        <td>1x</td>
+                        <td>Cheesecake</td>
+                        <td>€20</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="imgTotal">
+                      <p class="totaal">Totaal: €6</p>
+                  </div>
+             </div> 
+
+              <div class="kalenderWinkel">
+                    <label for="bericht">Kies u datum voor ophaling</label>
+                    <textarea id="kalender" name="kalender" rows="10" cols="50">
+                    </textarea>
+              </div>
+
+              <div class="knopWinkel">
+                  <input type="submit" name="contactWinkelSubmit" id="contactWinkelSubmit" size="20" value="Bestellen" />
+              </div>
+
+            </section>
+      </section>
+      <div class="naastWinkel">
+        <section class="formulierWinkelDesktop">
+          <form action="winkel.php" method="POST" class="winkelformDesktop" data-netlify="true">
+            <section class="allesDesktop">
+              <h1>Winkel</h1>
+              <section class="name">
+                <label for="naam">Naam</label>
+                <input type="text" id="naam" name="naam" required />
+                <label for="voornaam">Voornaam</label>
+                <input type="text" id="voornaam" name="voornaam" required />
+              </section>
+
+              <section class="e-mail">
+                <label for="e-mail">E-mail</label>
+                <input type="e-mail" id="e-mail" name="e-mail" required />
+                <label for="phone">Telefoon</label>
+                <input type="phone" id="phone" name="phone" required />
+              </section>
+
+              <section class="calender">
+                <div class="month">
+                  <ul>
+                    <li> <span class="left">&#10094;</span> </li>
+                    <li>February</li>
+                    <li> <span class="right">&#10095;</span></li>
+                  </ul>
+                </div>
+                
+                <ul class="weekdays">
+                  <li>Mo</li>
+                  <li>Tu</li>
+                  <li>We</li>
+                  <li>Th</li>
+                  <li>Fr</li>
+                  <li>Sa</li>
+                  <li>Su</li>
+                </ul>
+                
+                <ul class="days">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li>5</li>
+                  <li>6</li>
+                  <li>7</li>
+                  <li>8</li>
+                  <li>9</li>
+                  <li><span class="active">10</span></li>
+                  <li>11</li>
+                  <li>12</li>
+                  <li>13</li>
+                  <li>14</li>
+                  <li>15</li>
+                  <li>16</li>
+                  <li>17</li>
+                  <li>18</li>
+                  <li>19</li>
+                  <li>20</li>
+                  <li>21</li>
+                  <li>22</li>
+                  <li>23</li>
+                  <li>24</li>
+                  <li>25</li>
+                  <li>26</li>
+                  <li>27</li>
+                  <li>28</li>
+                  <li>29</li>
+                  <li>30</li>
+                </ul>            
+              </section>
+              <input type="submit" name="winkelSubmit" id="winkelSubmit" value="Bestellen" />
+            </form>
+          </section>
+        </section>
+        
+        <section id="ArtikelsDesktop">
+              <h1>Artikels</h1>
+
+              <div class="artikelsWinkelDesktop">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>1x</td>
+                      <td>Bokkepootjes</td>
+                      <td>€5</td>
+                    </tr>
+
+                    <tr>
+                      <td>1x</td>
+                      <td>Appel Frangipane</td>
+                      <td>€12</td>
+                    </tr>
+
+                    <tr>
+                      <td>1x</td>
+                      <td>Cheesecake</td>
+                      <td>€20</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class="imgTotalDesktop">
+                <p class="totaal">Totaal: €6</p>
+                <img class="imgWinkel" src="../illustraties/Asset 1.svg" alt="illustratie-winkel">
+              </div>
+        </section>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+        <section class="taal">
+          <ul>
+            <li>
+              <select name="taal" id="taal">
+                <option value="nl">NL</option>
+                <option value="fr">FR</option>
+                <option value="en">EN</option>
+              </select>
+            </li>
+            <li id="footerFlo">FLOGÂTEAU</li>
+            <div class="icons">
+              <li>
+                <a href="www.facebook.com/Flogâteau-1838784923015234/"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/flogateau_/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                  <a href="mailto:flocroonenberghs@gmail.com"><i class="far fa-envelope"></i></a>
+              </li>
+          </div>
+          </ul>
+        </section>
+      </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+
+
+  </body>
+</html>

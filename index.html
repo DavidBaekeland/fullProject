@@ -1,17 +1,320 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <form name="contact" method="POST" data-netlify="true">
-      <label>Your Name: <input type="text" name="name" /></label>   
-      <label>Your Email: <input type="email" name="email" /></label>
-      <label>Message: <textarea name="message"></textarea></label>
-      <button type="submit">Send</button>
-  </form>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/444de97735.js"
+      crossorigin="anonymous"
+    ></script>
 
-</body>
+    <title>Flogateau</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="topnav">        <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+        <a href="#">Home</a>
+        <div id="myLinks">
+          <a href="./page/product.html">Producten</a>
+          <a href="./page/about.html">Over mij</a>
+          <a href="./page/contact.html">Contact</a>
+          <a href="./page/winkel.html"><i class="fas fa-shopping-basket"></i></a>        
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>                     <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+
+      <nav class="navDesktop" id="navDesktop">
+            <ul>
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="./page/product.html">Producten</a></li>
+              <img src="./img/Flogateautransparant.png" alt="Logo transparant"/>
+              <li><a href="./page/about.html">Over mij</a></li>
+              <li><a href="./page/contact.html">Contact</a></li>
+            </ul>
+          <p>
+            <a href="./page/winkel.html"><i style="margin-right:25px;" class="fas fa-shopping-basket"></i></a>
+          </p>
+      </nav>
+
+    </header>
+
+    <main class="mainHome">
+
+        <div class="bollenHome">
+            <a href="#navDesktop">
+              <label class="bollenNavHome">
+                One
+                <input type="button" checked="checked" />
+                <span class="checkmark"></span>
+              </label>
+            </a>
+      
+            <a href="#hometwo">
+            <label class="bollenNavHome"
+              >Two
+              <input type="button" />
+              <span class="checkmark"></span>
+            </label>
+          </a>
+      
+            <a href="#homethree">
+            <label class="bollenNavHome"
+              >Three
+              <input type="button" />
+              <span class="checkmark"></span>
+            </label>
+          </a>
+        </div>
+
+      <section id="homeone" class="startHome">
+        <img src="../illustraties/Main.svg" />
+        <h1>Welkom bij <span>Flogâteau</span></h1>
+      </section>
+
+      <section class="productHome">
+          <h1>Onze Producten</h1>
+        <div class="slideshow-container">                             <!--https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+        
+          <div class="mySlides fade">
+              <div class="taartHome">
+                  <!-- <figure class="TAARTEN">
+                    <img src="./illustraties/goudRuitje1.svg" alt="product" />
+                    <img class="taarthome" src="./img/Products/BokkenpootjesPNG.png" alt="bokkepootjes"/>
+                    <figcaption class="infoTaart">
+                    
+                      <h3>Koekjes</h3>
+                      <p>Neem een kijkje naar de koekjes
+                        van Flogâteau! </p>
+                        <a class="productKoekKnopHome" href="./page/product.html"
+                        >Meer
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i
+                          ></a>
+                      </figcaption>
+                  </figure> -->
+              </div>
+          </div>
+          
+          <!-- <div class="mySlides fade">
+              <div class="taartHome">
+                  <figure class="TAARTEN">
+                    <img src="./illustraties/mintRuitje.svg" alt="product" />
+                    <img class="taarthome" src="./img/Products/Taarten/appelfrangipane1.png" alt="taart"/>
+                    <figcaption class="infoTaart">
+                      <h3>Taarten</h3>
+                      <p>Neem een kijkje naar de 'gâteaux' van Flogâteau!</p>
+                      <a class="productTaartKnopHome" href="./page/product.html"
+                      >Meer
+                          <i class="fas fa-arrow-right" aria-hidden="true"></i
+                            ></a>
+                    </figcaption>
+                  </figure>
+                </div>
+          </div> -->
+          
+          <!-- <div class="mySlides fade">
+              <div class="taartHome">
+                  <figure class="TAARTEN">
+                    <img src="./illustraties/goudRuitje1.svg" alt="product" />
+                    <img class="taarthome" src="./img/Bloemcupcake.png" alt="bloemcupcake"/>
+                    <figcaption class="infoTaart">
+                      <h3>Cupcakes</h3>
+                      <p>Neem een kijkje naar de cupcakes
+                        van Flogâteau! </p>
+                        <a class="productKoekKnopHome" href="./page/product.html"
+                        >Meer
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i
+                          ></a>
+                      </figcaption>
+                  </figure>
+                </div>
+          </div> -->
+        </div>
+        <br>
+        
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+        
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+        
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+        
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+        </script>
+        </section>
+      
+      <section id="hometwo" class="productHomeDesktop">
+        <h1 >Onze Producten</h1>
+        <div class="naastHomeDesktop">
+          
+          <div class="taartHomeDesktop">
+            <figure class="TAARTENDesktop">
+              <img src="./illustraties/goudRuitje1.svg" alt="product" />
+              <figcaption class="infoTaartDesktop">
+                <img class="taarthomeDesktop" style="padding-left:0;" src="./img/Products/BokkenpootjesPNG.png" alt="bokkepootjes"/>
+                <h3>Koekjes</h3>
+                <p>Neem een kijkje naar de koekjes
+                  van Flogâteau! </p>
+                  <a class="productKoekKnopHomeDesktop" href="./page/product.html"
+                  >Meer
+                  <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </p>
+                </figcaption>
+            </figure>
+          </div>
+            
+                <div class="taartHomeDesktop">
+                  <figure class="TAARTENDesktop">
+                    <img src="./illustraties/mintRuitje.svg" alt="product" />
+                    <figcaption class="infoTaart">
+                      <img class="taarthomeDesktop" style="padding-left:0;" src="./img/Products/Taarten/appelfrangipane1.png" alt="taart"/>
+                      <h3>Taarten</h3>
+                      <p>Neem een kijkje naar de 'gâteaux' van Flogâteau!</p>
+                      <a class="productTaartKnopHomeDesktop" href="./page/product.html"
+                      >Meer
+                          <i class="fas fa-arrow-right" aria-hidden="true"></i
+                            ></a>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+            
+                <div class="taartHomeDesktop">
+                    <figure class="TAARTENDesktop">
+                      <img src="./illustraties/goudRuitje1.svg" alt="product" />
+                      <figcaption class="infoTaartDesktop">
+                        <img class="taarthomeDesktop" style="padding-left:0;" src="./img/Bloemcupcake.png" alt="bloemcupcake"/>
+                        <h3>Cupcakes</h3>
+                        <p>Neem een kijkje naar de cupcakes
+                          van Flogâteau! </p>
+                          <a class="productKoekKnopHomeDesktop" href="./page/product.html"
+                          >Meer
+                          <i class="fas fa-arrow-right" aria-hidden="true"></i
+                            ></a>
+                          </p>
+                        </figcaption>
+                    </figure>
+                  </div>
+            </div>
+      </section>
+
+      
+      
+
+      <section id="homethree" class="actieHome">
+        <img src="./illustraties/Home game.svg" alt="" />
+        
+        <div class="samenHome3">
+          <h1>Actie!</h1>
+          <article>
+            <p>
+              Om de lancering van de vernieuwde website te vieren heb ik
+              besloten om een winactie te organiseren, maar wat houdt deze actie
+              in? Wel er zal een loterij gehouden worden. Dit houdt in dat er
+              voor een paar dagen een getal geraden moet worden tussen 0 en 50
+              en de winnaar krijgt een prijs.
+            </p>
+          </article>
+
+          <article class="laatste">
+            <p>
+              Hoe kan ik meedoen? Wel, bij iedere aankoop bij Flogâteau kan je
+              ,met de barcode op het ontvangstbewijs, meedoen. Hieronder bervind
+              zich een knop waar je de nummers van je barcode kan ingeven en
+              deelnemen. Niet gewonnen? Niet getreurd, want Flo heeft nog steeds
+              je hulp nodig. Door telkens de spelletjes op te lossen help je Flo
+              te zoeken naar de ingrediënten. Eens je ze allemaal opgelost hebt
+              krijg je een leuk cadeautje
+            </p>
+          </article>
+          <a id="doeMeeKnopHome" href="./page/barcode.html">Doe Mee
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          <a id="doeMeeKnopDesktopHome" href="./page/barcode.html">Doe Mee
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div> 
+      </section>
+    </main>
+
+    
+    <footer>
+      <section class="taal">
+        <ul>
+          <li>
+            <select name="taal" id="taal">
+              <option value="nl">NL</option>
+              <option value="fr">FR</option>
+              <option value="en">EN</option>
+            </select>
+          </li>
+          <li id="footerFlo">FLOGÂTEAU</li>
+          <div class="icons">
+            <li>
+              <a href="www.facebook.com/Flogâteau-1838784923015234/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/flogateau_/"
+                ><i class="fab fa-instagram"></i
+                  ></a>
+            </li>
+            <li>
+                <a href="mailto:flocroonenberghs@gmail.com"><i class="far fa-envelope"></i></a>
+            </li>
+        </div>
+        </ul>
+      </section>
+    </footer>
+
+    <script>
+      function myFunction() {                  /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar*/
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+  </script>
+
+  </body>
 </html>
