@@ -275,7 +275,8 @@ main {
 }
 
 .taartHome figcaption {
-  position: absolute;
+  /*position: absolute;*/
+  z-index: 2;
   left: 0;
   top: 12vh;
   width: 100%;
