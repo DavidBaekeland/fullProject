@@ -35,18 +35,23 @@
 .icon-cart1:before {
   content: "\e93b";
 }
+
 .icon-menu:before {
   content: "\e9bd";
 }
+
 .icon-mail2:before {
   content: "\ea84";
 }
+
 .icon-facebook:before {
   content: "\ea90";
 }
+
 .icon-instagram:before {
   content: "\ea92";
 }
+
 .icon-cart:before {
   content: "\e93a";
 }
@@ -60,7 +65,8 @@ body {
   margin: 0;
 }
 
-/*Nav Mobile*/ /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar*/
+/*Nav Mobile*/
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar*/
 .topnav {
   overflow: hidden;
   background-color: #ffffff;
@@ -187,11 +193,13 @@ main {
   font-size: 1.5625em;
   font-weight: 500;
 }
+
 .startHome span {
   color: #bca04a;
   font-size: 1.5625em;
   font-weight: 500;
 }
+
 .startHome {
   display: flex;
   flex-direction: row;
@@ -202,6 +210,7 @@ main {
 .productHome {
   margin-bottom: 3.125rem;
 }
+
 .productHome h1 {
   color: #bca04a;
   font-size: 1.5625em;
@@ -277,7 +286,8 @@ main {
   justify-content: center;
 }
 
-/*SlideShow*/ /*https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+/*SlideShow*/
+/*https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 
 .slideshow-container {
   max-width: 1000px;
@@ -314,6 +324,7 @@ main {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -323,12 +334,13 @@ main {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
 }
-*/
 
+*/
 /*EindSlideShow*/
 
 .actieHome h1 {
@@ -364,6 +376,7 @@ main {
   font-weight: 500;
   left: 6.39625vw;
 }
+
 /*Einde Home*/
 
 /*About*/
@@ -398,6 +411,7 @@ main {
   font-weight: 400;
   font-size: 0.875em;
 }
+
 .doorAbout .eenAbout {
   margin-bottom: 1.25rem;
 }
@@ -425,24 +439,29 @@ main {
   color: #4f5d75;
   font-weight: 500;
 }
+
 .voornaamContact {
   padding-bottom: 1.25rem;
 }
+
 .naamContact label {
   padding-right: 2.596875rem;
   font-size: 1em;
   color: #4f5d75;
   font-weight: 500;
 }
+
 .naamContact {
   padding-bottom: 1.25rem;
 }
+
 .e-mailContact label {
   padding-right: 2.4375rem;
   font-size: 1em;
   color: #4f5d75;
   font-weight: 500;
 }
+
 .e-mailContact {
   padding-bottom: 1.25rem;
 }
@@ -452,6 +471,7 @@ main {
   color: #4f5d75;
   font-weight: 500;
 }
+
 .berichtContact {
   display: flex;
   flex-direction: column;
@@ -488,6 +508,7 @@ main {
   left: 6.39625vw;
   margin-bottom: 1.25rem;
 }
+
 /*Eind Contact*/
 
 /*Winkel*/
@@ -511,24 +532,29 @@ main {
   color: #4f5d75;
   font-weight: 500;
 }
+
 .voornaamWinkel {
   padding-bottom: 1.25rem;
 }
+
 .naamWinkel label {
   padding-right: 2.596875rem;
   font-size: 1em;
   color: #4f5d75;
   font-weight: 500;
 }
+
 .naamWinkel {
   padding-bottom: 1.25rem;
 }
+
 .e-mailWinkel label {
   padding-right: 2.4375rem;
   font-size: 1em;
   color: #4f5d75;
   font-weight: 500;
 }
+
 .e-mailWinkel {
   padding-bottom: 1.25rem;
 }
@@ -539,14 +565,17 @@ main {
   color: #4f5d75;
   font-weight: 500;
 }
+
 .telefoonWinkel {
   padding-bottom: 1.25rem;
 }
+
 .kalenderWinkel label {
   font-size: 1em;
   color: #4f5d75;
   font-weight: 500;
 }
+
 .kalenderWinkel {
   display: flex;
   flex-direction: column;
@@ -568,13 +597,22 @@ main {
 }
 
 .artikelsWinkel table {
-  margin-top: 0.9375rem;
+  margin-top: 0.4rem;
   font-weight: 400;
 }
 
 .imgTotal {
   font-weight: 500;
 }
+
+.calender label {
+  padding-right: 21.3px;
+}
+
+.calender  {
+  padding-bottom: 1.25rem;
+}
+
 /*Einde Winkel*/
 
 /*Begin Product*/
@@ -693,9 +731,11 @@ main {
 .bollenNavHome {
   display: none;
 }
+
 .productHomeDesktop {
   display: none;
 }
+
 #doeMeeKnopDesktopHome {
   display: none;
 }
@@ -707,6 +747,7 @@ main {
 .formulierWinkelDesktop {
   display: none;
 }
+
 #ArtikelsDesktop {
   display: none;
 }
@@ -721,10 +762,10 @@ main {
 
 /*Eind uitzetting van desktop*/
 
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 @media only screen and (min-width: 1025px) {
+
   /*
 ===============================
 Navigation
@@ -739,6 +780,7 @@ Navigation
     justify-content: center;
     align-items: center;
   }
+
   .navDesktop ul {
     display: flex;
     justify-content: center;
@@ -746,6 +788,7 @@ Navigation
     width: 100%;
     list-style: none;
   }
+
   .navDesktop img {
     width: 8%;
   }
@@ -776,6 +819,7 @@ Navigation
   .active {
     background-color: transparent;
   }
+
   /* 
 ===============================
 Body
@@ -784,6 +828,7 @@ Body
   main {
     margin-bottom: 0px;
   }
+
   /*
 ===============================
 Home Section-1
@@ -861,9 +906,10 @@ Home Section-1
     border-radius: 50%;
   }
 
-  .bollenNavHome:active input:active ~ .checkmark {
+  .bollenNavHome:active input:active~.checkmark {
     background-color: #bba24781;
   }
+
   #homeone {
     margin-bottom: 9.375rem;
   }
@@ -970,96 +1016,6 @@ Home Section-2
     margin-bottom: 9.375rem;
   }
 
-  /*.home-main-2 {
-    display: flex;
-  }
-
-  #hometwo {
-    font-size: 4.5em;
-    font-weight: 500;
-    color: #bba247;
-  }
-
-  .home-main-2 section {
-    display: flex;
-    justify-content: center;
-    padding-top: 9vh;
-  }
-
-  .home-main-2 figure {
-    display: flex;
-    flex-direction: column;
-    width: 64%;
-    /* margin: 30px 25px; */
-  /*position: relative;
-  }
-
-  /* .taartHome img:first-of-type {
-    position: relative;
-    width: 100%;
-    padding-left: 15%;
-  } */
-
-  /*.home-main-2 figcaption {
-    text-align: center;
-    position: absolute;
-    bottom: 40px;
-  }
-
-  .home-main-2 figure img {
-    width: 20vw;
-  }
-
-  .taartHome figcaption {
-    /* position: absolute;
-    left: 0; */
-  /*top: 12vh;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .home-main-2 .soort {
-    position: absolute;
-    margin-top: 50px;
-    width: 80%;
-    display: flex;
-    align-self: center;
-  }
-
-  .home-main-2 figure h3 {
-    font-size: 24px;
-  }
-
-  .home-main-2 figure p {
-    font-size: 18px;
-    font-weight: 500;
-    color: #3f3f3f;
-    margin: 5px 0px 10px 0px;
-  }
-
-  .home-main-2 figure a {
-    display: table;
-    color: #4f5d75;
-    font-weight: 800;
-    background-color: white;
-    border: 1px solid #4f5d75;
-    padding: 10px 8px;
-    margin-top: 10px;
-    font-size: 15px;
-    margin: auto;
-    transition: 0.2s;
-  }
-
-  .home-main-2 figure a:hover {
-    color: white;
-    background-color: #4f5d75;
-    font-weight: 500;
-    transition: 0.4s;
-  }
-
   /*
 ===============================
 Home Section-3
@@ -1089,6 +1045,7 @@ Home Section-3
     display: flex;
     flex-direction: column;
   }
+
   #homethree p {
     font-size: 0.9375rem;
     font-weight: 400;
@@ -1178,6 +1135,7 @@ Producten
     padding: 2px;
     color: #3f3f3f;
   }
+
   .product-main-2 a,
   .product-main-2 span {
     color: #c1aea7;
@@ -1589,6 +1547,7 @@ Winkel
     margin-bottom: 3.125vh;
     align-items: center;
   }
+
   .allesDesktop {
     /* padding-left: 2.1875rem;
     padding-right: 2.1875rem;
@@ -1635,6 +1594,11 @@ Winkel
     background-color: #ffffff;
   }
 
+
+  .allesDesktop #date {
+    margin-top: 2%;
+  }
+
   .allesDesktop textarea {
     font-weight: 400;
     background-color: #ffffff;
@@ -1663,16 +1627,18 @@ Kalender
 =====================
 */
 
-  .allesDesktop .calender {
+ 
+
+  /* .allesDesktop .calender {
     display: flex;
     flex-direction: column;
     padding-top: 0.3125rem;
-  }
+  } */
   /* Month header */
-  .month {
-    /* display: flex;
+  /* .month {
+    display: flex;
     flex-direction: row;
-    justify-content: center; */
+    justify-content: center;
     padding-bottom: 1.875rem;
   }
 
@@ -1684,7 +1650,7 @@ Kalender
 
   .month li {
     list-style: none;
-  }
+  } */
 
   /* .left {
     padding-right: 12.5rem;
@@ -1693,7 +1659,7 @@ Kalender
     padding-left: 12.5rem;
   } */
 
-  .month .prev {
+  /* .month .prev {
     float: left;
     padding-top: 0.625rem;
   }
@@ -1740,7 +1706,7 @@ Kalender
   }
   .winkelformDesktop .calender label {
     padding-bottom: 0.625rem;
-  }
+  } */
 
   /*
   =====================
@@ -1837,6 +1803,7 @@ Kalender
     font-weight: 400;
     font-size: 1.1875em;
   }
+
   .imgTotalDesktop {
     font-weight: 500;
     font-size: 1.5em;
@@ -1973,6 +1940,7 @@ Footer
     position: absolute;
     margin-top: 35%;
   }
+
   /* footer .icons a {
     padding-right: 50%;
   } */
