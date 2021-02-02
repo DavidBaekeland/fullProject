@@ -275,7 +275,8 @@ main {
 }
 
 .taartHome figcaption {
-  position: absolute;
+  /*position: absolute;*/
+  z-index: 2;
   left: 0;
   top: 12vh;
   width: 100%;
@@ -324,7 +325,6 @@ main {
   from {
     opacity: 0.4;
   }
-
   to {
     opacity: 1;
   }
@@ -334,13 +334,10 @@ main {
   from {
     opacity: 0.4;
   }
-
   to {
     opacity: 1;
   }
 }
-
-*/
 /*EindSlideShow*/
 
 .actieHome h1 {
@@ -681,7 +678,7 @@ main {
 }
 
 .kaders .productenlijst figcaption section p {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .kaders .productenlijst figure p {
@@ -720,7 +717,7 @@ main {
 }
 
 .kaders .productenlijst figure a i {
-  font-weight: 600;
+  font-weight: 500;
   margin: 2px 0px 0px 3px;
 }
 
