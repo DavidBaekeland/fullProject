@@ -16,12 +16,12 @@
   <body>
     <header>
       <nav class="topnav">        <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
-        <a href="#">Contact</a>
+        <a href="./winkel.html"><i class="fas fa-shopping-basket"></i></a>        
         <div id="myLinks">
           <a href="../index.html">Home</a>
           <a href="./product.html">Producten</a>
           <a href="./about.html">Over mij</a>
-          <a href="./winkel.html"><i class="fas fa-shopping-basket"></i></a>        
+          <a href="#">Contact</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -42,6 +42,7 @@
       </nav>
 
     </header>
+
 
     <main id="contactMain">
       <section>
@@ -66,8 +67,7 @@
 
             <div class="berichtContact">
               <label for="bericht">Uw bericht</label>
-              <textarea id="bericht" name="bericht" rows="10" cols="50">
-              </textarea>
+              <textarea id="bericht" name="bericht" rows="10" cols="50"></textarea>
             </div>
 
             <div class="knopContact">
@@ -81,7 +81,7 @@
 
     <main id="contactDesktopMain">
         <section>
-          <form name="contact" method="POST" class="contactformDesktop" data-netlify="true">
+          <form name="contact" method="POST" class="contactform" data-netlify="true">
             <section class="alles">
               <h1 class="contact">Contact</h1>
               <section class="name">
@@ -98,8 +98,7 @@
   
               <section class="bericht">
                 <label for="bericht">Uw bericht</label>
-                <textarea id="bericht" name="bericht" rows="10" cols="50">
-                </textarea>
+                <textarea id="bericht" name="bericht" rows="10"></textarea>
               </section>
               <input type="submit" name="winkelSubmit" id="winkelSubmit" value="Verzenden" />
             </form>
@@ -125,7 +124,7 @@
         </section>
       </main>
     
-    <footer>
+    <footer class="footcontact" >
       <section class="taal">
         <ul>
           <li>
