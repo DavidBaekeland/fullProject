@@ -1,0 +1,2547 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/444de97735.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+
+      // Script for Mobile version
+      function functionTaartenMobile() {
+        var checkBox = document.getElementById("box1Mobile");
+        var text = document.getElementById("taartenMobile");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      function functionKoekjesMobile() {
+        var checkBox = document.getElementById("box2Mobile");
+        var text = document.getElementById("koekjesMobile");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      function functionGebakMobile() {
+        var checkBox = document.getElementById("box3Mobile");
+        var text = document.getElementById("gebakMobile");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      
+      function functionFeestMobile() {
+        var checkBox = document.getElementById("box4Mobile");
+        var text = document.getElementById("feestMobile");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      
+      function functionLogoMobile() {
+        var checkBox = document.getElementById("box5Mobile");
+        var text = document.getElementById("logoMobile");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      
+      function functionKaartjesMobile() {
+        var checkBox = document.getElementById("box6Mobile");
+        var text = document.getElementById("kaartjesMobile");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      
+      // Script for Desktop version
+      function functionTaarten() {
+        var checkBox = document.getElementById("box1");
+        var text = document.getElementById("taarten");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      function functionKoekjes() {
+        var checkBox = document.getElementById("box2");
+        var text = document.getElementById("koekjes");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      function functionGebak() {
+        var checkBox = document.getElementById("box3");
+        var text = document.getElementById("gebak");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      
+      function functionFeest() {
+        var checkBox = document.getElementById("box4");
+        var text = document.getElementById("feest");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      
+      function functionLogo() {
+        var checkBox = document.getElementById("box5");
+        var text = document.getElementById("logo");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      
+      function functionKaartjes() {
+        var checkBox = document.getElementById("box6");
+        var text = document.getElementById("kaartjes");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+          </script>
+    <title>Flogateau</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="topnav">
+        <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+        <a href="./winkel.html"><i class="fas fa-shopping-basket"></i></a>
+        <div id="myLinks">
+          <a href="../index.html">Home</a>
+          <a href="#">Producten</a>
+          <a href="./about.html">Over mij</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+      <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+
+      <nav class="navDesktop">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#" class="active">Producten</a></li>
+          <img src="../img/Flogateautransparant.png" alt="Logo transparant" />
+          <li><a href="./about.html">Over mij</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <p>
+          <a href="./winkel.html"
+            ><i style="margin-right: 25px;" class="fas fa-shopping-basket"></i
+          ></a>
+        </p>
+      </nav>
+    </header>
+
+    <main class="productMain">
+      <aside>
+        <section>
+          <h2>Filters</h2>
+          <h3>Assortiment</h3>
+        </section>
+        <label class="container">
+          <input type="checkbox" id="box1Mobile" name="checking" onclick="functionTaartenMobile()">
+          <p>Taarten</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" id="box2Mobile" name="checking" onclick="functionKoekjesMobile()">
+          <p>Koekjes</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" id="box3Mobile" name="checking" onclick="functionGebakMobile()">
+          <p>Fijn gebak</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" id="box4Mobile" name="checking" onclick="functionFeestMobile()">
+          <p>Feest</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" id="box5Mobile" name="checking" onclick="functionLogoMobile()">
+          <p>Logo cupcakes</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" id="box6Mobile" name="checking" onclick="functionKaartjesMobile()">
+          <p>Postkaartjes</p>
+        </label>
+      </aside>
+
+      <div class="kaders">
+        <section class="productenlijst">
+          <section id="productenlijst">
+
+            <section id="taartenMobile" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/Taarten/appel frangipane.jpg"
+                  alt="Appel Frangipane"
+                />
+                <figcaption>
+                  <h3>Appel Frangipane</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Deze appeltaart met een subtiele amandelsmaak heeft een
+                    bodem van boterdeeg, gevuld met frangipane en appeltjes.
+                  </p>
+
+                   
+                  <small>tarwe, ei, lactose, noten</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/cheesecake framboos.jpg"
+                  alt="product cheesecake framboos"
+                />
+                <figcaption>
+                  <h3>Cheesecake framboos</h3>
+                  <section>
+                    <p>4 personen</p>
+                    <p>€10</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Een luchtige cheesecake met verse roomkaas, een krokante
+                    speculaasbodem en verse framboosjes.
+                  </p>
+
+                
+                  <small>lactose, ei, tarwe, vis (gelatine)</small>
+                  <a href="../index.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/citroen meringue groot.jpg"
+                  alt="product appel frangipane"
+                />
+                <figcaption>
+                  <h3>Citroen-Meringue</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Een lekkere krokante bodem van boterdeeg, gevuld met een
+                    citroencrème en afgewerkt met fluweelzachte meringue.
+                  </p>
+                  <small>Lactose, ei, tarwe, soja, vis (gelatine)</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/carrot cake.jpg"
+                  alt="Carrot Cake"
+                />
+                <figcaption>
+                  <h3>Carrot Cake</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Een taart vol specerijen, gehakte noten en wortelen. Deze
+                    taart is afgewerkt met een lekkere roomkaastopping.
+                  </p>
+                  <small>Ei, lactose, soja, tarwe, noten</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/fraisier 2.jpg"
+                  alt="Fraisier"
+                />
+                <figcaption>
+                  <h3>Fraisier</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€15</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    De fraisier is een heerlijke taart met vanillebiscuit,
+                    aardbeien en een luchtige mousseline crème.
+                  </p>
+                  <small>Tarwe, ei, lactose, vis (gelatine)</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/banaan.jpg"
+                  alt="Bananentaart"
+                />
+                <figcaption>
+                  <h3>Bananentaart</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Een heerlijke klassieker! Een krokante bodem van
+                    boterdeeg, gevuld met crème Suisse en afgewerkt met
+                    lekkere bananenschijfjes.
+                  </p>
+                  <small>Tarwe, lactose, ei, soja, vis (gelatine)</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/pavlova.jpg"
+                  alt="Pavlova"
+                />
+                <figcaption>
+                  <h3>Pavlova</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€15</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Een mooie, maar vooral lekker zomerse taart. Een heerlijke meringue die nog wat zacht is vanbinnen maar krokant vanbuiten. Deze taart is gevuld met slagroom en rood fruit. 
+                    (Ander fruit is mogelijk op aanvraag)
+                  </p>
+                  <small>Ei, Lactose</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/rabarber.jpg"
+                  alt="Rabarber-Frangipane"
+                />
+                <figcaption>
+                  <h3>Rabarber-Frangipane</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Nog op zoek naar een taart om een zomerse BBQ af te sluiten? Deze taart met 
+                    een krokante bodem, gevuld met frangipane en verse rabarber is zeker een aanrader! 
+                  </p>
+                  <small>Tarwe, lactose, ei, noten</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/aardbei groot.jpg"
+                  alt="Aardbeientaart"
+                />
+                <figcaption>
+                  <h3>Aardbeientaart</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€15</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Een heerlijke klassieker! Een krokante bodem van boterdeeg, 
+                    gevuld met banketbakkersroom en afgewerkt met verse aardbeitjes.
+                  </p>
+                  <small>Tarwe, lactose, ei, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/cheesecake aardbei.jpg"
+                  alt="Cheescake Aardbei"
+                />
+                <figcaption>
+                  <h3>Cheescake Aardbei</h3>
+                  <section>
+                    <p>4 personen</p>
+                    <p>€10</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Een luchtige cheesecake met verse roomkaas, een krokante speculaasbodem en verse aardbeien.
+                  </p>
+                  <small>Lactose, ei, tarwe, vis (gelatine)</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/bresillienne.jpg"
+                  alt="Flan bresillienne"
+                />
+                <figcaption>
+                  <h3>Flan bresillienne</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Een perfect taartje voor bij de koffie. Een heerlijke flan, 
+                    afgewerkt met slagroom en bresiliennenootjes. 
+                  </p>
+                  <small>Tarwe, lactose, ei, noten</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/chocolade bavaroisPNG.png"
+                  alt="Chocolade bavarois"
+                />
+                <figcaption>
+                  <h3>Chocolade bavarois</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€15</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Deze chocoladetaart is luchtig en heel rijk van smaak. De combinatie 
+                    van chocoladebiscuit en chocoladebavarois zorgt voor een lekker evenwicht! 
+                  </p>
+                  <small>Ei, tarwe, lactose, soja, vis (gelatine)</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/"
+                  alt="Flantaart"
+                />
+                <figcaption>
+                  <h3>Flantaart</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Lekkere flantaart voor tijdens een koffiepauze. Ook verkrijgbaar in flan-bresiliennevorm. 
+                  </p>
+                  <small>Tarwe, lactose, ei </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/red velvet officieel.jpg"
+                  alt="Red velvet"
+                />
+                <figcaption>
+                  <h3>Red velvet</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€15</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Deze taart is een Amerikaanse klassieker! De taart zelf heeft een subtiele chocoladesmaak. 
+                    De afwerking gebeurt met roomkaastopping met witte chocolade. 
+                  </p>
+                  <small>Tarwe, ei, lactose, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/bretoense appeltaart.jpg"
+                  alt="Bretoense Appeltaart"
+                />
+                <figcaption>
+                  <h3>Bretoense Appeltaart</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Een van mijn favorieten! Een heerlijk appeltaartje waarvan de geur alleen al 
+                    je doet watertanden! De appeltjes worden gebakken in een appel-botersausje. 
+                  </p>
+                  <small>Tarwe, lactose, ei, noten</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </section>
+
+            <section id="koekjesMobile" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/Bokkenpootjes.jpg"
+                  alt="Bokkenpootjes"
+                />
+                <figcaption>
+                  <h3>Bokkenpootjes</h3>
+                  <section>
+                    <p>8 stuks</p>
+                    <p>€5</p>
+                  </section>
+                  <p>
+                    Dé specialiteit van Flogâteau! 2 amandelkoekjes gevuld met
+                    een heerlijke botercrème en vervolgens in chocolade
+                    degompeld
+                  </p>
+
+                  
+                  <small>ei, noten, tarwe, lactose, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/bokkenpootjes vaderdag.jpg"
+                  alt="Mokka Bokkenpootjes"
+                />
+                <figcaption>
+                  <h3>Bokkenpootjes Mokka</h3>
+                  <section>
+                    <p>8 stuks</p>
+                    <p>€6</p>
+                  </section>
+                  <p>
+                    Deze bokkenpootjes zijn gevuld met een mokkacrème.
+                     De uiteindes zijn in witte chocolade gedopt om de smaken mooi in elkaar te laten vloeien.
+                  </p>
+
+                  
+                  <small>Ei, noten, tarwe, lactose, soja
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/moppen.jpg"
+                  alt="Moppen"
+                />
+                <figcaption>
+                  <h3>Moppen</h3>
+                  <section>
+                    <p>15 stuks</p>
+                    <p>€5</p>
+                  </section>
+                  <p>
+                    Krokante, broze koekjes die door een mengeling van vanille 
+                    en chocolade een mooi patroon met zich mee brengen.
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei 
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/madeleines.jpg"
+                  alt="Madeleines"
+                />
+                <figcaption>
+                  <h3>Madeleines</h3>
+                  <section>
+                    <p>6 stuks</p>
+                    <p>€3</p>
+                  </section>
+                  <p>
+                    Deze zachte koekjes hebben een heerlijk 
+                    frisse smaak door de subtiele tint van citrus erin.
+                  </p>
+
+                  
+                  <small>Ei, tarwe, lactose
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/wafeltjes.jpg"
+                  alt="Wafeltjes"
+                />
+                <figcaption>
+                  <h3>Wafeltjes</h3>
+                  <section>
+                    <p>8 stuks</p>
+                    <p>€3.50</p>
+                  </section>
+                  <p>
+                    Deze heerlijke bewaarwafeltjes zijn krokant vanbuiten maar lekker zacht en mals aan de binnenkant. 
+                    Afgesloten kan je ze ze tot een week bewaren.
+                  </p>
+
+                  
+                  <small>Lactose, tarwe, ei
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Feest/kerstboomkoekjes.jpg"
+                  alt="Kerstkoekjes"
+                />
+                <figcaption>
+                  <h3>Kerstkoekjes</h3>
+                  <section>
+                    <p>8 stuks</p>
+                    <p>€-</p>
+                  </section>
+                  <p>
+                    De klassieke gingerbread-koekjes voor tijdens de kerstperiode! Deze koekjes zijn lekker krokant en hebben een kruidige smaak dankzij het kaneel dat aan het deeg is toegevoegd. 
+                    Heerlijk om van te smullen, maar ook superleuk om als kerstdecoratie te gebruiken!
+                  </p>
+
+                  <small>Lactose, ei, tarwe
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/margrietjes.jpg"
+                  alt="Margrietjes"
+                />
+                <figcaption>
+                  <h3>Margrietjes</h3>
+                  <section>
+                    <p>15 stuks</p>
+                    <p>€5</p>
+                  </section>
+                  <p>
+                    Krokante, broze koekjes met een hartje van frambozenconfituur.
+                     Deze koekjes kunnen op aanvraag ook met een andere smaak confituur gevuld worden.
+                  </p>
+
+                  <small>Boter, tarwe, ei
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/oreo's.jpg"
+                  alt="Oreo's"
+                />
+                <figcaption>
+                  <h3>Oreo's</h3>
+                  <section>
+                    <p>8 stuks</p>
+                    <p>€4</p>
+                  </section>
+                  <p>
+                    Deze krokante chocoladekoekjes zijn gevuld met een romige zoete vulling. 
+                    Ze zijn gebaseerd op de bekende Oreo cookies uit Amerika.
+                  </p>
+
+                  
+                  <small>Lactose, tarwe, ei 
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/macarons.jpg"
+                  alt="Macarons"
+                />
+                <figcaption>
+                  <h3>Macarons</h3>
+                  <section>
+                    <p>8 stuks</p>
+                    <p>€5</p>
+                  </section>
+                  <p>
+                    Macarons de Paris. Deze typisch Parijse koekjes bestaan uit 2 amandelkoekjes
+                     die aan elkaar geplakt zijn met een lekkere vulling. De smaken zijn eindeloos!
+                  </p>
+
+                  
+                  <small>Ei, noten, lactose, soja 
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              
+
+            </section>
+
+            <section id="gebakMobile" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/chocolade cupcake met karamel.jpg"
+                  alt="Chocolade Cupcakes Met Karamel"
+                />
+                <figcaption>
+                  <h3>Chocolade Cupcakes Met Karamel</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Deze heerlijke chocoladecupcakes 
+                    zijn afgewerkt met een topping op basis van karamel. Een heerlijke combinatie! 
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei, soja </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/vanille cupcakes.jpg"
+                  alt="Vanille Cupcakes"
+                />
+                <figcaption>
+                  <h3>Vanille Cupcakes</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€1</p>
+                  </section>
+                  <p>
+                    Vanille cupcakes gebaseerd op de cupcakes van Magnolia's
+                     Bakery in New York. Afgewerkt met een luchtige vanilletopping. 
+                  </p>
+                  <small>Lactose, tarwe, ei</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/red velvet cupcakes.jpg"
+                  alt="Red Velvet Cupcakes"
+                />
+                <figcaption>
+                  <h3>Red Velvet Cupcakes</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€1</p>
+                  </section>
+                  <p>
+                    Klassieke Amerikaanse red velvet cupcakes! Deze cupcakes hebben een subtiele
+                     chocoladesmaak en zijn afgewerkt met een roomkaas - witte chocolade topping.
+                  </p>
+
+                  
+                  <small>Tarwe, ei, lactose, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/carrot cupcakes.jpg"
+                  alt="Carrot Cupcakes"
+                />
+                <figcaption>
+                  <h3>Carrot Cupcakes</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€1</p>
+                  </section>
+                  <p>
+                    Een cupcake vol specerijen, waaronder kaneel. De gehakte noten en wortelen zorgen voor een aangename structuur. 
+                    Deze cupcakes zijn afgewerkt met een lekkere roomkaastopping.
+                  </p>
+
+                  
+                  <small>Ei, lactose, soja, tarwe, noten</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/Passie-meringue.jpg"
+                  alt="Passie-meringue Mini Tartelette "
+                />
+                <figcaption>
+                  <h3>Passie-meringue Mini Tartelette (6cm)</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Een mini taartje met een krokante bodem van boterdeeg. Het taartje is gevuld
+                     met passievruchtencrème en afgewerkt met fluweelzachte meringue. 
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei, vis (gelatine), soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/aardbei.jpg"
+                  alt="Aardbei Mini Tartelette "
+                />
+                <figcaption>
+                  <h3>Aardbei Mini Tartelette (⌀ 6cm)</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Een mini taartje met een krokante bodem van boterdeeg. 
+                    Het taartje is gevuld met banketbakkersroom en afgewerkt 
+                    met verse aardbeitjes. 
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/crunchy chocolate.jpg"
+                  alt="Crunchy Chocolate Mini Tartelette"
+                />
+                <figcaption>
+                  <h3>Crunchy Chocolate Mini Tartelette (6cm)</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Een mini taartje met een krokante bodem van boterdeeg. In het taartje zit een zachte ganache van melkchocolade. 
+                    Het taartje wordt afgewerkt met een krokant 'chocoladerotske'.
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/product01.jpg"
+                  alt="Salted Caramel Mini Tartelette"
+                />
+                <figcaption>
+                  <h3>Salted Caramel Mini Tartelette (6cm)</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Een mini taartje met een krokante bodem van boterdeeg. De vulling is een zachte, gezouten karamel. 
+                    Het taartje wordt afgewerkt met gezouten karamel crispy pearls. 
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/"
+                  alt="Bretoens Appel Mini Tartelette"
+                />
+                <figcaption>
+                  <h3>Bretoens Appel Mini Tartelette (6cm)</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Een mini taartje met een krokante bodem van boterdeeg. Het taartje wordt 
+                    gebakken met een appel-botersausje en verse appelblokjes. 
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/citroen meringue.jpg"
+                  alt="Citroen-Meringue Mini Tartelette "
+                />
+                <figcaption>
+                  <h3>Citroen-Meringue Mini Tartelette (6cm)</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Een mini taartje met een krokante bodem van boterdeeg. Het taartje is gevuld 
+                    met citroencrème en afgewerkt met fluweelzachte meringue.
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei, vis (gelatine), soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/test.png"
+                  alt="Tigrés"
+                />
+                <figcaption>
+                  <h3>Tigrés</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€1.50</p>
+                  </section>
+                  <p>
+                    Deze gebakjes bestaan uit een mals amandelgebakje met chocoladestukjes in. 
+                    Het wordt afgewerkt met een lekkere chocoladeganache.
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei, noten, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/"
+                  alt="Mini Pavlova's"
+                />
+                <figcaption>
+                  <h3>Mini Pavlova's</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Mooie, maar vooral lekker zomerse taartjes. Een 
+                    heerlijke meringue die nog wat zacht is vanbinnen maar 
+                    krokant vanbuiten. Deze taart is gevuld met slagroom en rood fruit.
+                    (Ander fruit is mogelijk op aanvraag)
+                  </p>
+
+                  
+                  <small>Ei, Lactose</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/mini eclairs.jpg"
+                  alt="mini eclairs"
+                />
+                <img
+                  src="../illustraties/red.png"
+                  alt="rode lind"
+                  class="lind"
+                />
+                <figcaption>
+                  <h3>Eclairs</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€1.80</p>
+                  </section>
+                  <p>
+                    Een Franse klassieker. Deze eclairs zijn gevuld met een
+                    traditionele banketbakkersroom en afgewerkt met
+                    chocoladeganache en hagelslag.
+                  </p>
+
+                 
+                  <small>tarwe, ei, lactose, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+
+             
+              
+
+            </section>
+
+            <section id="feestMobile" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/Taarten/taart bloemen.jpg"
+                  alt="Themataarten En -Cupcakes"
+                />
+                <figcaption>
+                  <h3>Themataarten En -Cupcakes</h3>
+
+                  <p>
+                    Geef je een (verjaardags)-feestje en zoek je nog naar 
+                    gepersonaliseerd lekkers? Bij Flogâteau kan je ook
+                    gethematiseerde taarten en cupcakes bestellen.  Vermeld 
+                    bij je bestelling welk thema je kiest (eventueel met foto's 
+                    waarop ik me kan baseren), en dan check ik de mogelijkheden!
+                  </p>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/taart bloemen.jpg"
+                  alt="Themataarten En -Cupcakes"
+                />
+                <figcaption>
+                  <h3>Themataarten En -Cupcakes</h3>
+               
+                  <p>
+                    Cijfertaart vanille - cookie, Cijfertaart chocolade - karamel - cookie, Cijfertaart vanille
+                     - biscuit, Cijfertaart chocolade-karamel - biscuit
+                  </p>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <figcaption>
+                  <h3>Prijzen Feestgebak</h3>
+                  <section>
+                    <p>Themataart 6p.</p>
+                    <p>€25</p>
+                  </section>
+                  <section>
+                    <p>Thema cupcake</p>
+                    <p>€3</p>
+                  </section>
+               
+                  <section>
+                    <p>Cijfertaarten</p>
+                    <p>€40</p>
+                  </section>
+               
+               
+
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+       
+            </section>
+
+            <section id="logoMobile" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/LogoCupcakes/logo cupcakes.jpg"
+                  alt="Logo Cupcakes"
+                />
+                <figcaption>
+                  <h3>Logo Cupcakes</h3>
+                  <section>
+                    <div>
+                      <p>Mini: min. 50 stuks</p>
+                      <p>Groot: min. 12 stuks</p>
+                    </div>
+                    <div>
+                      <p>€75</p>
+                      <p>€30</p>
+                    </div>
+                  </section>
+                  <p>
+                    Bij Flogâteau kan je ook cupcakes bestellen met je
+                    bedrijfslogo op. Ze zijn beschikbaar in vanille, chocolade,
+                    red velvet en carrot.
+                  </p>
+
+              
+                  <small></small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+       
+            </section>
+
+            <section id="kaartjesMobile" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/kaartenPNG.png"
+                  alt="Kaartjes"
+                />
+                <figcaption>
+                  <h3>Kaartjes</h3>
+                  <section>
+
+                      <p>€0.50</p>
+
+                  </section>
+                  <p>
+                    Verschillende leuke kaartjes met een zoete boodschap op.
+                     Altijd leuk om bij een verjaardagstaart cadeau te doen! 
+                  </p>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/"
+                  alt="Kaartje"
+                />
+                <figcaption>
+                  <h3>Kaartjes</h3>
+                  <section>
+
+                      <p>€0.50</p>
+
+                  </section>
+                  <p>
+                    Verschillende leuke kaartjes met een zoete boodschap op.
+                     Altijd leuk om bij een verjaardagstaart cadeau te doen! 
+                  </p>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/"
+                  alt="Kaartje"
+                />
+                <figcaption>
+                  <h3>Kaartjes</h3>
+                  <section>
+
+                      <p>€0.50</p>
+
+                  </section>
+                  <p>
+                    Verschillende leuke kaartjes met een zoete boodschap op.
+                     Altijd leuk om bij een verjaardagstaart cadeau te doen! 
+                  </p>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+       
+            </section>
+
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <main class="productMainDesktop">
+      <aside>
+        <h2>Filters</h2>
+        <h3>Assortiment</h3>
+        <label class="container">
+          <input type="checkbox" id="box1" name="checking" onclick="functionTaarten()">
+          <p>Taarten</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" id="box2" name="checking" onclick="functionKoekjes()">
+          <p>Koekjes</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" id="box3" name="checking" onclick="functionGebak()">
+          <p>Fijn gebak</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" id="box4" name="checking" onclick="functionFeest()">
+          <p>Feest</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" id="box5" name="checking" onclick="functionLogo()">
+          <p>Logo cupcakes</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" id="box6" name="checking" onclick="functionKaartjes()">
+          <p>Postkaartjes</p>
+        </label>
+      </aside>
+
+      <div class="kadersDesktop">
+        <section class="productenlijstDesktop">
+          <section id="productenlijstDesktop">
+
+            <section id="taarten" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/Taarten/appel frangipane.jpg"
+                  alt="Appel Frangipane"
+                />
+                <figcaption>
+                  <h3>Appel Frangipane</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Deze appeltaart met een subtiele amandelsmaak heeft een
+                    bodem van boterdeeg, gevuld met frangipane en appeltjes.
+                  </p>
+
+                   
+                  <small>tarwe, ei, lactose, noten</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/cheesecake framboos.jpg"
+                  alt="product cheesecake framboos"
+                />
+                <figcaption>
+                  <h3>Cheesecake framboos</h3>
+                  <section>
+                    <p>4 personen</p>
+                    <p>€10</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Een luchtige cheesecake met verse roomkaas, een krokante
+                    speculaasbodem en verse framboosjes.
+                  </p>
+
+                
+                  <small>lactose, ei, tarwe, vis (gelatine)</small>
+                  <a href="../index.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/citroen meringue groot.jpg"
+                  alt="product appel frangipane"
+                />
+                <figcaption>
+                  <h3>Citroen-Meringue</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Een lekkere krokante bodem van boterdeeg, gevuld met een
+                    citroencrème en afgewerkt met fluweelzachte meringue.
+                  </p>
+                  <small>Lactose, ei, tarwe, soja, vis (gelatine)</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/carrot cake.jpg"
+                  alt="Carrot Cake"
+                />
+                <figcaption>
+                  <h3>Carrot Cake</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Een taart vol specerijen, gehakte noten en wortelen. Deze
+                    taart is afgewerkt met een lekkere roomkaastopping.
+                  </p>
+                  <small>Ei, lactose, soja, tarwe, noten</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/fraisier 2.jpg"
+                  alt="Fraisier"
+                />
+                <figcaption>
+                  <h3>Fraisier</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€15</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    De fraisier is een heerlijke taart met vanillebiscuit,
+                    aardbeien en een luchtige mousseline crème.
+                  </p>
+                  <small>Tarwe, ei, lactose, vis (gelatine)</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/banaan.jpg"
+                  alt="Bananentaart"
+                />
+                <figcaption>
+                  <h3>Bananentaart</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Een heerlijke klassieker! Een krokante bodem van
+                    boterdeeg, gevuld met crème Suisse en afgewerkt met
+                    lekkere bananenschijfjes.
+                  </p>
+                  <small>Tarwe, lactose, ei, soja, vis (gelatine)</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/pavlova.jpg"
+                  alt="Pavlova"
+                />
+                <figcaption>
+                  <h3>Pavlova</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€15</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Een mooie, maar vooral lekker zomerse taart. Een heerlijke meringue die nog wat zacht is vanbinnen maar krokant vanbuiten. Deze taart is gevuld met slagroom en rood fruit. 
+                    (Ander fruit is mogelijk op aanvraag)
+                  </p>
+                  <small>Ei, Lactose</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/rabarber.jpg"
+                  alt="Rabarber-Frangipane"
+                />
+                <figcaption>
+                  <h3>Rabarber-Frangipane</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Nog op zoek naar een taart om een zomerse BBQ af te sluiten? Deze taart met 
+                    een krokante bodem, gevuld met frangipane en verse rabarber is zeker een aanrader! 
+                  </p>
+                  <small>Tarwe, lactose, ei, noten</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/aardbei groot.jpg"
+                  alt="Aardbeientaart"
+                />
+                <figcaption>
+                  <h3>Aardbeientaart</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€15</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Een heerlijke klassieker! Een krokante bodem van boterdeeg, 
+                    gevuld met banketbakkersroom en afgewerkt met verse aardbeitjes.
+                  </p>
+                  <small>Tarwe, lactose, ei, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/cheesecake aardbei.jpg"
+                  alt="Cheescake Aardbei"
+                />
+                <figcaption>
+                  <h3>Cheescake Aardbei</h3>
+                  <section>
+                    <p>4 personen</p>
+                    <p>€10</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Een luchtige cheesecake met verse roomkaas, een krokante speculaasbodem en verse aardbeien.
+                  </p>
+                  <small>Lactose, ei, tarwe, vis (gelatine)</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/bresillienne.jpg"
+                  alt="Flan bresillienne"
+                />
+                <figcaption>
+                  <h3>Flan bresillienne</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Een perfect taartje voor bij de koffie. Een heerlijke flan, 
+                    afgewerkt met slagroom en bresiliennenootjes. 
+                  </p>
+                  <small>Tarwe, lactose, ei, noten</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/chocolade bavaroisPNG.png"
+                  alt="Chocolade bavarois"
+                />
+                <figcaption>
+                  <h3>Chocolade bavarois</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€15</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Deze chocoladetaart is luchtig en heel rijk van smaak. De combinatie 
+                    van chocoladebiscuit en chocoladebavarois zorgt voor een lekker evenwicht! 
+                  </p>
+                  <small>Ei, tarwe, lactose, soja, vis (gelatine)</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/"
+                  alt="Flantaart"
+                />
+                <figcaption>
+                  <h3>Flantaart</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Lekkere flantaart voor tijdens een koffiepauze. Ook verkrijgbaar in flan-bresiliennevorm. 
+                  </p>
+                  <small>Tarwe, lactose, ei </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/red velvet officieel.jpg"
+                  alt="Red velvet"
+                />
+                <figcaption>
+                  <h3>Red velvet</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€15</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Deze taart is een Amerikaanse klassieker! De taart zelf heeft een subtiele chocoladesmaak. 
+                    De afwerking gebeurt met roomkaastopping met witte chocolade. 
+                  </p>
+                  <small>Tarwe, ei, lactose, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/bretoense appeltaart.jpg"
+                  alt="Bretoense Appeltaart"
+                />
+                <figcaption>
+                  <h3>Bretoense Appeltaart</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Een van mijn favorieten! Een heerlijk appeltaartje waarvan de geur alleen al 
+                    je doet watertanden! De appeltjes worden gebakken in een appel-botersausje. 
+                  </p>
+                  <small>Tarwe, lactose, ei, noten</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </section>
+
+            <section id="koekjes" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/Bokkenpootjes.jpg"
+                  alt="Bokkenpootjes"
+                />
+                <figcaption>
+                  <h3>Bokkenpootjes</h3>
+                  <section>
+                    <p>8 stuks</p>
+                    <p>€5</p>
+                  </section>
+                  <p>
+                    Dé specialiteit van Flogâteau! 2 amandelkoekjes gevuld met
+                    een heerlijke botercrème en vervolgens in chocolade
+                    degompeld
+                  </p>
+
+                  
+                  <small>ei, noten, tarwe, lactose, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/bokkenpootjes vaderdag.jpg"
+                  alt="Mokka Bokkenpootjes"
+                />
+                <figcaption>
+                  <h3>Bokkenpootjes Mokka</h3>
+                  <section>
+                    <p>8 stuks</p>
+                    <p>€6</p>
+                  </section>
+                  <p>
+                    Deze bokkenpootjes zijn gevuld met een mokkacrème.
+                     De uiteindes zijn in witte chocolade gedopt om de smaken mooi in elkaar te laten vloeien.
+                  </p>
+
+                  
+                  <small>Ei, noten, tarwe, lactose, soja
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/moppen.jpg"
+                  alt="Moppen"
+                />
+                <figcaption>
+                  <h3>Moppen</h3>
+                  <section>
+                    <p>15 stuks</p>
+                    <p>€5</p>
+                  </section>
+                  <p>
+                    Krokante, broze koekjes die door een mengeling van vanille 
+                    en chocolade een mooi patroon met zich mee brengen.
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei 
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/madeleines.jpg"
+                  alt="Madeleines"
+                />
+                <figcaption>
+                  <h3>Madeleines</h3>
+                  <section>
+                    <p>6 stuks</p>
+                    <p>€3</p>
+                  </section>
+                  <p>
+                    Deze zachte koekjes hebben een heerlijk 
+                    frisse smaak door de subtiele tint van citrus erin.
+                  </p>
+
+                  
+                  <small>Ei, tarwe, lactose
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/wafeltjes.jpg"
+                  alt="Wafeltjes"
+                />
+                <figcaption>
+                  <h3>Wafeltjes</h3>
+                  <section>
+                    <p>8 stuks</p>
+                    <p>€3.50</p>
+                  </section>
+                  <p>
+                    Deze heerlijke bewaarwafeltjes zijn krokant vanbuiten maar lekker zacht en mals aan de binnenkant. 
+                    Afgesloten kan je ze ze tot een week bewaren.
+                  </p>
+
+                  
+                  <small>Lactose, tarwe, ei
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Feest/kerstboomkoekjes.jpg"
+                  alt="Kerstkoekjes"
+                />
+                <figcaption>
+                  <h3>Kerstkoekjes</h3>
+                  <section>
+                    <p>8 stuks</p>
+                    <p>€-</p>
+                  </section>
+                  <p>
+                    De klassieke gingerbread-koekjes voor tijdens de kerstperiode! Deze koekjes zijn lekker krokant en hebben een kruidige smaak dankzij het kaneel dat aan het deeg is toegevoegd. 
+                    Heerlijk om van te smullen, maar ook superleuk om als kerstdecoratie te gebruiken!
+                  </p>
+
+                  <small>Lactose, ei, tarwe
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/margrietjes.jpg"
+                  alt="Margrietjes"
+                />
+                <figcaption>
+                  <h3>Margrietjes</h3>
+                  <section>
+                    <p>15 stuks</p>
+                    <p>€5</p>
+                  </section>
+                  <p>
+                    Krokante, broze koekjes met een hartje van frambozenconfituur.
+                     Deze koekjes kunnen op aanvraag ook met een andere smaak confituur gevuld worden.
+                  </p>
+
+                  <small>Boter, tarwe, ei
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/oreo's.jpg"
+                  alt="Oreo's"
+                />
+                <figcaption>
+                  <h3>Oreo's</h3>
+                  <section>
+                    <p>8 stuks</p>
+                    <p>€4</p>
+                  </section>
+                  <p>
+                    Deze krokante chocoladekoekjes zijn gevuld met een romige zoete vulling. 
+                    Ze zijn gebaseerd op de bekende Oreo cookies uit Amerika.
+                  </p>
+
+                  
+                  <small>Lactose, tarwe, ei 
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/macarons.jpg"
+                  alt="Macarons"
+                />
+                <figcaption>
+                  <h3>Macarons</h3>
+                  <section>
+                    <p>8 stuks</p>
+                    <p>€5</p>
+                  </section>
+                  <p>
+                    Macarons de Paris. Deze typisch Parijse koekjes bestaan uit 2 amandelkoekjes
+                     die aan elkaar geplakt zijn met een lekkere vulling. De smaken zijn eindeloos!
+                  </p>
+
+                  
+                  <small>Ei, noten, lactose, soja 
+                  </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              
+
+            </section>
+
+            <section id="gebak" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/chocolade cupcake met karamel.jpg"
+                  alt="Chocolade Cupcakes Met Karamel"
+                />
+                <figcaption>
+                  <h3>Chocolade Cupcakes Met Karamel</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Deze heerlijke chocoladecupcakes 
+                    zijn afgewerkt met een topping op basis van karamel. Een heerlijke combinatie! 
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei, soja </small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/vanille cupcakes.jpg"
+                  alt="Vanille Cupcakes"
+                />
+                <figcaption>
+                  <h3>Vanille Cupcakes</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€1</p>
+                  </section>
+                  <p>
+                    Vanille cupcakes gebaseerd op de cupcakes van Magnolia's
+                     Bakery in New York. Afgewerkt met een luchtige vanilletopping. 
+                  </p>
+                  <small>Lactose, tarwe, ei</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/red velvet cupcakes.jpg"
+                  alt="Red Velvet Cupcakes"
+                />
+                <figcaption>
+                  <h3>Red Velvet Cupcakes</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€1</p>
+                  </section>
+                  <p>
+                    Klassieke Amerikaanse red velvet cupcakes! Deze cupcakes hebben een subtiele
+                     chocoladesmaak en zijn afgewerkt met een roomkaas - witte chocolade topping.
+                  </p>
+
+                  
+                  <small>Tarwe, ei, lactose, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/carrot cupcakes.jpg"
+                  alt="Carrot Cupcakes"
+                />
+                <figcaption>
+                  <h3>Carrot Cupcakes</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€1</p>
+                  </section>
+                  <p>
+                    Een cupcake vol specerijen, waaronder kaneel. De gehakte noten en wortelen zorgen voor een aangename structuur. 
+                    Deze cupcakes zijn afgewerkt met een lekkere roomkaastopping.
+                  </p>
+
+                  
+                  <small>Ei, lactose, soja, tarwe, noten</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/Passie-meringue.jpg"
+                  alt="Passie-meringue Mini Tartelette "
+                />
+                <figcaption>
+                  <h3>Passie-meringue Mini Tartelette (6cm)</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Een mini taartje met een krokante bodem van boterdeeg. Het taartje is gevuld
+                     met passievruchtencrème en afgewerkt met fluweelzachte meringue. 
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei, vis (gelatine), soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/aardbei.jpg"
+                  alt="Aardbei Mini Tartelette "
+                />
+                <figcaption>
+                  <h3>Aardbei Mini Tartelette (⌀ 6cm)</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Een mini taartje met een krokante bodem van boterdeeg. 
+                    Het taartje is gevuld met banketbakkersroom en afgewerkt 
+                    met verse aardbeitjes. 
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/crunchy chocolate.jpg"
+                  alt="Crunchy Chocolate Mini Tartelette"
+                />
+                <figcaption>
+                  <h3>Crunchy Chocolate Mini Tartelette (6cm)</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Een mini taartje met een krokante bodem van boterdeeg. In het taartje zit een zachte ganache van melkchocolade. 
+                    Het taartje wordt afgewerkt met een krokant 'chocoladerotske'.
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/product01.jpg"
+                  alt="Salted Caramel Mini Tartelette"
+                />
+                <figcaption>
+                  <h3>Salted Caramel Mini Tartelette (6cm)</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Een mini taartje met een krokante bodem van boterdeeg. De vulling is een zachte, gezouten karamel. 
+                    Het taartje wordt afgewerkt met gezouten karamel crispy pearls. 
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/"
+                  alt="Bretoens Appel Mini Tartelette"
+                />
+                <figcaption>
+                  <h3>Bretoens Appel Mini Tartelette (6cm)</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Een mini taartje met een krokante bodem van boterdeeg. Het taartje wordt 
+                    gebakken met een appel-botersausje en verse appelblokjes. 
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/citroen meringue.jpg"
+                  alt="Citroen-Meringue Mini Tartelette "
+                />
+                <figcaption>
+                  <h3>Citroen-Meringue Mini Tartelette (6cm)</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Een mini taartje met een krokante bodem van boterdeeg. Het taartje is gevuld 
+                    met citroencrème en afgewerkt met fluweelzachte meringue.
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei, vis (gelatine), soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/test.png"
+                  alt="Tigrés"
+                />
+                <figcaption>
+                  <h3>Tigrés</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€1.50</p>
+                  </section>
+                  <p>
+                    Deze gebakjes bestaan uit een mals amandelgebakje met chocoladestukjes in. 
+                    Het wordt afgewerkt met een lekkere chocoladeganache.
+                  </p>
+
+                  
+                  <small>Tarwe, lactose, ei, noten, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/"
+                  alt="Mini Pavlova's"
+                />
+                <figcaption>
+                  <h3>Mini Pavlova's</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Mooie, maar vooral lekker zomerse taartjes. Een 
+                    heerlijke meringue die nog wat zacht is vanbinnen maar 
+                    krokant vanbuiten. Deze taart is gevuld met slagroom en rood fruit.
+                    (Ander fruit is mogelijk op aanvraag)
+                  </p>
+
+                  
+                  <small>Ei, Lactose</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/mini eclairs.jpg"
+                  alt="mini eclairs"
+                />
+                <img
+                  src="../illustraties/red.png"
+                  alt="rode lind"
+                  class="lind"
+                />
+                <figcaption>
+                  <h3>Eclairs</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€1.80</p>
+                  </section>
+                  <p>
+                    Een Franse klassieker. Deze eclairs zijn gevuld met een
+                    traditionele banketbakkersroom en afgewerkt met
+                    chocoladeganache en hagelslag.
+                  </p>
+
+                 
+                  <small>tarwe, ei, lactose, soja</small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+
+             
+              
+
+            </section>
+
+            <section id="feest" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/Taarten/taart bloemen.jpg"
+                  alt="Themataarten En -Cupcakes"
+                />
+                <figcaption>
+                  <h3>Themataarten En -Cupcakes</h3>
+
+                  <p>
+                    Geef je een (verjaardags)-feestje en zoek je nog naar 
+                    gepersonaliseerd lekkers? Bij Flogâteau kan je ook
+                    gethematiseerde taarten en cupcakes bestellen.  Vermeld 
+                    bij je bestelling welk thema je kiest (eventueel met foto's 
+                    waarop ik me kan baseren), en dan check ik de mogelijkheden!
+                  </p>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/taart bloemen.jpg"
+                  alt="Themataarten En -Cupcakes"
+                />
+                <figcaption>
+                  <h3>Themataarten En -Cupcakes</h3>
+               
+                  <p>
+                    Cijfertaart vanille - cookie, Cijfertaart chocolade - karamel - cookie, Cijfertaart vanille
+                     - biscuit, Cijfertaart chocolade-karamel - biscuit
+                  </p>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <figcaption>
+                  <h3>Prijzen Feestgebak</h3>
+                  <section>
+                    <p>Themataart 6p.</p>
+                    <p>€25</p>
+                  </section>
+                  <section>
+                    <p>Thema cupcake</p>
+                    <p>€3</p>
+                  </section>
+               
+                  <section>
+                    <p>Cijfertaarten</p>
+                    <p>€40</p>
+                  </section>
+               
+               
+
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+       
+            </section>
+
+            <section id="logo" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/LogoCupcakes/logo cupcakes.jpg"
+                  alt="Logo Cupcakes"
+                />
+                <figcaption>
+                  <h3>Logo Cupcakes</h3>
+                  <section>
+                    <div>
+                      <p>Mini: min. 50 stuks</p>
+                      <p>Groot: min. 12 stuks</p>
+                    </div>
+                    <div>
+                      <p>€75</p>
+                      <p>€30</p>
+                    </div>
+                  </section>
+                  <p>
+                    Bij Flogâteau kan je ook cupcakes bestellen met je
+                    bedrijfslogo op. Ze zijn beschikbaar in vanille, chocolade,
+                    red velvet en carrot.
+                  </p>
+
+              
+                  <small></small>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+       
+            </section>
+
+            <section id="kaartjes" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/kaartenPNG.png"
+                  alt="Kaartjes"
+                />
+                <figcaption>
+                  <h3>Kaartjes</h3>
+                  <section>
+
+                      <p>€0.50</p>
+
+                  </section>
+                  <p>
+                    Verschillende leuke kaartjes met een zoete boodschap op.
+                     Altijd leuk om bij een verjaardagstaart cadeau te doen! 
+                  </p>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/"
+                  alt="Kaartje"
+                />
+                <figcaption>
+                  <h3>Kaartjes</h3>
+                  <section>
+
+                      <p>€0.50</p>
+
+                  </section>
+                  <p>
+                    Verschillende leuke kaartjes met een zoete boodschap op.
+                     Altijd leuk om bij een verjaardagstaart cadeau te doen! 
+                  </p>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/"
+                  alt="Kaartje"
+                />
+                <figcaption>
+                  <h3>Kaartjes</h3>
+                  <section>
+
+                      <p>€0.50</p>
+
+                  </section>
+                  <p>
+                    Verschillende leuke kaartjes met een zoete boodschap op.
+                     Altijd leuk om bij een verjaardagstaart cadeau te doen! 
+                  </p>
+                  <a href="../page/winkel.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+       
+            </section>
+
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <section class="taal">
+        <ul>
+          <li>
+            <select name="taal" id="taal">
+              <option value="nl">NL</option>
+              <option value="fr">FR</option>
+              <option value="en">EN</option>
+            </select>
+          </li>
+          <li id="footerFlo">FLOGÂTEAU</li>
+          <div class="icons">
+            <li>
+              <a href="www.facebook.com/Flogâteau-1838784923015234/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/flogateau_/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:flocroonenberghs@gmail.com"
+                ><i class="far fa-envelope"></i
+              ></a>
+            </li>
+          </div>
+        </ul>
+      </section>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
