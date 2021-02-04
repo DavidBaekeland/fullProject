@@ -251,10 +251,11 @@
     <section class="taal">
       <ul>
         <li>
-          <select name="taal" id="taal">
-            <option value="fr">FR</option>
-            <option value="nl">NL</option>
-            <option value="en">EN</option>
+          <!--https://stackoverflow.com/questions/2000656/using-href-links-inside-option-tag-->
+          <select name="taal" id="taal" onchange="location = this.value;">
+            <option value="../index.html">NL</option>
+            <option value="#">FR</option>
+            <option value="en/engels-home.html">EN</option>
           </select>
         </li>
         <li id="footerFlo">FLOGÂTEAU</li>

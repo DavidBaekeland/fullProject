@@ -134,8 +134,8 @@
               <section class="calender">
                 <label for="date">kalender</label>
                 <input type="date" id="date" name="date" required />
-                
               </section>
+              
               <input type="submit" name="winkelSubmit" id="winkelSubmit" value="Bestellen" />
             </section>
           </form>
@@ -180,10 +180,11 @@
         <section class="taal">
           <ul>
             <li>
-              <select name="taal" id="taal">
-                <option value="nl">NL</option>
-                <option value="fr">FR</option>
-                <option value="en">EN</option>
+              <!--https://stackoverflow.com/questions/2000656/using-href-links-inside-option-tag-->
+              <select name="taal" id="taal" onchange="location = this.value;">
+                <option value="#">NL</option>
+                <option value="fr/magasin.html">FR</option>
+                <option value="en/engels-winkel.html">EN</option>
               </select>
             </li>
             <li id="footerFlo">FLOGÂTEAU</li>

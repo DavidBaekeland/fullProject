@@ -63,28 +63,33 @@
       <a href="path_to_file" download="proposed_file_name">Prent 3</a>
     </main>
     <footer>
-      <section>
+      <section class="taal">
         <ul>
-          <p><b>NL</b> / FR / ENG</p>
-        </ul>
-      </section>
-      <section class="flofoot">
-        <p>
-          FLOGÂTEAU
-        </p>
-      </section>
-      <section>
-        <div class="icons">
-          <a href="www.facebook.com/Flogâteau-1838784923015234/"
-            ><p><i class="fab fa-facebook-f"></i></p
-          ></a>
-          <a href="https://www.instagram.com/flogateau_/"
-            ><p><i class="fab fa-instagram"></i></p
-          ></a>
-          <a href="mailto:"
-            ><p><i class="far fa-envelope"></i></p
-          ></a>
+          <li>
+            <!--https://stackoverflow.com/questions/2000656/using-href-links-inside-option-tag-->
+            <select name="taal" id="taal" onchange="location = this.value;">
+              <option value="../page/lose.html">NL</option>
+              <option value="../fr/lose.html">FR</option>
+              <option value="#">EN</option>
+            </select>
+          </li>
+          <li id="footerFlo">FLOGÂTEAU</li>
+          <div class="icons">
+            <li>
+              <a href="www.facebook.com/Flogâteau-1838784923015234/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/flogateau_/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+                <a href="mailto:flocroonenberghs@gmail.com"><i class="far fa-envelope"></i></a>
+            </li>
         </div>
+        </ul>
       </section>
     </footer>
 
