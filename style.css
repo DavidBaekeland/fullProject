@@ -35,23 +35,18 @@
 .icon-cart1:before {
   content: "\e93b";
 }
-
 .icon-menu:before {
   content: "\e9bd";
 }
-
 .icon-mail2:before {
   content: "\ea84";
 }
-
 .icon-facebook:before {
   content: "\ea90";
 }
-
 .icon-instagram:before {
   content: "\ea92";
 }
-
 .icon-cart:before {
   content: "\e93a";
 }
@@ -65,10 +60,10 @@ body {
   margin: 0;
 }
 
-/*Nav Mobile*/
-/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar*/
+/*Nav Mobile*/ /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar*/
 .topnav {
   overflow: hidden;
+  z-index: 2;
   background-color: #ffffff;
   position: fixed;
   top: 0;
@@ -171,10 +166,6 @@ footer .icons li:nth-child(even) a {
   background-color: #ffffff;
 }
 
-#footerFlo {
-  padding: 0 10%;
-}
-
 /*Einde Footer Mobile*/
 
 /*Home*/
@@ -193,13 +184,11 @@ main {
   font-size: 1.5625em;
   font-weight: 500;
 }
-
 .startHome span {
   color: #bca04a;
   font-size: 1.5625em;
   font-weight: 500;
 }
-
 .startHome {
   display: flex;
   flex-direction: row;
@@ -210,7 +199,6 @@ main {
 .productHome {
   margin-bottom: 3.125rem;
 }
-
 .productHome h1 {
   color: #bca04a;
   font-size: 1.5625em;
@@ -276,11 +264,8 @@ main {
 
 .taartHome figcaption {
   position: absolute;
-  z-index: 2;
   left: 0;
-  /* top: 12vh; */
   width: 100%;
-  /* height: 100%; */
   bottom: 6%;
   display: flex;
   flex-direction: column;
@@ -288,8 +273,7 @@ main {
   justify-content: center;
 }
 
-/*SlideShow*/
-/*https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+/*SlideShow*/ /*https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 
 .slideshow-container {
   max-width: 1000px;
@@ -339,6 +323,7 @@ main {
     opacity: 1;
   }
 }
+
 /*EindSlideShow*/
 
 .actieHome h1 {
@@ -374,7 +359,6 @@ main {
   font-weight: 500;
   left: 6.39625vw;
 }
-
 /*Einde Home*/
 
 /*About*/
@@ -409,7 +393,6 @@ main {
   font-weight: 400;
   font-size: 0.875em;
 }
-
 .doorAbout .eenAbout {
   margin-bottom: 1.25rem;
 }
@@ -437,29 +420,24 @@ main {
   color: #4f5d75;
   font-weight: 500;
 }
-
 .voornaamContact {
   padding-bottom: 1.25rem;
 }
-
 .naamContact label {
   padding-right: 2.596875rem;
   font-size: 1em;
   color: #4f5d75;
   font-weight: 500;
 }
-
 .naamContact {
   padding-bottom: 1.25rem;
 }
-
 .e-mailContact label {
   padding-right: 2.4375rem;
   font-size: 1em;
   color: #4f5d75;
   font-weight: 500;
 }
-
 .e-mailContact {
   padding-bottom: 1.25rem;
 }
@@ -469,7 +447,6 @@ main {
   color: #4f5d75;
   font-weight: 500;
 }
-
 .berichtContact {
   display: flex;
   flex-direction: column;
@@ -495,6 +472,7 @@ main {
 #doeMeeKnopHome {
   display: inline-block;
   text-align: center;
+  margin-left: 55vw;
   margin-top: 0.9375rem;
   border: 0.125rem solid #bca04a;
   padding: 0.9375rem 0.9375rem;
@@ -530,29 +508,24 @@ main {
   color: #4f5d75;
   font-weight: 500;
 }
-
 .voornaamWinkel {
   padding-bottom: 1.25rem;
 }
-
 .naamWinkel label {
   padding-right: 2.596875rem;
   font-size: 1em;
   color: #4f5d75;
   font-weight: 500;
 }
-
 .naamWinkel {
   padding-bottom: 1.25rem;
 }
-
 .e-mailWinkel label {
   padding-right: 2.4375rem;
   font-size: 1em;
   color: #4f5d75;
   font-weight: 500;
 }
-
 .e-mailWinkel {
   padding-bottom: 1.25rem;
 }
@@ -563,17 +536,16 @@ main {
   color: #4f5d75;
   font-weight: 500;
 }
-
 .telefoonWinkel {
   padding-bottom: 1.25rem;
 }
-
-.kalenderWinkel label {
+.calender label {
   font-size: 1em;
   color: #4f5d75;
   font-weight: 500;
+  padding-right: 1.2rem;
+  padding-bottom: 1.25rem;
 }
-
 .kalenderWinkel {
   display: flex;
   flex-direction: column;
@@ -588,6 +560,7 @@ main {
   font-size: 1em;
   color: #4f5d75;
   font-weight: 500;
+  margin-top: 2rem;
 }
 
 .artikelsWinkel label {
@@ -595,25 +568,55 @@ main {
 }
 
 .artikelsWinkel table {
-  margin-top: 0.4rem;
+  margin-top: 0.9375rem;
   font-weight: 400;
 }
 
 .imgTotal {
   font-weight: 500;
 }
-
-.calender label {
-  padding-right: 21.3px;
-}
-
-.calender  {
-  padding-bottom: 1.25rem;
-}
-
 /*Einde Winkel*/
 
 /*Begin Product*/
+
+.productMainDesktop {
+  display: none;
+}
+
+.productMain aside {
+  background-color: #e8f5f0;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.productMain aside section {
+  padding: 1rem;
+}
+
+.productMain aside section h3 {
+  padding-top: 0.2rem;
+}
+
+.productMain .container {
+  display: inline-flex;
+}
+
+.productMain .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.productMain .container p::after {
+  content: " | ";
+}
+
+.productMain .container label:last-of-type {
+  content: "";
+}
 
 .kaders .productenlijst:nth-child(2) {
   padding: 60px 0px;
@@ -647,6 +650,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  margin: 1rem;
 }
 
 .kaders .productenlijst figcaption {
@@ -679,7 +683,7 @@ main {
 }
 
 .kaders .productenlijst figcaption section p {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .kaders .productenlijst figure p {
@@ -718,7 +722,7 @@ main {
 }
 
 .kaders .productenlijst figure a i {
-  font-weight: 500;
+  font-weight: 600;
   margin: 2px 0px 0px 3px;
 }
 
@@ -729,11 +733,9 @@ main {
 .bollenNavHome {
   display: none;
 }
-
 .productHomeDesktop {
   display: none;
 }
-
 #doeMeeKnopDesktopHome {
   display: none;
 }
@@ -745,7 +747,6 @@ main {
 .formulierWinkelDesktop {
   display: none;
 }
-
 #ArtikelsDesktop {
   display: none;
 }
@@ -758,12 +759,100 @@ main {
   display: none;
 }
 
+#alleProducten {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.footerBarcode {
+  position: absolute;
+  bottom: 0;
+}
+
+.bargift {
+  width: 40%;
+  position: absolute;
+  bottom: 9%;
+  left: 28%;
+}
+
+.win {
+  margin-left: 18vw;
+  margin-top: 15vh;
+  color: #bba247;
+}
+
+.volledigbox {
+  width: 60%;
+  height: 30%;
+  background: #ccb0642d;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  right: 20%;
+  top: 30%;
+}
+
+.volledigbox h2 {
+  font-size: 1.2em;
+  padding-left: 3vw;
+  padding-top: 1vh;
+  width: 90%;
+  color: #b1835c;
+}
+
+.eerstetekst {
+  font-size: 12px;
+  color: #4f5d75;
+  margin-top: 2vh;
+}
+
+.code_form {
+  padding: 10px 20px;
+}
+
+.code_form input {
+  margin-top: 1vh;
+  height: 40px;
+  width: 100%;
+  padding: 0 5px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #4f5d75;
+}
+
+.code_form button {
+  margin-top: 3vh;
+  padding: 3%;
+  width: 50%;
+  font-size: 12px;
+  color: #4f5d75;
+  outline: none;
+  font-weight: bold;
+  background: white;
+  border-radius: 3px;
+  border: 1px solid #4f5d75;
+  transition: 0.5s;
+}
+
+.code_form #debarcode_error {
+  margin-top: 5px;
+  width: 98%;
+  font-size: 12px;
+  color: #c62828;
+  background: rgba(255, 0, 0, 0.1);
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 3px;
+  border: 1px solid #ef9a9a;
+  display: none;
+}
+
 /*Eind uitzetting van desktop*/
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 @media only screen and (min-width: 1025px) {
-
   /*
 ===============================
 Navigation
@@ -778,7 +867,6 @@ Navigation
     justify-content: center;
     align-items: center;
   }
-
   .navDesktop ul {
     display: flex;
     justify-content: center;
@@ -786,7 +874,6 @@ Navigation
     width: 100%;
     list-style: none;
   }
-
   .navDesktop img {
     width: 8%;
   }
@@ -817,7 +904,6 @@ Navigation
   .active {
     background-color: transparent;
   }
-
   /* 
 ===============================
 Body
@@ -826,7 +912,6 @@ Body
   main {
     margin-bottom: 0px;
   }
-
   /*
 ===============================
 Home Section-1
@@ -904,10 +989,9 @@ Home Section-1
     border-radius: 50%;
   }
 
-  .bollenNavHome:active input:active~.checkmark {
+  .bollenNavHome:active input:active ~ .checkmark {
     background-color: #bba24781;
   }
-
   #homeone {
     margin-bottom: 9.375rem;
   }
@@ -918,6 +1002,9 @@ Home Section-2
 ===============================
 */
 
+  .productHome {
+    display: none;
+  }
   .productHomeDesktop {
     display: block;
   }
@@ -926,7 +1013,7 @@ Home Section-2
     color: #bca04a;
     font-size: 4.5em;
     font-weight: 500;
-    margin: 9% 0;
+    margin: 9% 0 7.5%;
     padding-top: 1%;
   }
 
@@ -1019,6 +1106,7 @@ Home Section-2
 Home Section-3
 ===============================
 */
+
   .actieHome img {
     display: inline-block;
     width: 40%;
@@ -1042,8 +1130,9 @@ Home Section-3
   #homethree .samenHome3 {
     display: flex;
     flex-direction: column;
+    padding-left: 8%;
+    width: 80%;
   }
-
   #homethree p {
     font-size: 0.9375rem;
     font-weight: 400;
@@ -1057,6 +1146,7 @@ Home Section-3
     display: inline-block;
     width: 20%;
     text-align: center;
+    margin-left: 31vw;
     margin-top: 0.9375rem;
     border: 0.125rem solid #bca04a;
     padding: 0.9375rem 0.9375rem;
@@ -1074,9 +1164,6 @@ Home Section-3
 Producten
 =============================== 
 */
-  .productHome {
-    display: none;
-  }
 
   .productMain {
     display: none;
@@ -1086,26 +1173,17 @@ Producten
     display: flex;
     width: 80%;
     margin: auto;
-    padding-top: 1%;
-  }
-
-  .productMainDesktop #warning {
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-  }
-
-  .productMainDesktop #warning p {
-    padding-top: 0.6%;
-    color: red;
-    font-weight: 600;
+    padding-top: 70px;
   }
 
   .productMainDesktop aside {
-    height: 650px;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
     background-color: #e8f5f0;
-    margin-right: 3vw;
-    padding: 0 80px 0 50px;
+    margin-right: 50px;
+    padding: 0px 80px 0px 50px;
+    max-width: 25%;
   }
 
   .productMainDesktop .container {
@@ -1133,7 +1211,6 @@ Producten
     padding: 2px;
     color: #3f3f3f;
   }
-
   .product-main-2 a,
   .product-main-2 span {
     color: #c1aea7;
@@ -1171,9 +1248,9 @@ Producten
     background-color: #ccb0642d;
     display: flex;
     flex-direction: column;
-    max-width: 30%;
+    max-width: 26%;
     padding: 20px;
-    margin: 0px 20px 20px 0px;
+    margin: 0.5rem;
   }
 
   .kadersDesktop .productenlijstDesktop figcaption {
@@ -1267,6 +1344,7 @@ About
     display: inline-block;
   }
 
+  /*
   #aboutDesktop .frame {
     display: inline-block;
     position: absolute;
@@ -1372,6 +1450,70 @@ About
     padding-top: 10.5%;
     z-index: 1;
     color: #3f3f3f;
+  } */
+
+  /*
+===============================
+About
+===============================
+*/
+  .deeleen {
+    display: flex;
+    padding: 2% 5% 5% 5%;
+  }
+
+  .deeleen .frame img {
+    width: 175%;
+    margin-left: 10rem;
+  }
+
+  .deeleen #textone {
+    margin: -3rem 0 0 20rem;
+  }
+
+  .deeleen #textone h1 {
+    color: #ccb164;
+    font-size: 72px;
+    font-weight: 400;
+  }
+
+  .deeleen #textone p {
+    color: #4f5d75;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.2rem;
+  }
+
+  .abouttwo h1 {
+    color: #ccb164;
+    font-size: 72px;
+    font-weight: 400;
+    padding: 0 0 4rem 15rem;
+  }
+
+  .abouttwo p {
+    color: #4f5d75;
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .abouttwo .pabouttwo {
+    padding: 2.5% 45% 0% 10%;
+    line-height: 1.2rem;
+  }
+
+  .abouttwo .paboutthree {
+    padding: 7% 14% 0% 28.5%;
+    line-height: 1.2rem;
+  }
+
+  .abouttwo div {
+    background-image: url("../illustraties/Tijdlijn2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+    width: 100%;
+    margin-left: 5%;
   }
 
   /*
@@ -1402,10 +1544,9 @@ Contact
 
   .contactformDesktop h1 {
     margin-top: 0rem;
-    margin-bottom: 10%;
+    margin-bottom: 1.5rem;
     font-weight: 500;
     display: flex;
-    justify-content: left;
     font-size: 3rem;
     color: #bca04a;
   }
@@ -1467,8 +1608,8 @@ Contact
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 50%;
     justify-content: space-evenly;
+    width: 50%;
   }
 
   .mediaContact li {
@@ -1493,7 +1634,7 @@ Contact
     margin-top: 0;
     font-weight: 500;
     padding-bottom: 3.125rem;
-    font-size: 4.5em;
+    font-size: 3em;
     color: #bca04a;
   }
 
@@ -1530,6 +1671,10 @@ Contact
 Winkel
 =============================== 
 */
+  .mainWinkel {
+    width: 90%;
+    margin: auto;
+  }
   .formulierWinkel {
     display: none;
   }
@@ -1546,7 +1691,6 @@ Winkel
     margin-bottom: 3.125vh;
     align-items: center;
   }
-
   .allesDesktop {
     /* padding-left: 2.1875rem;
     padding-right: 2.1875rem;
@@ -1593,11 +1737,6 @@ Winkel
     background-color: #ffffff;
   }
 
-
-  .allesDesktop #date {
-    margin-top: 2%;
-  }
-
   .allesDesktop textarea {
     font-weight: 400;
     background-color: #ffffff;
@@ -1612,6 +1751,7 @@ Winkel
     margin-bottom: 1.25rem;
     padding-top: 0.675rem;
     display: inline-block;
+    flex-direction: wrap;
   }
 
   .allesDesktop .e-mail label {
@@ -1625,86 +1765,14 @@ Kalender
 =====================
 */
 
- 
-
-  /* .allesDesktop .calender {
-    display: flex;
-    flex-direction: column;
+  .allesDesktop .calender {
     padding-top: 0.3125rem;
-  } */
-  /* Month header */
-  /* .month {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 1.875rem;
   }
 
-  .month ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-  }
-
-  .month li {
-    list-style: none;
-  } */
-
-  /* .left {
-    padding-right: 12.5rem;
-  }
-  .right {
-    padding-left: 12.5rem;
-  } */
-
-  /* .month .prev {
-    float: left;
-    padding-top: 0.625rem;
-  }
-
-  .month .next {
-    float: right;
-    padding-top: 0.625rem;
-  }
-
-  .weekdays {
-    margin: 0;
-    padding: 0.625rem 0;
-    background-color: #3f3f3f;
-  }
-
-  .weekdays li {
-    display: inline-block;
-    width: 13.6%;
-    color: #e4dbcc;
-    text-align: center;
-  }
-
-  .days {
-    padding: 0.125rem 0;
-    background: #3f3f3f;
-    margin: 0;
-  }
-
-  .days li {
-    list-style: none;
-    display: inline-block;
-    width: 13.6%;
-    text-align: center;
-    margin-bottom: 0.3125em;
-    font-size: 0.75em;
-    color: #e4dbcc;
-  }
-
-  .days li .active {
-    content: none;
-    padding: 0.3125em;
-    background: #1abc9c;
-    color: white;
-  }
   .winkelformDesktop .calender label {
     padding-bottom: 0.625rem;
-  } */
+    padding-right: 0.8rem;
+  }
 
   /*
   =====================
@@ -1801,7 +1869,6 @@ Kalender
     font-weight: 400;
     font-size: 1.1875em;
   }
-
   .imgTotalDesktop {
     font-weight: 500;
     font-size: 1.5em;
@@ -1837,7 +1904,7 @@ Barcode
     bottom: 25vh;
     position: absolute;
     width: 25%;
-    margin-left: 18vw;
+    margin-left: -10vh;
   }
 
   .volledigbox h2 {
@@ -1911,6 +1978,13 @@ Footer
     padding: 1em 0;
   }
 
+  .footcontact {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0%;
+  }
+
   /* .taal {
     margin: auto;
     width: 87%;
@@ -1929,17 +2003,73 @@ Footer
     padding: 0;
   }
 
-  .footerAbout {
-    position: absolute;
-    margin-top: 100%;
-  }
-
   .footerBarcode {
     position: absolute;
     margin-top: 35%;
   }
-
   /* footer .icons a {
     padding-right: 50%;
   } */
+}
+
+/* 
+===============================
+Lose
+=============================== 
+*/
+
+.lost {
+  overflow-x: hidden;
+}
+
+.losetit {
+  padding-top: 6%;
+  font-size: 2em;
+  color: #b1835c;
+  margin-left: 6%;
+}
+
+.losep {
+  width: 47%;
+  padding-top: 3vh;
+  margin-left: 6%;
+}
+
+.prent1,
+.prent2,
+.prent3,
+.prent4,
+.prent5 {
+  margin-top: 10%;
+  border: 0.125rem solid #bca04a;
+  padding: 0.9375rem 0.9375rem;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: white;
+  width: 12%;
+  display: flex;
+  justify-content: center;
+  color: #4f5d75;
+}
+
+.losefoot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0%;
+}
+
+.prentjes {
+  width: 47%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-left: 2.2%;
+}
+
+.flolose {
+  position: absolute;
+  width: 30%;
+  right: 6%;
+  top: 35%;
 }
