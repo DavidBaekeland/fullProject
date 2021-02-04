@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -21,18 +21,28 @@
   </head>
 
   <body>
-    <header>   
+    <header>
+
+
+
+      
       <nav class="topnav">        <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
-        <a href="./winkel.html"><i class="fas fa-shopping-basket"></i></a>
-        <div id="myLinks">
-          <a href="#">Home</a>
-          <a href="./page/product.html">Producten</a>
-          <a href="./page/about.html">Over mij</a>
-          <a href="./page/contact.html">Contact</a>       
-        </div>
+        
+       
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
+          
+        <div id="myLinks">
+          <a href="/index.html">Home</a>
+          <a href="./page/product.html">Products</a>
+          <a href="./page/about.html">About me</a>
+          <a href="./page/contact.html">Contact</a>       
+        </div>
+       
+        
+        <a href="./page/winkel.html"><i class="fas fa-shopping-basket"></i></a>
+      
        </nav>
 
 
@@ -43,9 +53,9 @@
       <nav class="navDesktop" id="navDesktop">
             <ul>
               <li><a href="#" class="active">Home</a></li>
-              <li><a href="./page/product.html">Producten</a></li>
+              <li><a href="./page/product.html">Products</a></li>
               <img src="./img/Flogateautransparant.png" alt="Logo transparant"/>
-              <li><a href="./page/about.html">Over mij</a></li>
+              <li><a href="./page/about.html">About me</a></li>
               <li><a href="./page/contact.html">Contact</a></li>
             </ul>
           <p>
@@ -84,12 +94,12 @@
         </div>
 
       <section id="homeone" class="startHome">
-        <img src="./illustraties/Main.svg" alt="welkom-illustratie"/>
-        <h1>Welkom bij <span>Flogâteau</span></h1>
+        <img src="../illustraties/Main.svg" />
+        <h1>Welcom at <span>Flogâteau</span></h1>
       </section>
 
       <section class="productHome">
-          <h1>Onze Producten</h1>
+          <h1>Our Products</h1>
 
           <div class="slideshow-container">                             <!--https://www.w3schools.com/howto/howto_js_slideshow.asp-->
         
@@ -100,11 +110,10 @@
                     <img class="taarthome" src="./img/Products/BokkenpootjesPNG.png" alt="bokkepootjes"/>
                     <figcaption class="infoTaart">
                     
-                      <h3>Koekjes</h3>
-                      <p>Neem een kijkje naar de koekjes
-                        van Flogâteau! </p>
+                      <h3>Cookies</h3>
+                      <p>Take a look at the cookies from Flogâteau </p>
                         <a class="productKoekKnopHome" href="./page/product.html"
-                        >Meer
+                        >More
                         <i class="fas fa-arrow-right" aria-hidden="true"></i
                           ></a>
                       </figcaption>
@@ -112,7 +121,7 @@
               </div>
           </div>
           
-          <div class="mySlides fade">
+          <!-- <div class="mySlides fade">
               <div class="taartHome">
                   <figure class="TAARTEN">
                     <img src="./illustraties/mintRuitje.svg" alt="product" />
@@ -145,7 +154,7 @@
                       </figcaption>
                   </figure>
                 </div>
-          </div>
+          </div> -->
         </div>
         <br>
 
@@ -168,9 +177,8 @@
               <img src="./illustraties/goudRuitje1.svg" alt="product" />
               <figcaption class="infoTaartDesktop">
                 <img class="taarthomeDesktop" style="padding-left:0;" src="./img/Products/BokkenpootjesPNG.png" alt="bokkepootjes"/>
-                <h3>Koekjes</h3>
-                <p>Neem een kijkje naar de koekjes
-                  van Flogâteau! </p>
+                <h3>Cookies</h3>
+                <p>Take a look at the cookies from Flogâteau </p>
                   <a class="productKoekKnopHomeDesktop" href="./page/product.html"
                   >Meer
                   <i class="fas fa-arrow-right" aria-hidden="true"></i
@@ -185,10 +193,10 @@
                     <img src="./illustraties/mintRuitje.svg" alt="product" />
                     <figcaption class="infoTaart">
                       <img class="taarthomeDesktop" style="padding-left:0;" src="./img/Products/Taarten/appelfrangipane1.png" alt="taart"/>
-                      <h3>Taarten</h3>
-                      <p>Neem een kijkje naar de 'gâteaux' van Flogâteau!</p>
+                      <h3>Cakes</h3>
+                      <p>Take a look at the 'gâteau' from Flogâteau</p>
                       <a class="productTaartKnopHomeDesktop" href="./page/product.html"
-                      >Meer
+                      >More
                           <i class="fas fa-arrow-right" aria-hidden="true"></i
                             ></a>
                       </p>
@@ -202,10 +210,9 @@
                       <figcaption class="infoTaartDesktop">
                         <img class="taarthomeDesktop" style="padding-left:0;" src="./img/Bloemcupcake.png" alt="bloemcupcake"/>
                         <h3>Cupcakes</h3>
-                        <p>Neem een kijkje naar de cupcakes
-                          van Flogâteau! </p>
+                        <p>Take a look at the cupcakes from Flogâteau </p>
                           <a class="productKoekKnopHomeDesktop" href="./page/product.html"
-                          >Meer
+                          >More
                           <i class="fas fa-arrow-right" aria-hidden="true"></i
                             ></a>
                           </p>
@@ -222,32 +229,30 @@
         <img src="./illustraties/Home game.svg" alt="" />
         
         <div class="samenHome3">
-          <h1>Actie!</h1>
+          <h1>Contest!</h1>
           <article>
             <p>
-              Om de lancering van de vernieuwde website te vieren heb ik
-              besloten om een winactie te organiseren, maar wat houdt deze actie
-              in? Wel er zal een loterij gehouden worden. Dit houdt in dat er
-              voor een paar dagen een getal geraden moet worden tussen 0 en 50
-              en de winnaar krijgt een prijs.
+              To celebrate the launch of the new website I have
+               decided to organize a giveaway, but what does this promotion hold? Well there will be a lottery. This means that there will be a random winning barcode.
+               This winner will get a price.
+               
             </p>
           </article>
 
           <article class="laatste">
             <p>
-              Hoe kan ik meedoen? Wel, bij iedere aankoop bij Flogâteau kan je
-              ,met de barcode op het ontvangstbewijs, meedoen. Hieronder bevindt
-              zich een knop waar je de nummers van je barcode kan ingeven en
-              deelnemen. Niet gewonnen? Niet getreurd, want Flo heeft nog steeds
-              je hulp nodig. Door telkens de spelletjes op te lossen help je Flo
-              te zoeken naar de ingrediënten. Eens je ze allemaal opgelost hebt
-              krijg je een leuk cadeautje.
+              How can I participate? With every purchase at Flogâteau you get a barcode, which is located at the bottom of the ticket. 
+              Below you will find a button where you can enter the numbers of your barcode and
+              participate. Didn't win? Don't worry, because Flo still
+              needs your help. By solving the games, you help Flo
+              to look for the needed ingredients. Once you have solved them all,
+              you get a nice gift.
             </p>
           </article>
-          <a id="doeMeeKnopHome" href="./page/barcode.html">Doe Mee
+          <a id="doeMeeKnopHome" href="./page/barcode.html">Join
               <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
-          <a id="doeMeeKnopDesktopHome" href="./page/barcode.html">Doe Mee
+          <a id="doeMeeKnopDesktopHome" href="./page/barcode.html">Join
             <i class="fas fa-arrow-right" aria-hidden="true"></i>
           </a>
         </div> 

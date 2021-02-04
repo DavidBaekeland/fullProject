@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/444de97735.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Flogateau</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="topnav">
+        <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+        <a href="#">Products</a>
+        <div id="myLinks">
+          <a href="../index.html">Home</a>
+          <a href="./about.html">About me</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./winkel.html"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+      <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+
+      <nav class="navDesktop">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#" class="active">Products</a></li>
+          <img src="../img/Flogateautransparant.png" alt="Logo transparant" />
+          <li><a href="./about.html">About me</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <p>
+          <a href="./winkel.html"
+            ><i style="margin-right: 25px;" class="fas fa-shopping-basket"></i
+          ></a>
+        </p>
+      </nav>
+    </header>
+
+    <main class="productMain">
+      <!--aside class="filter">
+        <h2>Filters</h2>
+        <h3>Assortiment</h3>
+        <label class="container">
+          <input type="checkbox" checked="checked" class="edit" />
+          <p>Taarten</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" />
+          <p>Koekjes</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" />
+          <p>Fijn gebak</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" />
+          <p>Feest</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" />
+          <p>Logo cupcakes</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" />
+          <p>Postkaartjes</p>
+        </label>
+
+        <h3>Allergieën</h3>
+        <label class="container">
+          <input type="checkbox" checked="checked" class="edit" />
+          <p>Gluten</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" />
+          <p>Ei</p>
+        </label>
+        <label class="container" checked="checked">
+          <input type="checkbox" />
+          <p>Soja</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" />
+          <p>Noten</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" />
+          <p>Tarwe</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" />
+          <p>Lactose</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" />
+          <p>Boter</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" />
+          <p>Vis (gelatine)</p>
+        </label>
+      </aside-->
+
+      <div class="kaders">
+        <section class="productenlijst">
+          <section class="taarten">
+            <section class="frangipane">
+              <figure>
+                <img
+                  src="../img/Products/appel frangipane.jpg"
+                  alt="product appel frangipane"
+                />
+                <figcaption>
+                  <h3>Appel Frangipane</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <p>
+                    Deze appeltaart met een subtiele amandelsmaak heeft een
+                    bodem van boterdeeg, gevuld met frangipane en appeltjes.
+                  </p>
+
+                  <!-- <button onclick="myFunction()" id="knop">lees meer</button>           -->
+                  <small>tarwe, ei, lactose, noten</small>
+                  <a href="#"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </section>
+
+            <section class="cheesecake">
+              <figure>
+                <img
+                  src="../img/Products/Taarten/cheesecake framboos.jpg"
+                  alt="product cheesecake framboos"
+                />
+                <figcaption>
+                  <h3>Cheesecake framboos</h3>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Een luchtige cheesecake met verse roomkaas, een krokante
+                    speculaasbodem en verse framboosjes.
+                  </p>
+
+                  <!-- <button onclick="myFunction()" id="knop">lees meer</button>           -->
+                  <small>lactose, ei, tarwe, vis (gelatine)</small>
+                  <a href="../index.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </section>
+          </section>
+
+          <section class="koekjes">
+            <section class="bokkenpootjes">
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/Bokkenpootjes.jpg"
+                  alt="product Bokkenpootjes"
+                />
+                <figcaption>
+                  <h3>Bokkenpootjes</h3>
+                  <section>
+                    <p>8 stuks</p>
+                    <p>€5</p>
+                  </section>
+                  <p>
+                    Dé specialiteit van Flogâteau! 2 amandelkoekjes gevuld met
+                    een heerlijke botercrème en vervolgens in chocolade
+                    degompeld
+                  </p>
+
+                  <!-- <button onclick="myFunction()" id="knop">lees meer</button>           -->
+                  <small>ei, noten, tarwe, lactose, soja</small>
+                  <a href="../index.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </section>
+          </section>
+
+          <section class="cupcakes">
+            <section class="logoCupcakes">
+              <figure>
+                <img
+                  src="../img/Products/LogoCupcakes/logo cupcakes.jpg"
+                  alt="product appel frangipane"
+                />
+                <figcaption>
+                  <h3>Logo Cupcakes</h3>
+                  <section>
+                    <div>
+                      <p>Mini: min. 50 stuks</p>
+                      <p>Groot: min. 12 stuks</p>
+                    </div>
+                    <div>
+                      <p>€75</p>
+                      <p>€30</p>
+                    </div>
+                  </section>
+                  <p>
+                    Bij Flogâteau kan je ook cupcakes bestellen met je
+                    bedrijfslogo op. Ze zijn beschikbaar in vanille, chocolade,
+                    red velvet en carrot.
+                  </p>
+
+                  <!-- <button onclick="myFunction()" id="knop">lees meer</button>           -->
+                  <small></small>
+                  <a href="../index.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </section>
+          </section>
+
+          <section class="gebak">
+            <section class="Passie-meringue">
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/Passie-meringue.jpg"
+                  alt="product appel frangipane"
+                />
+                <figcaption>
+                  <h3>Passie-meringue <span>(mini tartilette)</span></h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Deze appeltaart met een subtiele amandelsmaak heeft een
+                    bodem van boterdeeg, gevuld met frangipane en appeltjes.
+                  </p>
+
+                  <!-- <button onclick="myFunction()" id="knop">lees meer</button>           -->
+                  <small>tarwe, lactose, ei, vis (gelatine), soja</small>
+                  <a href="../index.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </section>
+
+            <section class="eclairs">
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/mini eclairs.jpg"
+                  alt="product mini eclairs"
+                />
+                <figcaption>
+                  <h3>Eclairs</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€1.80</p>
+                  </section>
+                  <p>
+                    Een Franse klassieker. Deze eclairs zijn gevuld met een
+                    traditionele banketbakkersroom en afgewerkt met
+                    chocoladeganache en hagelslag.
+                  </p>
+
+                  <!-- <button onclick="myFunction()" id="knop">lees meer</button>           -->
+                  <small>tarwe, ei, lactose, soja</small>
+                  <a href="../index.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </section>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <main class="productMainDesktop">
+      <aside class="filterDesktop">
+        <h2>Filters</h2>
+        <h3>Assortiment</h3>
+        <label class="containerDesktop">
+          <input type="checkbox" checked="checked" class="edit" />
+          <p>Taarten</p>
+        </label>
+        <label class="containerDesktop">
+          <input type="checkbox" />
+          <p>Koekjes</p>
+        </label>
+        <label class="containerDesktop">
+          <input type="checkbox" />
+          <p>Fijn gebak</p>
+        </label>
+        <label class="containerDesktop">
+          <input type="checkbox" />
+          <p>Feest</p>
+        </label>
+        <label class="containerDesktop">
+          <input type="checkbox" />
+          <p>Logo cupcakes</p>
+        </label>
+        <label class="containerDesktop">
+          <input type="checkbox" />
+          <p>Postkaartjes</p>
+        </label>
+
+        <h3>Allergieën</h3>
+        <label class="containerDesktop">
+          <input type="checkbox" checked="checked" class="edit" />
+          <p>Gluten</p>
+        </label>
+        <label class="containerDesktop">
+          <input type="checkbox" />
+          <p>Ei</p>
+        </label>
+        <label class="container" checked="checked">
+          <input type="checkbox" />
+          <p>Soja</p>
+        </label>
+        <label class="containerDesktop">
+          <input type="checkbox" />
+          <p>Noten</p>
+        </label>
+        <label class="containerDesktop">
+          <input type="checkbox" />
+          <p>Tarwe</p>
+        </label>
+        <label class="containerDesktop">
+          <input type="checkbox" />
+          <p>Lactose</p>
+        </label>
+        <label class="containerDesktop">
+          <input type="checkbox" />
+          <p>Boter</p>
+        </label>
+        <label class="containerDesktop">
+          <input type="checkbox" />
+          <p>Vis (gelatine)</p>
+        </label>
+      </aside>
+
+      <div class="kadersDesktop">
+        <section class="productenlijstDesktop">
+          <section class="taartenDesktop">
+            <section class="frangipaneDesktop">
+              <figure>
+                <img
+                  src="../img/Products/appel frangipane.jpg"
+                  alt="product appel frangipane"
+                />
+                <figcaption>
+                  <h3>Appel Frangipane</h3>
+                  <section>
+                    <p>4-6 personen</p>
+                    <p>€12</p>
+                  </section>
+                  <p>
+                    Deze appeltaart met een subtiele amandelsmaak heeft een
+                    bodem van boterdeeg, gevuld met frangipane en appeltjes.
+                  </p>
+
+                  <!-- <button onclick="myFunction()" id="knop">lees meer</button>           -->
+                  <small>tarwe, ei, lactose, noten</small>
+                  <a href="#"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </section>
+
+            <section class="cheesecakeDesktop">
+              <figure>
+                <img
+                  src="../img/Products/Taarten/cheesecake framboos.jpg"
+                  alt="product cheesecake framboos"
+                />
+                <figcaption>
+                  <h3>Cheesecake framboos</h3>
+                  <section>
+                    <p>8-10 personen</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Een luchtige cheesecake met verse roomkaas, een krokante
+                    speculaasbodem en verse framboosjes.
+                  </p>
+
+                  <!-- <button onclick="myFunction()" id="knop">lees meer</button>           -->
+                  <small>lactose, ei, tarwe, vis (gelatine)</small>
+                  <a href="../index.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </section>
+          </section>
+
+          <section class="koekjesDesktop">
+            <section class="bokkenpootjesDesktop">
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/Bokkenpootjes.jpg"
+                  alt="product Bokkenpootjes"
+                />
+                <figcaption>
+                  <h3>Bokkenpootjes</h3>
+                  <section>
+                    <p>8 stuks</p>
+                    <p>€5</p>
+                  </section>
+                  <p>
+                    Dé specialiteit van Flogâteau! 2 amandelkoekjes gevuld met
+                    een heerlijke botercrème en vervolgens in chocolade
+                    degompeld
+                  </p>
+
+                  <!-- <button onclick="myFunction()" id="knop">lees meer</button>           -->
+                  <small>ei, noten, tarwe, lactose, soja</small>
+                  <a href="../index.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </section>
+          </section>
+
+          <section class="cupcakesDesktop">
+            <section class="logoCupcakesDesktop">
+              <figure>
+                <img
+                  src="../img/Products/LogoCupcakes/logo cupcakes.jpg"
+                  alt="product appel frangipane"
+                />
+                <figcaption>
+                  <h3>Logo Cupcakes</h3>
+                  <section>
+                    <div>
+                      <p>Mini: min. 50 stuks</p>
+                      <p>Groot: min. 12 stuks</p>
+                    </div>
+                    <div>
+                      <p>€75</p>
+                      <p>€30</p>
+                    </div>
+                  </section>
+                  <p>
+                    Bij Flogâteau kan je ook cupcakes bestellen met je
+                    bedrijfslogo op. Ze zijn beschikbaar in vanille, chocolade,
+                    red velvet en carrot.
+                  </p>
+
+                  <!-- <button onclick="myFunction()" id="knop">lees meer</button>           -->
+                  <small></small>
+                  <a href="../index.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </section>
+          </section>
+
+          <section class="gebakDesktop">
+            <section class="Passie-meringueDesktop">
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/Passie-meringue.jpg"
+                  alt="product appel frangipane"
+                />
+                <figcaption>
+                  <h3>Passie-meringue <span>(mini tartilette)</span></h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Deze appeltaart met een subtiele amandelsmaak heeft een
+                    bodem van boterdeeg, gevuld met frangipane en appeltjes.
+                  </p>
+
+                  <!-- <button onclick="myFunction()" id="knop">lees meer</button>           -->
+                  <small>tarwe, lactose, ei, vis (gelatine), soja</small>
+                  <a href="../index.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </section>
+
+            <section class="eclairsDesktop">
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/mini eclairs.jpg"
+                  alt="product mini eclairs"
+                />
+                <figcaption>
+                  <h3>Eclairs</h3>
+                  <section>
+                    <p>1 stuk</p>
+                    <p>€1.80</p>
+                  </section>
+                  <p>
+                    Een Franse klassieker. Deze eclairs zijn gevuld met een
+                    traditionele banketbakkersroom en afgewerkt met
+                    chocoladeganache en hagelslag.
+                  </p>
+
+                  <!-- <button onclick="myFunction()" id="knop">lees meer</button>           -->
+                  <small>tarwe, ei, lactose, soja</small>
+                  <a href="../index.html"
+                    >Bestellen
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </section>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <section class="taal">
+        <ul>
+          <li>
+            <select name="taal" id="taal">
+              <option value="nl">NL</option>
+              <option value="fr">FR</option>
+              <option value="en">EN</option>
+            </select>
+          </li>
+          <li id="footerFlo">FLOGÂTEAU</li>
+          <div class="icons">
+            <li>
+              <a href="www.facebook.com/Flogâteau-1838784923015234/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/flogateau_/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:flocroonenberghs@gmail.com"
+                ><i class="far fa-envelope"></i
+              ></a>
+            </li>
+          </div>
+        </ul>
+      </section>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,12 +16,12 @@
   <body>
     <header>
       <nav class="topnav">        <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
-        <a href="./winkel.html"><i class="fas fa-shopping-basket"></i></a>        
+        <a href="#">Contact</a>
         <div id="myLinks">
           <a href="../index.html">Home</a>
-          <a href="./product.html">Producten</a>
-          <a href="./about.html">Over mij</a>
-          <a href="#">Contact</a>
+          <a href="./product.html">Products</a>
+          <a href="./about.html">About me</a>
+          <a href="./winkel.html"><i class="fas fa-shopping-basket"></i></a>        
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -31,9 +31,9 @@
       <nav class="navDesktop">
             <ul>
               <li><a href="../index.html" >Home</a></li>
-              <li><a href="./product.html">Producten</a></li>
+              <li><a href="./product.html">Products</a></li>
               <img src="../img/Flogateautransparant.png" alt="Logo transparant"/>
-              <li><a href="./about.html">Over mij</a></li>
+              <li><a href="./about.html">About me</a></li>
               <li><a href="#" class="active">Contact</a></li>
             </ul>
           <p>
@@ -43,20 +43,19 @@
 
     </header>
 
-
     <main id="contactMain">
       <section>
-        <form name="contact" method="POST" class="contactform" data-netlify="true">
+        <form action="contact.php" method="POST" class="contactform">
           <section class="allesContact">
             <h1>Contact</h1>
             
             <div class="voornaamContact">
-              <label for="voornaam">Voornaam</label>
+              <label for="voornaam">Name</label>
               <input type="text" id="voornaam" name="voornaam" required />
             </div>
 
             <div class="naamContact">
-              <label for="naam">Naam</label>
+              <label for="naam">Last name</label>
               <input type="text" id="naam" name="naam" required />
             </div>
 
@@ -66,8 +65,9 @@
             </div>
 
             <div class="berichtContact">
-              <label for="bericht">Uw bericht</label>
-              <textarea id="bericht" name="bericht" rows="10" cols="50"></textarea>
+              <label for="bericht">Your message</label>
+              <textarea id="bericht" name="bericht" rows="10" cols="50" placeholder="Describe yourself here...">
+              </textarea>
             </div>
 
             <div class="knopContact">
@@ -81,13 +81,13 @@
 
     <main id="contactDesktopMain">
         <section>
-          <form name="contact" method="POST" class="contactform" data-netlify="true">
+          <form action="contact.php" method="POST" class="contactformDesktop">
             <section class="alles">
               <h1 class="contact">Contact</h1>
               <section class="name">
-                <label for="voornaam">Voornaam</label>
+                <label for="voornaam">Name</label>
                 <input type="text" id="voornaam" name="voornaam" required />
-                <label for="naam">Naam</label>
+                <label for="naam">Last name</label>
                 <input type="text" id="naam" name="naam" required />
               </section>
   
@@ -97,8 +97,9 @@
               </section>
   
               <section class="bericht">
-                <label for="bericht">Uw bericht</label>
-                <textarea id="bericht" name="bericht" rows="10"></textarea>
+                <label for="bericht">Your message</label>
+                <textarea id="bericht" name="bericht" rows="10" cols="50">
+                </textarea>
               </section>
               <input type="submit" name="winkelSubmit" id="winkelSubmit" value="Verzenden" />
             </form>
@@ -106,6 +107,7 @@
         </section>
         
         <section class="mediaContact">
+          <h1>Social Media</h1>
           <section id="row">
               <a  href="https://www.facebook.com/Flog%C3%A2teau-1838784923015234/?hc_ref=ART5tzjcPseEba9lkebpn3igC6le9cfudKQvwr5gN44qrNYtoIRLlHTKiVwHwMBOvwg&fref=nf&__tn__=kC-R" target="_blank"
               ><img  class="fb" src="../illustraties/Fcbsocial.svg" alt="facebook-icon"
@@ -124,7 +126,7 @@
         </section>
       </main>
     
-    <footer class="footcontact" >
+    <footer>
       <section class="taal">
         <ul>
           <li>

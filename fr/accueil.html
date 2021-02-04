@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/444de97735.js" crossorigin="anonymous"></script>
+
+  <title>Flogâteau</title>
+</head>
+
+<body>
+  <header>
+
+
+
+
+    <nav class="topnav">
+      <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+
+
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <div id="myLinks">
+        <a href="./accueil.html">Accueil</a>
+        <a href="./produits.html">Produits</a>
+        <a href="./apropos.html">À propos</a>
+        <a href="./contactfr.html">Contact</a>
+      </div>
+
+      <a href=""><i class="fas fa-shopping-basket"></i></a>
+
+    </nav>
+
+
+
+
+
+
+    <nav class="navDesktop" id="navDesktop">
+      <ul>
+        <li><a href="#" class="active">Accueil</a></li>
+        <li><a href="./produits.html">Produits</a></li>
+        <img src="../img/Flogateautransparant.png" alt="Logo transparant" />
+        <li><a href="./apropos">À propos</a></li>
+        <li><a href="./contactfr.html">Contact</a></li>
+      </ul>
+      <p>
+        <a href="./magasin.html"><i style="margin-right:25px;" class="fas fa-shopping-basket"></i></a>
+      </p>
+    </nav>
+
+  </header>
+
+  <main class="mainHome">
+
+    <div class="bollenHome">
+      <a href="#navDesktop">
+        <label class="bollenNavHome">
+          One
+          <input type="button" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+      </a>
+
+      <a href="#hometwo">
+        <label class="bollenNavHome">Two
+          <input type="button" />
+          <span class="checkmark"></span>
+        </label>
+      </a>
+
+      <a href="#homethree">
+        <label class="bollenNavHome">Three
+          <input type="button" />
+          <span class="checkmark"></span>
+        </label>
+      </a>
+    </div>
+
+    <section id="homeone" class="startHome">
+      <img src="../illustraties/Main.svg" />
+      <h1>Bienvenue chez <span>Flogâteau</span></h1>
+    </section>
+
+    <section class="productHome">
+      <h1>Nos produits</h1>
+
+      <div class="slideshow-container">
+        <!--https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+
+        <div class="mySlides fade">
+          <div class="taartHome">
+            <figure class="TAARTEN">
+              <img src="../illustraties/goudRuitje1.svg" alt="product" />
+              <img class="taarthome" src="../img/Products/BokkenpootjesPNG.png" alt="bokkepootjes" />
+              <figcaption class="infoTaart">
+
+                <h3>Biscuits</h3>
+                <p>Jetez un coup d'oeil aux biscuits de
+                  Flogâteau! </p>
+                <a class="productKoekKnopHome" href="./produits.html">Plus
+                  <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="taartHome">
+            <figure class="TAARTEN">
+              <img src="../illustraties/mintRuitje.svg" alt="product" />
+              <img class="taarthome" src="../img/Products/Taarten/appelfrangipane1.png" alt="taart" />
+              <figcaption class="infoTaart">
+                <h3>Tartes</h3>
+                <p>Jetez un coup d'oeil aux gâteaux de Flogâteau!</p>
+                <a class="productTaartKnopHome" href="./produits.html">Plus
+                  <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="taartHome">
+            <figure class="TAARTEN">
+              <img src="../illustraties/goudRuitje1.svg" alt="product" />
+              <img class="taarthome" src="../img/Bloemcupcake.png" alt="bloemcupcake" />
+              <figcaption class="infoTaart">
+                <h3>Cupcakes</h3>
+                <p>Jetez un coup d'oeil aux cupcakes de Flogâteau! </p>
+                <a class="productKoekKnopHome" href="./produits.html">Plus
+                  <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <script src="../js/dots.js"></script>
+    </section>
+
+
+    <section id="hometwo" class="productHomeDesktop">
+      <h1>Nos produits</h1>
+      <div class="naastHomeDesktop">
+
+        <div class="taartHomeDesktop">
+          <figure class="TAARTENDesktop">
+            <img src="../illustraties/goudRuitje1.svg" alt="product" />
+            <figcaption class="infoTaartDesktop">
+              <img class="taarthomeDesktop" style="padding-left:0;" src="../img/Products/BokkenpootjesPNG.png"
+                alt="bokkepootjes" />
+              <h3>Biscuits</h3>
+              <p>Jetez un coup d'oeil aux biscuits de Flogâteau! </p>
+              <a class="productKoekKnopHomeDesktop" href="./page/product.html">Plus
+                <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="taartHomeDesktop">
+          <figure class="TAARTENDesktop">
+            <img src="../illustraties/mintRuitje.svg" alt="product" />
+            <figcaption class="infoTaart">
+              <img class="taarthomeDesktop" style="padding-left:0;" src="../img/Products/Taarten/appelfrangipane1.png"
+                alt="taart" />
+              <h3>Gâteaux</h3>
+              <p>Jetez un coup d'oeil aux gâteaux de Flogâteau!</p>
+              <a class="productTaartKnopHomeDesktop" href="./page/product.html">Plus
+                <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="taartHomeDesktop">
+          <figure class="TAARTENDesktop">
+            <img src="../illustraties/goudRuitje1.svg" alt="product" />
+            <figcaption class="infoTaartDesktop">
+              <img class="taarthomeDesktop" style="padding-left:0;" src="../img/Bloemcupcake.png" alt="bloemcupcake" />
+              <h3>Cupcakes</h3>
+              <p>Jetez un coup d'oeil aux cupcakes de Flogâteau! </p>
+              <a class="productKoekKnopHomeDesktop" href="./page/product.html">Plus
+                <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section id="homethree" class="actieHome">
+      <img src="../illustraties/Home game.svg" alt="" />
+
+      <div class="samenHome3">
+        <h1>Action!</h1>
+        <article>
+          <p>
+            Pour célébrer le lancement du nouveau site web, j'ai
+            a décidé d'organiser un concours. Mais que représente cette promotion
+            ? Eh bien, il y aura une loterie. Cela signifie qu'il y a
+            pendant quelques jours un nombre entre 0 et 50 qui doit être deviné.
+            Le gagnant de ce jeu concours reçoit un prix.
+          </p>
+        </article>
+
+        <article class="laatste">
+          <p>
+            Comment puis-je participer? Eh bien, avec chaque achat chez Flogâteau, vous pouvez
+            participer avec le code-barres sur le reçu. Trouvez ci-dessous
+            un bouton sur lequel vous pouvez saisir les numéros de votre code-barres. Pas gagnant? Ne vous inquiètez
+            pas, car Flo a toujours
+            besoin de votre aide. En résolvant les jeux vous aidez Flo
+            chercher les ingrédients. Une fois que vous les avez tous résolus
+            vous reçevrez un beau cadeau.
+          </p>
+        </article>
+        <a id="doeMeeKnopHome" href="./page/barcode.html">Participez
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+        <a id="doeMeeKnopDesktopHome" href="./page/barcode.html">Participez
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <section class="taal">
+      <ul>
+        <li>
+          <select name="taal" id="taal">
+            <option value="fr">FR</option>
+            <option value="nl">NL</option>
+            <option value="en">EN</option>
+          </select>
+        </li>
+        <li id="footerFlo">FLOGÂTEAU</li>
+        <div class="icons">
+          <li>
+            <a href="www.facebook.com/Flogâteau-1838784923015234/"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/flogateau_/"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="mailto:flocroonenberghs@gmail.com"><i class="far fa-envelope"></i></a>
+          </li>
+        </div>
+      </ul>
+    </section>
+  </footer>
+
+  <script>
+    function myFunction() {
+      /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar*/
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

@@ -2,13 +2,9 @@ let debarcode = document.forms["form"]["debarcode"];
 
 let debarcode_error = document.getElementById("debarcode_error");
 
-let winner = { win: "abcedfghijkl" };
-
 debarcode.addEventListener("textInput", debarcode_Verify);
 
 function validated() {
-  
-
   if (debarcode.value.length < 12) {
     debarcode.style.border = "1px solid red";
     debarcode_error.style.display = "block";

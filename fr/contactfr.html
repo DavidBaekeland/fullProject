@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/444de97735.js" crossorigin="anonymous"></script>
+
+  <title>Flogateau</title>
+</head>
+
+<body>
+  <header>
+    <nav class="topnav">
+      <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+      <a href="#">Contact</a>
+      <div id="myLinks">
+        <a href="./accueil.html">Accueil</a>
+        <a href="./product.html">Produits</a>
+        <a href="./apropos.html">À propos</a>
+        <a href="./winkel.html"><i class="fas fa-shopping-basket"></i></a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+
+    <nav class="navDesktop">
+      <ul>
+        <li><a href="./accueil.html">Accueil</a></li>
+        <li><a href="./product.html">Produits</a></li>
+        <img src="../img/Flogateautransparant.png" alt="Logo transparant" />
+        <li><a href="./apropos.html">À propos</a></li>
+        <li><a href="#" class="active">Contact</a></li>
+      </ul>
+      <p>
+        <a href="./winkel.html"><i style="margin-right:25px;" class="fas fa-shopping-basket"></i></a>
+      </p>
+    </nav>
+
+  </header>
+
+  <main id="contactMain">
+    <section>
+      <form action="contact.php" method="POST" class="contactform">
+        <section class="allesContact">
+          <h1>Contact</h1>
+
+          <div class="voornaamContact">
+            <label for="voornaam">Prenom</label>
+            <input type="text" id="voornaam" name="voornaam" required />
+          </div>
+
+          <div class="naamContact">
+            <label for="naam">Nom</label>
+            <input type="text" id="naam" name="naam" required />
+          </div>
+
+          <div class="e-mailContact">
+            <label for="e-mail">E-mail</label>
+            <input type="e-mail" id="e-mail" name="e-mail" required />
+          </div>
+
+          <div class="berichtContact">
+            <label for="bericht">Votre message</label>
+            <textarea id="bericht" name="bericht" rows="10" cols="50"
+              placeholder="Ecrivez ci-dessous votre message"></textarea>
+          </div>
+
+          <div class="knopContact">
+            <input type="submit" name="contactWinkelSubmit" id="contactWinkelSubmit" size="20" value="Envoyer" />
+          </div>
+
+      </form>
+    </section>
+    </section>
+  </main>
+
+  <main id="contactDesktopMain">
+    <section>
+      <form action="contact.php" method="POST" class="contactformDesktop">
+        <section class="alles">
+          <h1 class="contact">Contact</h1>
+          <section class="name">
+            <label for="voornaam">Prenom</label>
+            <input type="text" id="voornaam" name="voornaam" required />
+            <label for="naam">Nom</label>
+            <input type="text" id="naam" name="naam" required />
+          </section>
+
+          <section class="e-mail">
+            <label for="e-mail">E-mail</label>
+            <input type="e-mail" id="e-mail" name="e-mail" size="55.5" required />
+          </section>
+
+          <section class="bericht">
+            <label for="bericht">Votre message</label>
+            <textarea id="bericht" name="bericht" rows="10"></textarea>
+          </section>
+          <input type="submit" name="winkelSubmit" id="winkelSubmit" value="Envoyer" />
+      </form>
+    </section>
+    </section>
+
+    <section class="mediaContact">
+      <h1>Reseaux sociaux</h1>
+      <section id="row">
+        <a href="https://www.facebook.com/Flog%C3%A2teau-1838784923015234/?hc_ref=ART5tzjcPseEba9lkebpn3igC6le9cfudKQvwr5gN44qrNYtoIRLlHTKiVwHwMBOvwg&fref=nf&__tn__=kC-R"
+          target="_blank"><img class="fb" src="../illustraties/Fcbsocial.svg" alt="facebook-icon" /></a>
+        <a href="https://www.instagram.com/flogateau_/" target="_blank"><img class="insta"
+            src="../illustraties/insta2.svg" alt="instagram-icon" /></a>
+        <a href="mailto:" target="_blank"><img class="mail" src="../illustraties/mail2.svg" alt="mail-icon" /></a>
+
+      </section>
+      <section>
+        <img src="../illustraties/Contact.svg" alt="illustratie-contact">
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <section class="taal">
+      <ul>
+        <li>
+          <select name="taal" id="taal">
+            <option value="nl">NL</option>
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+          </select>
+        </li>
+        <li id="footerFlo">FLOGÂTEAU</li>
+        <div class="icons">
+          <li>
+            <a href="www.facebook.com/Flogâteau-1838784923015234/"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/flogateau_/"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="mailto:flocroonenberghs@gmail.com"><i class="far fa-envelope"></i></a>
+          </li>
+        </div>
+      </ul>
+    </section>
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
