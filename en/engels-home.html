@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -21,45 +21,30 @@
   </head>
 
   <body>
-    <header>
-
-
-
-      
+    <header>      
       <nav class="topnav">        <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
-        
-       
+        <a href="engels-winkel.html"><i class="fas fa-shopping-basket"></i></a>
+        <div id="myLinks">
+          <a href="#">Home</a>
+          <a href="engels-product.html">Products</a>
+          <a href="engels-about.html">About me</a>
+          <a href="engels-contact.html">Contact</a>       
+        </div> 
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
-          </a>
-          
-        <div id="myLinks">
-          <a href="/index.html">Home</a>
-          <a href="./page/product.html">Products</a>
-          <a href="./page/about.html">About me</a>
-          <a href="./page/contact.html">Contact</a>       
-        </div>
-       
-        
-        <a href="./page/winkel.html"><i class="fas fa-shopping-basket"></i></a>
-      
+          </a>    
        </nav>
-
-
-
-
-
 
       <nav class="navDesktop" id="navDesktop">
             <ul>
               <li><a href="#" class="active">Home</a></li>
-              <li><a href="./page/product.html">Products</a></li>
-              <img src="./img/Flogateautransparant.png" alt="Logo transparant"/>
-              <li><a href="./page/about.html">About me</a></li>
-              <li><a href="./page/contact.html">Contact</a></li>
+              <li><a href="engels-product.html">Products</a></li>
+              <img src="../img/Flogateautransparant.png" alt="Logo transparant" />
+              <li><a href="engels-about.html">About me</a></li>
+              <li><a href="engels-contact.html">Contact</a></li>
             </ul>
           <p>
-            <a href="./page/winkel.html"><i style="margin-right:25px;" class="fas fa-shopping-basket"></i></a>
+            <a href="engels-winkel.html"><i style="margin-right:25px;" class="fas fa-shopping-basket"></i></a>
           </p>
       </nav>
 
@@ -95,24 +80,24 @@
 
       <section id="homeone" class="startHome">
         <img src="../illustraties/Main.svg" />
-        <h1>Welcom at <span>Flogâteau</span></h1>
+        <h1>Welcome at <span>Flogâteau</span></h1>
       </section>
 
       <section class="productHome">
-          <h1>Our Products</h1>
+          <h1>Our products</h1>
 
           <div class="slideshow-container">                             <!--https://www.w3schools.com/howto/howto_js_slideshow.asp-->
         
           <div class="mySlides fade">
               <div class="taartHome">
                   <figure class="TAARTEN">
-                    <img src="./illustraties/goudRuitje1.svg" alt="product" />
-                    <img class="taarthome" src="./img/Products/BokkenpootjesPNG.png" alt="bokkepootjes"/>
+                    <img src="../illustraties/goudRuitje1.svg" alt="product" />
+                    <img class="taarthome" src="../img/Products/BokkenpootjesPNG.png" alt="bokkepootjes"/>
                     <figcaption class="infoTaart">
                     
                       <h3>Cookies</h3>
-                      <p>Take a look at the cookies from Flogâteau </p>
-                        <a class="productKoekKnopHome" href="./page/product.html"
+                      <p>Take a look at the cookies from Flogâteau! </p>
+                        <a class="productKoekKnopHome" href="engels-product.html"
                         >More
                         <i class="fas fa-arrow-right" aria-hidden="true"></i
                           ></a>
@@ -121,16 +106,16 @@
               </div>
           </div>
           
-          <!-- <div class="mySlides fade">
+          <div class="mySlides fade">
               <div class="taartHome">
                   <figure class="TAARTEN">
-                    <img src="./illustraties/mintRuitje.svg" alt="product" />
-                    <img class="taarthome" src="./img/Products/Taarten/appelfrangipane1.png" alt="taart"/>
+                    <img src="../illustraties/mintRuitje.svg" alt="product" />
+                    <img class="taarthome" src="../img/Products/Taarten/appelfrangipane1.png" alt="taart"/>
                     <figcaption class="infoTaart">
-                      <h3>Taarten</h3>
-                      <p>Neem een kijkje naar de 'gâteaux' van Flogâteau!</p>
-                      <a class="productTaartKnopHome" href="./page/product.html"
-                      >Meer
+                      <h3>Cakes</h3>
+                      <p>Take a look at the 'gâteau' from Flogâteau</p>
+                      <a class="productTaartKnopHome" href="engels-product.html"
+                      >More
                           <i class="fas fa-arrow-right" aria-hidden="true"></i
                             ></a>
                     </figcaption>
@@ -141,20 +126,19 @@
           <div class="mySlides fade">
               <div class="taartHome">
                   <figure class="TAARTEN">
-                    <img src="./illustraties/goudRuitje1.svg" alt="product" />
-                    <img class="taarthome" src="./img/Bloemcupcake.png" alt="bloemcupcake"/>
+                    <img src="../illustraties/goudRuitje1.svg" alt="product" />
+                    <img class="taarthome" src="../img/Bloemcupcake.png" alt="bloemcupcake"/>
                     <figcaption class="infoTaart">
                       <h3>Cupcakes</h3>
-                      <p>Neem een kijkje naar de cupcakes
-                        van Flogâteau! </p>
-                        <a class="productKoekKnopHome" href="./page/product.html"
-                        >Meer
+                      <p>Take a look at the cupcakes from Flogâteau </p>
+                        <a class="productKoekKnopHome" href="engels-product.html"
+                        >More
                         <i class="fas fa-arrow-right" aria-hidden="true"></i
                           ></a>
                       </figcaption>
                   </figure>
                 </div>
-          </div> -->
+          </div>
         </div>
         <br>
 
@@ -164,23 +148,22 @@
           <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
 
-        <script src="./js/dots.js"></script>
       </section>
-        
+      
 
       <section id="hometwo" class="productHomeDesktop">
-        <h1 >Onze Producten</h1>
+        <h1 >Our products</h1>
         <div class="naastHomeDesktop">
           
           <div class="taartHomeDesktop">
             <figure class="TAARTENDesktop">
-              <img src="./illustraties/goudRuitje1.svg" alt="product" />
+              <img src="../illustraties/goudRuitje1.svg" alt="product" />
               <figcaption class="infoTaartDesktop">
-                <img class="taarthomeDesktop" style="padding-left:0;" src="./img/Products/BokkenpootjesPNG.png" alt="bokkepootjes"/>
+                <img class="taarthomeDesktop" style="padding-left:0;" src="../img/Products/BokkenpootjesPNG.png" alt="bokkepootjes"/>
                 <h3>Cookies</h3>
-                <p>Take a look at the cookies from Flogâteau </p>
-                  <a class="productKoekKnopHomeDesktop" href="./page/product.html"
-                  >Meer
+                <p>Take a look at the cookies from Flogâteau! </p>
+                  <a class="productKoekKnopHomeDesktop" href="engels-product.html"
+                  >More
                   <i class="fas fa-arrow-right" aria-hidden="true"></i
                     ></a>
                   </p>
@@ -190,43 +173,43 @@
             
                 <div class="taartHomeDesktop">
                   <figure class="TAARTENDesktop">
-                    <img src="./illustraties/mintRuitje.svg" alt="product" />
+                    <img src="../illustraties/mintRuitje.svg" alt="product" />
                     <figcaption class="infoTaart">
-                      <img class="taarthomeDesktop" style="padding-left:0;" src="./img/Products/Taarten/appelfrangipane1.png" alt="taart"/>
+                      <img class="taarthomeDesktop" style="padding-left:0;" src="../img/Products/Taarten/appelfrangipane1.png" alt="taart"/>
                       <h3>Cakes</h3>
-                      <p>Take a look at the 'gâteau' from Flogâteau</p>
-                      <a class="productTaartKnopHomeDesktop" href="./page/product.html"
+                      <p>Take a look at the 'gâteaux' from Flogâteau!</p>
+                      <a class="productTaartKnopHomeDesktop" href="engels-product.html"
                       >More
-                          <i class="fas fa-arrow-right" aria-hidden="true"></i
-                            ></a>
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                        ></a>
                       </p>
                     </figcaption>
                   </figure>
                 </div>
-            
+                
                 <div class="taartHomeDesktop">
-                    <figure class="TAARTENDesktop">
-                      <img src="./illustraties/goudRuitje1.svg" alt="product" />
-                      <figcaption class="infoTaartDesktop">
-                        <img class="taarthomeDesktop" style="padding-left:0;" src="./img/Bloemcupcake.png" alt="bloemcupcake"/>
-                        <h3>Cupcakes</h3>
-                        <p>Take a look at the cupcakes from Flogâteau </p>
-                          <a class="productKoekKnopHomeDesktop" href="./page/product.html"
-                          >More
-                          <i class="fas fa-arrow-right" aria-hidden="true"></i
-                            ></a>
-                          </p>
-                        </figcaption>
+                  <figure class="TAARTENDesktop">
+                    <img src="../illustraties/goudRuitje1.svg" alt="product" />
+                    <figcaption class="infoTaartDesktop">
+                      <img class="taarthomeDesktop" style="padding-left:0;" src="../img/Bloemcupcake.png" alt="bloemcupcake"/>
+                      <h3>Cupcakes</h3>
+                      <p>Take a look at the cupcakes from Flogâteau! </p>
+                        <a class="productKoekKnopHomeDesktop" href="engels-product.html"
+                        >More
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i
+                          ></a>
+                        </p>
+                      </figcaption>
                     </figure>
                   </div>
-            </div>
-      </section>
+                </div>
+              </section>
 
       
       
 
       <section id="homethree" class="actieHome">
-        <img src="./illustraties/Home game.svg" alt="" />
+        <img src="../illustraties/Home game.svg" alt="" />
         
         <div class="samenHome3">
           <h1>Contest!</h1>
@@ -249,10 +232,10 @@
               you get a nice gift.
             </p>
           </article>
-          <a id="doeMeeKnopHome" href="./page/barcode.html">Join
+          <a id="doeMeeKnopHome" href="engels-barcode.html">Join
               <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
-          <a id="doeMeeKnopDesktopHome" href="./page/barcode.html">Join
+          <a id="doeMeeKnopDesktopHome" href="engels-barcode.html">Join
             <i class="fas fa-arrow-right" aria-hidden="true"></i>
           </a>
         </div> 
@@ -265,9 +248,9 @@
         <ul>
           <li>
             <select name="taal" id="taal">
+              <option value="en">EN</option>
               <option value="nl">NL</option>
               <option value="fr">FR</option>
-              <option value="en">EN</option>
             </select>
           </li>
           <li id="footerFlo">FLOGÂTEAU</li>
@@ -300,6 +283,7 @@
         }
       }
   </script>
+  <script src="../js/dots.js"></script>
 
   </body>
 </html>
