@@ -466,7 +466,7 @@ main {
 
 .knopContact {
   text-align: center;
-  margin-bottom: 3.125rem;
+  margin-bottom: 4.1rem;
 }
 
 #doeMeeKnopHome {
@@ -1037,6 +1037,10 @@ Home Section-2
     padding-left: 0px;
   }
 
+  #taartcupcakeDesktop{
+    width: 65%;
+    padding-bottom: 4%;
+  }
   .infoTaartDesktop h3 {
     color: #bca04a;
     font-weight: 500;
@@ -1495,10 +1499,11 @@ About
     color: #4f5d75;
     font-size: 18px;
     text-align: justify;
+    font-weight: 400;
   }
 
   .abouttwo .pabouttwo {
-    padding: 2.5% 45% 0% 10%;
+    padding: 2.5% 45% 0% 11%;
     line-height: 1.2rem;
   }
 
@@ -1978,7 +1983,7 @@ Footer
     padding: 1em 0;
   }
 
-  .footcontact {
+ .footcontact {
     position: absolute;
     bottom: 0;
     width: 100%;
