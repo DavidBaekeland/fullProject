@@ -615,6 +615,10 @@ main {
   padding-bottom: 1.25rem;
 }
 
+.calenderFR label {
+  padding-right: 0.6rem;
+}
+
 .calenderEn label {
   font-size: 1em;
   color: #4f5d75;
