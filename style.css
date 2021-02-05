@@ -1362,6 +1362,7 @@ Producten
   }
 
   .kadersDesktop .productenlijstDesktop figure a {
+    text-decoration:none;
     display: table;
     color: #4f5d75;
     font-weight: 800;
@@ -1535,6 +1536,15 @@ Contact
 
   .contactformDesktop .e-mail label {
     padding-right: 2.8125rem;
+  }
+
+  .contactformDesktop .e-mailFR {
+    margin-bottom: 1.25rem;
+    padding-top: 0.625rem;
+  }
+
+  .contactformDesktop .e-mailFR label {
+    padding-right: 1.5rem;
   }
 
   .contactformDesktop .bericht {
@@ -1857,7 +1867,7 @@ Barcode
 
   .volledigbox h2 {
     font-size: 1.8em;
-    padding-left: 3vw;
+    padding-left: 2vw;
     padding-top: 7vh;
     width: 90%;
     color: #b1835c;
