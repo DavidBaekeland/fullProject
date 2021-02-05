@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,17 +18,17 @@
 
     <title>Flogateau</title>
   </head>
-  <body>
+  <body class="lost">
     <header>
       <nav class="topnav">
         <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
         <a href="engels-winkel.html"><i class="fas fa-shopping-basket"></i></a>
         <div id="myLinks">
           <a href="engels-home.html">Home</a>
-          <a href="engels-product.html">Products</a>
-          <a href="engels-about.html">About me</a>
+          <a href="engels-product.html">Product</a>
+          <a href="engels-product.html">About me</a>
           <a href="engels-contact.html">Contact</a>
-          <a href="#">Lose</a>
+          <a href="#">Win</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -43,7 +43,7 @@
           <img src="../img/Flogateautransparant.png" alt="Logo transparant" />
           <li><a href="engels-about.html" class="active">About me</a></li>
           <li><a href="engels-contact.html">Contact</a></li>
-          <li><a href="#">Lose</a></li>
+          <li><a href="#">Win</a></li>
         </ul>
         <p>
           <a href="engels-winkel.html"
@@ -54,26 +54,32 @@
     </header>
 
     <main>
-      <h1>Unfortunately, you lost</h1>
-      <p>
-        But be assured, I still have a consolation prize. I need your help in a
-        new adventure. Below are a few games where you can participate. We will
-        work together to make the most delicious bokkenpootjes. Afterwards, send
-        an email with our unique adventure and get a chance to win a nice gift.
+      <h1 class="wintit">Congratulations! You won!</h1>
+      <p class="winp">
+        As a gift, you will receive free bokkenpootjes.
       </p>
-      <a href="path_to_file" download="proposed_file_name">Prent 1</a>
-      <a href="path_to_file" download="proposed_file_name">Prent 2</a>
-      <a href="path_to_file" download="proposed_file_name">Prent 3</a>
+      <a class="winwin" href="engels-winkel.html">
+        Collect your price
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </a>
+      
+      <img class="flowin" src="../illustraties/Flolose.svg" alt="">
     </main>
-    <footer>
+
+  
+
+
+    <script src="../js/barcode.js"></script>
+
+    <footer class="losefoot">
       <section class="taal">
         <ul>
           <li>
             <!--https://stackoverflow.com/questions/2000656/using-href-links-inside-option-tag-->
             <select name="taal" id="taal" onchange="location = this.value;">
-              <option value="#">EN</option>
-              <option value="../page/lose.html">NL</option>
-              <option value="../fr/lose.html">FR</option>
+              <option value="../en/engels-win.html">EN</option>
+              <option value="#">NL</option>
+              <option value="../fr/win.html">FR</option>
             </select>
           </li>
           <li id="footerFlo">FLOGÂTEAU</li>
@@ -97,7 +103,6 @@
         </ul>
       </section>
     </footer>
-
-    <script src="../js/barcode.js"></script>
+    
   </body>
 </html>
