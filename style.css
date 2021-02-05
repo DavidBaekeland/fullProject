@@ -427,9 +427,20 @@ main {
   color: #4f5d75;
   font-weight: 500;
 }
+.voornaamContactEn {
+  padding-bottom: 1.25rem;
+}
+
+.voornaamContactEn label {
+  padding-right: 3.2rem;
+  font-size: 1em;
+  color: #4f5d75;
+  font-weight: 500;
+}
 .voornaamContact {
   padding-bottom: 1.25rem;
 }
+
 .naamContact label {
   padding-right: 2.596875rem;
   font-size: 1em;
