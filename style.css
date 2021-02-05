@@ -1734,6 +1734,14 @@ Winkel
     display: inline-block;
     flex-direction: wrap;
   }
+
+  .allesDesktop .e-mailEn {
+    margin-bottom: 1.25rem;
+    padding-top: 0.675rem;
+    display: inline-block;
+    flex-direction: wrap;
+  }
+
   .allesDesktop .e-mail label {
     font-weight: 500;
     padding-right: 1.4rem;
