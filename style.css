@@ -856,7 +856,6 @@ main {
 
 .losefoot {
   position: absolute;
-  bot
 }
 
 /*Eind uitzetting van desktop*/
@@ -1399,114 +1398,6 @@ About
   }
 
   /*
-  #aboutDesktop .frame {
-    display: inline-block;
-    position: absolute;
-
-    height: auto;
-    width: 25vw;
-    margin-left: 6vw;
-    bottom: 5.5vh;
-  }
-
-  .deeleen {
-    width: 100%;
-    height: 90%;
-  }
-
-  #aboutDesktop #textone {
-    margin-top: 15vh;
-    position: absolute;
-    height: auto;
-    width: 50vw;
-    padding: 3%;
-    padding-bottom: 10vh;
-    display: inline-block;
-    right: 6vw;
-    bottom: 6vh;
-    color: #bca04a;
-  }
-
-  .h1aboutone {
-    margin-top: 100px;
-    font-weight: 500;
-    color: #bca04a;
-    font-size: 4.5rem;
-  }
-
-  .paboutone {
-    color: #4f5d75;
-    font-size: 10pt;
-    font-weight: 400;
-    line-height: 3.5vh;
-  }
-
-  .abouttwo {
-    position: absolute;
-    height: 90vh;
-    width: 94%;
-    top: 110vh;
-    margin-left: 3vw;
-    margin-right: 3vw;
-  }
-
-  .abouttwo .styleabout {
-    position: absolute;
-    width: 75vw;
-    height: auto;
-    left: 6vw;
-    top: 18vh;
-  }
-
-  .h1abouttwo {
-    position: absolute;
-    font-size: 4.5rem;
-    font-weight: 500;
-    top: 0;
-    right: 0;
-    margin-top: 0;
-    display: flex;
-    justify-content: flex-end;
-    color: #bca04a;
-  }
-
-  .pabouttwo {
-    position: relative;
-    top: 7vh;
-    width: 40%;
-    margin-left: 80px;
-    height: auto;
-    font-size: 0.8em;
-    padding-top: 6.75rem;
-    padding-bottom: 0;
-    padding-right: 5rem;
-    padding-left: 1.875rem;
-    z-index: 1;
-    color: #3f3f3f;
-  }
-
-  .abouttwo .fotoone {
-    position: absolute;
-
-    width: 20vw;
-    max-height: 20vw;
-    bottom: 0;
-    left: 6vw;
-  }
-
-  .paboutthree {
-    position: absolute;
-    width: 55%;
-    height: auto;
-    font-size: 0.8em;
-    margin-left: 18.625rem;
-    padding: 2%;
-    padding-top: 10.5%;
-    z-index: 1;
-    color: #3f3f3f;
-  } */
-
-  /*
 ===============================
 About
 ===============================
@@ -1756,12 +1647,8 @@ Winkel
     align-items: center;
   }
   .allesDesktop {
-    /* padding-left: 2.1875rem;
-    padding-right: 2.1875rem;
-    padding-bottom: 0.9375rem; */
     background-color: rgba(178, 218, 205, 25%);
     padding: 4vh 5vw;
-    /* padding-bottom: 0; */
   }
 
   #winkelSubmit {
@@ -1877,14 +1764,6 @@ Kalender
   .artikelsWinkelDesktop table td:nth-child(odd) {
     margin: 0 6vw;
   }
-
-  /*.mediaWinkel {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-  }*/
 
   .mediaWinkel li {
     display: inline-block;
@@ -2048,11 +1927,6 @@ Footer
     width: 100%;
     left: 0%;
   }
-
-  /* .taal {
-    margin: auto;
-    width: 87%;
-  } */
 
   footer #footerFlo,
   footer select {
