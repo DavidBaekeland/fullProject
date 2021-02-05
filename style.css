@@ -541,6 +541,18 @@ main {
 .voornaamWinkel {
   padding-bottom: 1.25rem;
 }
+
+.voornaamWinkelFr label {
+  padding-right: 1.8rem;
+  font-size: 1em;
+  color: #4f5d75;
+  font-weight: 500;
+}
+.voornaamWinkelFr {
+  padding-bottom: 1.25rem;
+}
+
+
 .naamWinkel label {
   padding-right: 2.596875rem;
   font-size: 1em;
@@ -550,6 +562,17 @@ main {
 .naamWinkel {
   padding-bottom: 1.25rem;
 }
+
+.naamWinkelFr label {
+  padding-right: 3.2rem;
+  font-size: 1em;
+  color: #4f5d75;
+  font-weight: 500;
+}
+.naamWinkelFr {
+  padding-bottom: 1.25rem;
+}
+
 .e-mailWinkel label {
   padding-right: 2.4375rem;
   font-size: 1em;
@@ -557,6 +580,16 @@ main {
   font-weight: 500;
 }
 .e-mailWinkel {
+  padding-bottom: 1.25rem;
+}
+
+.e-mailWinkelFr label {
+  padding-right: 2.4375rem;
+  font-size: 1em;
+  color: #4f5d75;
+  font-weight: 500;
+}
+.e-mailWinkelFr {
   padding-bottom: 1.25rem;
 }
 
@@ -569,6 +602,17 @@ main {
 .telefoonWinkel {
   padding-bottom: 1.25rem;
 }
+
+.telefoonWinkelFr label {
+  padding-right: 0.5rem;
+  font-size: 1em;
+  color: #4f5d75;
+  font-weight: 500;
+}
+.telefoonWinkelFr {
+  padding-bottom: 1.25rem;
+}
+
 .calender label {
   font-size: 1em;
   color: #4f5d75;
