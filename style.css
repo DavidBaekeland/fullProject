@@ -1772,6 +1772,7 @@ Winkel
     font-weight: 500;
     padding-right: 2.1rem;
   }
+
   .allesDesktop #labelNomFrM {
     font-weight: 500;
     padding-right: 4.6rem;
@@ -1780,6 +1781,11 @@ Winkel
   .allesDesktop #labelPhoneFrM{
     font-weight: 500;
     padding-right: 1.3rem;
+  }
+
+  .allesDesktop #labelnameNl {
+    font-weight: 500;
+    padding-right: 3.9rem;
   }
 
   /*
