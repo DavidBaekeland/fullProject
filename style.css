@@ -433,9 +433,6 @@ main {
 
 .voornaamContactEn label {
   padding-right: 3.2rem;
-  font-size: 1em;
-  color: #4f5d75;
-  font-weight: 500;
 }
 .voornaamContact {
   padding-bottom: 1.25rem;
@@ -457,9 +454,6 @@ main {
 
 .naamContactEn label {
   padding-right: 1.2rem;
-  font-size: 1em;
-  color: #4f5d75;
-  font-weight: 500;
 }
 
 .e-mailContact label {
@@ -468,6 +462,11 @@ main {
   color: #4f5d75;
   font-weight: 500;
 }
+
+.e-mailContactEn label {
+  padding-right: 3rem;
+}
+
 .e-mailContact {
   padding-bottom: 1.25rem;
 }
@@ -491,7 +490,7 @@ main {
   padding: 0.75rem;
   font-weight: 500;
   font-size: 0.875em;
-  margin-bottom: 1.5625rem;
+  margin-bottom: 2.7rem;
 }
 
 .knopContact {
@@ -538,8 +537,16 @@ main {
   color: #4f5d75;
   font-weight: 500;
 }
+
 .voornaamWinkel {
   padding-bottom: 1.25rem;
+}
+
+.voornaamWinkelEn label {
+  padding-right: 4rem;
+  font-size: 1em;
+  color: #4f5d75;
+  font-weight: 500;
 }
 
 .voornaamWinkelFr label {
@@ -556,6 +563,10 @@ main {
   padding-bottom: 1.25rem;
 }
 
+.naamWinkelEn label {
+  padding-right: 1.8rem;
+}
+
 .naamWinkelFr label {
   padding-right: 3.2rem;
 }
@@ -568,6 +579,10 @@ main {
 }
 .e-mailWinkel {
   padding-bottom: 1.25rem;
+}
+
+.e-mailWinkelEn label {
+  padding-right: 3.8rem;
 }
 
 .e-mailWinkelFr label {
@@ -588,6 +603,10 @@ main {
   padding-right: 0.5rem;
 }
 
+.telefoonWinkelEn label {
+  padding-right: 3.85rem;
+}
+
 .calender label {
   font-size: 1em;
   color: #4f5d75;
@@ -596,8 +615,36 @@ main {
   padding-bottom: 1.25rem;
 }
 
-.calenderFr label {
-  padding-right: 0.6rem;
+.calenderEn label {
+  font-size: 1em;
+  color: #4f5d75;
+  font-weight: 500;
+  padding-right: 2.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.e-mailContactEn label {
+  padding-right: 3rem;
+}
+
+.voornaamWinkelEn label {
+  padding-right: 4rem;
+}
+
+.naamWinkelEn label {
+  padding-right: 1.8rem;
+}
+
+.e-mailWinkelEn label {
+  padding-right: 3.8rem;
+}
+
+.telefoonWinkelEn label {
+  padding-right: 3.85rem;
+}
+
+.calenderEn label {
+  padding-right: 2.5rem;
 }
 
 .kalenderWinkel {
@@ -629,6 +676,7 @@ main {
 .imgTotal {
   font-weight: 500;
 }
+
 /*Einde Winkel*/
 
 /*Begin Product*/
