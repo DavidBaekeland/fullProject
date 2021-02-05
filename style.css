@@ -1463,6 +1463,14 @@ About
     line-height: 1.2rem;
   }
 
+  .abouttwo .paboutthreeEn {
+    position: absolute;
+    top: 62%;
+    left: 34%;
+    padding-right: 9%;
+    line-height: 1.2rem;
+  }
+
   .abouttwo div {
     background-image: url("../illustraties/Tijdlijn2.svg");
     background-repeat: no-repeat;
@@ -1764,6 +1772,11 @@ Kalender
   .winkelformDesktop .calender label {
     padding-bottom: 0.625rem;
     padding-right: 0.2em;
+  }
+
+  .allesDesktop .calenderFrM label {
+    padding-bottom: 0.625rem;
+    padding-right: 0.5em;
   }
 
   /*
