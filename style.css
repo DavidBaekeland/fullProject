@@ -1773,6 +1773,11 @@ Winkel
     padding-right: 2.1rem;
   }
 
+  .allesDesktop #labelphoneEn {
+    font-weight: 500;
+    padding-right: 3.4rem;
+  }
+
   .allesDesktop #labelNomFrM {
     font-weight: 500;
     padding-right: 4.6rem;
@@ -1811,6 +1816,11 @@ Kalender
   .allesDesktop .calenderNlW label {
     padding-bottom: 0.625rem;
     padding-right: 1.2em;
+  }
+
+  .allesDesktop .calenderEnS label {
+    padding-bottom: 0.625rem;
+    padding-right: 0.2em;
   }
 
   /*
