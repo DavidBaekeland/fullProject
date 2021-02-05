@@ -439,6 +439,18 @@ main {
 .naamContact {
   padding-bottom: 1.25rem;
 }
+
+.naamContactEn {
+  padding-bottom: 1.25rem;
+}
+
+.naamContactEn label {
+  padding-right: 1.2rem;
+  font-size: 1em;
+  color: #4f5d75;
+  font-weight: 500;
+}
+
 .e-mailContact label {
   padding-right: 2.4375rem;
   font-size: 1em;
@@ -1934,6 +1946,7 @@ Barcode
 */
 
   .win {
+    font-weight: 500;
     margin-left: 18vw;
     margin-top: 15vh;
     color: #bba247;
