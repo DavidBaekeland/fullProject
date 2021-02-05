@@ -1715,14 +1715,36 @@ Winkel
     flex-direction: wrap;
   }
 
-  .allesDesktop .e-mail label {
+  .allesDesktop .e-mailFrM label {
     font-weight: 500;
     padding-right: 1.4rem;
   }
 
+  .allesDesktop .e-mailFrM {
+    margin-bottom: 1.25rem;
+    padding-top: 0.675rem;
+    display: inline-block;
+    flex-direction: wrap;
+  }
+
+  .allesDesktop .e-mailFrM label {
+    font-weight: 500;
+    padding-right: 2.4rem;
+  }
+
+
   .allesDesktop #labelphone {
     font-weight: 500;
     padding-right: 2.1rem;
+  }
+  .allesDesktop #labelNomFrM {
+    font-weight: 500;
+    padding-right: 4.6rem;
+  }
+
+  .allesDesktop #labelPhoneFrM{
+    font-weight: 500;
+    padding-right: 1.3rem;
   }
 
   /*
