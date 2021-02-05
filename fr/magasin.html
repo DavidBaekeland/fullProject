@@ -42,7 +42,7 @@
          <li><a href="./contactfr.html">Contact</a></li>
        </ul>
        <p>
-         <a href="./winkel.html"><i style="margin-right:25px;" class="fas fa-shopping-basket"></i></a>
+         <a href="#"><i style="margin-right:25px;" class="fas fa-shopping-basket"></i></a>
        </p>
      </nav>
 
@@ -51,7 +51,7 @@
    <main>
      <section class="formulierWinkel">
        <h1>Bestelling</h1>
-       <form action="winkel.php" method="POST" class="winkelform">
+       <form name="winkel" method="POST" class="winkelformDesktop" data-netlify="true">
 
          <section class="alles">
            <div class="voornaamWinkel">
@@ -112,10 +112,12 @@
            </div>
 
          </section>
+        </form>
      </section>
+
      <div class="naastWinkel">
        <section class="formulierWinkelDesktop">
-         <form action="winkel.php" method="POST" class="winkelformDesktop">
+          <form name="winkel" method="POST" class="winkelformDesktop" data-netlify="true">
            <section class="allesDesktop">
              <h1>Commande</h1>
              <section class="name">
@@ -138,8 +140,8 @@
             </div>
 
              <input type="submit" name="winkelSubmit" id="winkelSubmit" value="Bestellen" />
-         </form>
-       </section>
+            </section>
+          </form>
        </section>
 
        <section id="ArtikelsDesktop">
