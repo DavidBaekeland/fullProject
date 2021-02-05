@@ -1678,7 +1678,7 @@ Winkel
 
   .allesDesktop .name label {
     font-weight: 500;
-    padding-right: 0.9375rem;
+    padding-right: 1.9rem;
   }
 
   .allesDesktop input {
@@ -1707,7 +1707,12 @@ Winkel
 
   .allesDesktop .e-mail label {
     font-weight: 500;
-    padding-right: 0.625rem;
+    padding-right: 1.4rem;
+  }
+
+  .allesDesktop #labelphone {
+    font-weight: 500;
+    padding-right: 2.1rem;
   }
 
   /*
@@ -1722,7 +1727,7 @@ Kalender
 
   .winkelformDesktop .calender label {
     padding-bottom: 0.625rem;
-    padding-right: 0.8rem;
+    padding-right: 0.2em;
   }
 
   /*
