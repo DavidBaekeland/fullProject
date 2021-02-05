@@ -102,11 +102,10 @@
              </div>
            </div>
 
-           <div class="kalenderWinkel">
-             <label for="bericht">Date de retrait</label>
-             <textarea id="kalender" name="kalender" rows="10" cols="50">
-                    </textarea>
-           </div>
+           <div class="calender">
+            <label for="date">Calendrier</label>
+            <input type="date" id="date" name="date" min="2021-02-05" required />
+          </div>
 
            <div class="knopWinkel">
              <input type="submit" name="contactWinkelSubmit" id="contactWinkelSubmit" size="20" value="Bestellen" />
@@ -134,9 +133,8 @@
              </section>
 
              <div class="calender">
-              <label for="date">Calender</label>
-              <input type="date" id="date" name="date" required />
-            
+              <label for="date">Calendrier</label>
+              <input type="date" id="date" name="date" min="2021-02-05" required />
             </div>
 
              <input type="submit" name="winkelSubmit" id="winkelSubmit" value="Bestellen" />
