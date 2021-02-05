@@ -595,6 +595,11 @@ main {
   padding-right: 1.2rem;
   padding-bottom: 1.25rem;
 }
+
+.calenderFr label {
+  padding-right: 0.6rem;
+}
+
 .kalenderWinkel {
   display: flex;
   flex-direction: column;
