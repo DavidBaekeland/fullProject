@@ -1714,6 +1714,10 @@ Winkel
     display: inline-block;
     flex-direction: wrap;
   }
+  .allesDesktop .e-mail label {
+    font-weight: 500;
+    padding-right: 1.4rem;
+  }
 
   .allesDesktop .e-mailFrM label {
     font-weight: 500;
