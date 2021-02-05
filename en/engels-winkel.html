@@ -16,77 +16,147 @@
 
   <body>
     <header>
-      <nav class="topnav">        <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
-        <a href="#"><i class="fas fa-shopping-basket"></i></a>
-        <div id="myLinks">
-          <a href="../index.html">Home</a>
-          <a href="./product.html">Products</a>
-          <a href="./about.html">About me</a>
-          <a href="./contact.html">Contact</a>
-                  
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </nav>                     <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
-
-      <nav class="navDesktop">
-            <ul>
-              <li><a href="../index.html" >Home</a></li>
-              <li><a href="./product.html">Products</a></li>
-              <img src="../img/Flogateautransparant.png" alt="Logo transparant"/>
-              <li><a href="./about.html">About me</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-            </ul>
-          <p>
-            <a href="./winkel.html"><i style="margin-right:25px;" class="fas fa-shopping-basket"></i></a>
-          </p>
-      </nav>
+        <nav class="topnav">        <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+          <a href="engels-winkel.html"><i class="fas fa-shopping-basket"></i></a>
+          <div id="myLinks">
+            <a href="engels-home.html">Home</a>
+            <a href="engels-product.html">Products</a>
+            <a href="engels-about.html">About me</a>
+            <a href="#">Contact</a>       
+          </div> 
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>    
+         </nav>
+  
+        <nav class="navDesktop" id="navDesktop">
+              <ul>
+                <li><a href="engels-home.html" >Home</a></li>
+                <li><a href="engels-product.html">Products</a></li>
+                <img src="../img/Flogateautransparant.png" alt="Logo transparant" />
+                <li><a href="engels-about.html">About me</a></li>
+                <li><a href="#" class="active">Contact</a></li>
+              </ul>
+            <p>
+              <a href="engels-winkel.html"><i style="margin-right:25px;" class="fas fa-shopping-basket"></i></a>
+            </p>
+        </nav>
 
     </header>
 
-    <main>
-      <section class="formulierWinkel">
-        <h1>Order</h1>
-        <form action="winkel.php" method="POST" class="winkelform">
-
-            <section class="alles">
-              <div class="voornaamWinkel">
-                <label for="voornaam">Name</label>
-                <input type="text" id="voornaam" name="voornaam" required />
-              </div>
-              
-              <div class="naamWinkel">
-                  <label for="naam">Last name</label>
+    <main class="mainWinkel">
+        <section class="formulierWinkel">
+          <h1>Bestelling</h1>
+          <form method="POST" name="winkel" class="winkelform" data-netlify="true">
+  
+              <section class="alles">
+                <div class="voornaamWinkel">
+                  <label for="voornaam">Name</label>
+                  <input type="text" id="voornaam" name="voornaam" required />
+                </div>
+                
+                <div class="naamWinkel">
+                    <label for="naam">Last Name</label>
+                    <input type="text" id="naam" name="naam" required />
+                </div>
+  
+                <div class="e-mailWinkel">
+                    <label for="e-mail">E-mail</label>
+                    <input type="e-mail" id="e-mail" name="e-mail" required />
+                </div>
+  
+                <div class="telefoonWinkel">
+                    <label for="phone">Phone</label>
+                    <input type="phone" id="phone" name="phone" required />
+                </div>
+  
+                <div class="calender">
+                  <label for="date">Calender</label>
+                  <input type="date" id="date" name="date" required />
+                
+                </div>
+                  
+               <div class="artikelsWinkel">
+                  <label for="artikels">Artikles</label>
+                  <table>
+                      <tbody>
+                        <tr>
+                          <td>1x</td>
+                          <td>Bokkepootjes</td>
+                          <td>€5</td>
+                        </tr>
+      
+                        <tr>
+                          <td>1x</td>
+                          <td>Appel Frangipane</td>
+                          <td>€12</td>
+                        </tr>
+      
+                        <tr>
+                          <td>1x</td>
+                          <td>Cheesecake</td>
+                          <td>€20</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="imgTotal">
+                        <p class="totaal">Total: €6</p>
+                    </div>
+               </div> 
+  
+                <div class="knopWinkel">
+                    <input type="submit" name="contactWinkelSubmit" id="contactWinkelSubmit" size="20" value="Bestellen" />
+                </div>
+  
+              </section>
+        </section>
+        <div class="naastWinkel">
+          <section class="formulierWinkelDesktop">
+            <form method="POST" name="winkel" class="winkelformDesktop" data-netlify="true">
+              <section class="allesDesktop">
+                <h1>Shop</h1>
+                <section class="name">
+                  <label for="naam">Name</label>
                   <input type="text" id="naam" name="naam" required />
-              </div>
-
-              <div class="e-mailWinkel">
+                  <label for="voornaam">Last name</label>
+                  <input type="text" id="voornaam" name="voornaam" required />
+                </section>
+  
+                <section class="e-mail">
                   <label for="e-mail">E-mail</label>
                   <input type="e-mail" id="e-mail" name="e-mail" required />
-              </div>
-
-              <div class="telefoonWinkel">
                   <label for="phone">Phone</label>
                   <input type="phone" id="phone" name="phone" required />
-              </div>
-                
-             <div class="artikelsWinkel">
-                <label for="artikels">Articles</label>
-                <table>
+                </section>
+  
+                <section class="calender">
+                  <label for="date">Calender</label>
+                  <input type="date" id="date" name="date" required />
+                  
+                </section>
+                <input type="submit" name="winkelSubmit" id="winkelSubmit" value="Bestellen" />
+              </form>
+            </section>
+          </section>
+          
+          <section id="ArtikelsDesktop">
+                <h1>Artikles</h1>
+  
+                <div class="artikelsWinkelDesktop">
+                  <table>
                     <tbody>
                       <tr>
                         <td>1x</td>
                         <td>Bokkepootjes</td>
                         <td>€5</td>
                       </tr>
-    
+  
                       <tr>
                         <td>1x</td>
                         <td>Appel Frangipane</td>
                         <td>€12</td>
                       </tr>
-    
+  
                       <tr>
                         <td>1x</td>
                         <td>Cheesecake</td>
@@ -94,87 +164,16 @@
                       </tr>
                     </tbody>
                   </table>
-                  <div class="imgTotal">
-                      <p class="totaal">Total: €6</p>
-                  </div>
-             </div> 
-
-              <div class="kalenderWinkel">
-                    <label for="bericht">Choose your pickup date</label>
-                    <textarea id="kalender" name="kalender" rows="10" cols="50">
-                    </textarea>
-              </div>
-
-              <div class="knopWinkel">
-                  <input type="submit" name="contactWinkelSubmit" id="contactWinkelSubmit" size="20" value="Bestellen" />
-              </div>
-
-            </section>
-      </section>
-      <div class="naastWinkel">
-        <section class="formulierWinkelDesktop">
-          <form action="winkel.php" method="POST" class="winkelformDesktop">
-            <section class="allesDesktop">
-              <h1>Shop</h1>
-              <section class="name">
-                <label for="naam">Name</label>
-                <input type="text" id="naam" name="naam" required />
-                <label for="voornaam">Last name</label>
-                <input type="text" id="voornaam" name="voornaam" required />
-              </section>
-
-              <section class="e-mail">
-                <label for="e-mail">E-mail</label>
-                <input type="e-mail" id="e-mail" name="e-mail" required />
-                <label for="phone">Phone</label>
-                <input type="phone" id="phone" name="phone" required />
-              </section>
-
-              <section class="calender">
-                <label for="date">calender</label>
-                <input type="date" id="date" name="date" required />
-              </section>
-
-              <input type="submit" name="winkelSubmit" id="winkelSubmit" value="Bestellen" />
-            </form>
+                </div>
+                
+                <div class="imgTotalDesktop">
+                  <p class="totaal">Total: €6</p>
+                  <img class="imgWinkel" src="../illustraties/Asset 1.svg" alt="illustratie-winkel">
+                </div>
           </section>
-        </section>
-        
-        <section id="ArtikelsDesktop">
-              <h1>Articles</h1>
-
-              <div class="artikelsWinkelDesktop">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td>1x</td>
-                      <td>Bokkepootjes</td>
-                      <td>€5</td>
-                    </tr>
-
-                    <tr>
-                      <td>1x</td>
-                      <td>Appel Frangipane</td>
-                      <td>€12</td>
-                    </tr>
-
-                    <tr>
-                      <td>1x</td>
-                      <td>Cheesecake</td>
-                      <td>€20</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              
-              <div class="imgTotalDesktop">
-                <p class="totaal">Total: €6</p>
-                <img class="imgWinkel" src="../illustraties/Asset 1.svg" alt="illustratie-winkel">
-              </div>
-        </section>
-        </section>
-      </div>
-    </main>
+          </section>
+        </div>
+      </main>
 
     <footer>
         <section class="taal">

@@ -60,6 +60,10 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*Nav Mobile*/ /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar*/
 .topnav {
   overflow: hidden;
@@ -139,6 +143,7 @@ footer .taal ul {
   margin: auto;
 }
 
+
 footer li {
   display: inline-block;
 }
@@ -181,13 +186,13 @@ main {
 
 .startHome h1 {
   color: #b2dacd;
-  font-size: 1.5625em;
+  font-size: 2em;
   font-weight: 500;
 }
 .startHome span {
   color: #bca04a;
-  font-size: 1.5625em;
-  font-weight: 500;
+  font-size: 100%;
+  font-weight: 600;
 }
 .startHome {
   display: flex;
@@ -223,15 +228,17 @@ main {
 
 .infoTaart h3 {
   color: #bca04a;
-  font-weight: 500;
+  font-weight: 800;
   margin-bottom: 1vh;
 }
 
 .infoTaart p {
   color: #4f5d75;
   font-weight: 400;
-  font-size: 0.75em;
-  margin-bottom: 5vh;
+  font-size: 1.05em;
+  margin-bottom: 3vh;
+  width: 64%;
+  text-align: center;
 }
 
 .productKoekKnopHome {
@@ -466,7 +473,7 @@ main {
 
 .knopContact {
   text-align: center;
-  margin-bottom: 4.1rem;
+  margin-bottom: 3.125rem;
 }
 
 #doeMeeKnopHome {
@@ -847,6 +854,11 @@ main {
   display: none;
 }
 
+.losefoot {
+  position: absolute;
+  bot
+}
+
 /*Eind uitzetting van desktop*/
 
 @media only screen and (min-width: 768px) {
@@ -1031,19 +1043,20 @@ Home Section-2
     padding-left: 15%;
   }
 
+  figure figcaption img.cupcakeDesktop {
+    padding-bottom: 4%;
+    width: 65%;
+  }
+
   .taartHomeDesktop .taarthomeDesktop {
     position: absolute;
     width: 55%;
     padding-left: 0px;
   }
 
-  #taartcupcakeDesktop{
-    width: 65%;
-    padding-bottom: 4%;
-  }
   .infoTaartDesktop h3 {
     color: #bca04a;
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 0;
     margin-bottom: 1vh;
   }
@@ -1051,30 +1064,48 @@ Home Section-2
   .infoTaartDesktop p {
     color: #4f5d75;
     font-weight: 400;
-    font-size: 0.75em;
-    margin-bottom: 5vh;
+    font-size: 1.05em;
+    margin-bottom: 3vh;
+    width: 64%;
+    text-align: center;
   }
 
   .productKoekKnopHomeDesktop {
     border: 0.125rem solid #bca04a;
-    padding: 0.75rem 0.75rem;
+    padding: 0.55rem 1.5rem;
     text-decoration: none;
     display: inline-block;
     font-size: 0.875em;
     text-align: center;
     background-color: white;
     color: #4f5d75;
+    transition: 0.2s;
+  }
+
+  .productKoekKnopHomeDesktop:hover {
+    color: white;
+    background-color: #bca04a;
+    border: 0.125rem solid #bca04a;
+    transition: 0.4s;
   }
 
   .productTaartKnopHomeDesktop {
     border: 0.125rem solid #b2dacd;
-    padding: 0.75rem 0.75rem;
+    padding: 0.55rem 1.5rem;
     text-decoration: none;
     display: inline-block;
     font-size: 0.875em;
     text-align: center;
     background-color: white;
     color: #4f5d75;
+    transition: 0.2s;
+  }
+
+  .productTaartKnopHomeDesktop:hover {
+    color: white;
+    background-color: #b2dacd;
+    border: 0.125rem solid #b2dacd;
+    transition: 0.4s;
   }
 
   .taartHomeDesktop figure {
@@ -1161,6 +1192,25 @@ Home Section-3
     font-weight: 500;
     left: 6.39625vw;
     margin-bottom: 1.25rem;
+    transition: 0.3s;
+  }
+
+  #doeMeeKnopDesktopHome:hover {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    margin-left: 31vw;
+    margin-top: 0.9375rem;
+    border: 0.125rem solid #4f5d7500;
+    padding: 0.9375rem 0.9375rem;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: #bca04a;
+    color: white;
+    font-weight: 500;
+    left: 6.39625vw;
+    margin-bottom: 1.25rem;
+    transition: 0.6s;
   }
 
   /* 
@@ -1488,6 +1538,10 @@ About
     line-height: 1.2rem;
   }
 
+  .abouttwo {
+    position: relative;
+  }
+
   .abouttwo h1 {
     color: #ccb164;
     font-size: 72px;
@@ -1499,16 +1553,21 @@ About
     color: #4f5d75;
     font-size: 18px;
     text-align: justify;
-    font-weight: 400;
   }
 
   .abouttwo .pabouttwo {
-    padding: 2.5% 45% 0% 11%;
+    position: absolute;
+    top: 29%;
+    left: 23%;
+    padding-right: 41%;
     line-height: 1.2rem;
   }
 
   .abouttwo .paboutthree {
-    padding: 7% 14% 0% 28.5%;
+    position: absolute;
+    top: 59%;
+    left: 38%;
+    padding-right: 16%;
     line-height: 1.2rem;
   }
 
@@ -1983,7 +2042,7 @@ Footer
     padding: 1em 0;
   }
 
- .footcontact {
+  .footcontact {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -2015,66 +2074,148 @@ Footer
   /* footer .icons a {
     padding-right: 50%;
   } */
-}
 
-/* 
+  /* 
 ===============================
 Lose
 =============================== 
 */
 
-.lost {
-  overflow-x: hidden;
+  .lost {
+    overflow-x: hidden;
+  }
+
+  .losetit {
+    padding-top: 6%;
+    font-size: 2em;
+    color: #b1835c;
+    margin-left: 6%;
+  }
+
+  .losep {
+    width: 47%;
+    padding-top: 3vh;
+    margin-left: 6%;
+    text-align: left;
+  }
+
+  .prent1,
+  .prent2,
+  .prent3
+   {
+    margin-top: 10%;
+    border: 0.125rem solid #bca04a;
+    padding: 0.9375rem 0.9375rem;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: white;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    color: #4f5d75;
+  }
+
+  .prent1:hover,
+  .prent2:hover,
+  .prent3:hover {
+
+  margin-top: 10%;
+  margin-left: 6%;
+    border: 0.125rem solid #bca04a;
+    padding: 0.9375rem 0.9375rem;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: #bca04a;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    color: #4f5d75;
+    transition: 0.6s;
+  }
+
+
+  .losefoot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0%;
+  }
+
+  .prentjes {
+    width: 47%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-left: 2.2%;
+  }
+
+  .flolose {
+    position: absolute;
+    width: 30%;
+    right: 6%;
+    top: 35%;
+  }
+
+.taartHomeDesktop img .cupcakeDesktop {
+  width: 65%;
+  padding-bottom: 4%;
 }
 
-.losetit {
-  padding-top: 6%;
+.flowin {
+  position: absolute;
+  width: 30%;
+  right: 9%;
+  bottom: 30%;
+}
+
+.wintit {
+  padding-top: 3vh;
   font-size: 2em;
   color: #b1835c;
   margin-left: 6%;
 }
 
-.losep {
+.winp {
   width: 47%;
-  padding-top: 3vh;
-  margin-left: 6%;
+    padding-top: 3vh;
+    margin-left: 6%;
+    text-align: left;
 }
 
-.prent1,
-.prent2,
-.prent3,
-.prent4,
-.prent5 {
+.winwin {
   margin-top: 10%;
-  border: 0.125rem solid #bca04a;
-  padding: 0.9375rem 0.9375rem;
-  text-decoration: none;
-  font-size: 1rem;
-  background-color: white;
-  width: 12%;
-  display: flex;
-  justify-content: center;
-  color: #4f5d75;
+  margin-left: 6%;
+    border: 0.125rem solid #bca04a;
+    padding: 0.9375rem 0.9375rem;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: white;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    color: #4f5d75;
 }
 
-.losefoot {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  left: 0%;
+.winwin:hover {
+  margin-top: 10%;
+  margin-left: 6%;
+    border: 0.125rem solid #bca04a;
+    padding: 0.9375rem 0.9375rem;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: #bca04a;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    color: #4f5d75;
+    transition: 0.6s;
 }
 
-.prentjes {
-  width: 47%;
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  margin-left: 2.2%;
+
+.winwin i {
+padding-left: 1vw;
+display: flex;
+align-self: center;
 }
 
-.flolose {
-  position: absolute;
-  width: 30%;
-  right: 6%;
-  top: 35%;
 }

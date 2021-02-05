@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="FR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,66 +18,80 @@
 
     <title>Flogateau</title>
   </head>
-  <body class="lost">
+  <body>
     <header>
       <nav class="topnav">
         <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
-        <a href="./about.html">Over mij</a>
-        <div id="myLinks">
-          <a href="../index.html">Home</a>
-          <a href="./product.html">Producten</a>
-          <a href="./contact.html">Contact</a>
-          <a href="./winkel.html"><i class="fas fa-shopping-basket"></i></a>
-        </div>
+
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
-      </nav>
-      <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
 
-      <nav class="navDesktop">
+        <div id="myLinks">
+          <a href="./accueil.html">Accueil</a>
+          <a href="./produits.html">Produits</a>
+          <a href="./apropos.html">À propos</a>
+          <a href="./contactfr.html">Contact</a>
+        </div>
+
+        <a href=""><i class="fas fa-shopping-basket"></i></a>
+      </nav>
+
+      <nav class="navDesktop" id="navDesktop">
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./product.html">Producten</a></li>
+          <li><a href="./accueil.html">Accueil</a></li>
+          <li><a href="./produits.html">Produits</a></li>
           <img src="../img/Flogateautransparant.png" alt="Logo transparant" />
-          <li><a href="./lose.html" ">Over mij</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./apropos">À propos</a></li>
+          <li><a href="./contactfr.html">Contact</a></li>
         </ul>
         <p>
-          <a href="./winkel.html"
+          <a href="./magasin.html"
             ><i style="margin-right: 25px;" class="fas fa-shopping-basket"></i
           ></a>
         </p>
       </nav>
     </header>
 
-    <main>
-      <h1 class="wintit">Gefeliciteert je hebt gewonnen!</h1>
-      <p class="winp">
-         Als geschenk krijgt u gratis bokken pootjes.
-      </p>
-      <a class="winwin" href="../page/winkel.html">
-        Ontvang prijs
-        <i class="fas fa-arrow-right" aria-hidden="true"></i>
-      </a>
-      
-      <img class="flowin" src="../illustraties/Flolose.svg" alt="">
+    <main class="barcodeMain">
+      <h1 class="win">
+        Concours Flogâteau
+      </h1>
+      <figure>
+        <img
+          class="bargift"
+          src="../illustraties/giftbarcode.svg.svg"
+          alt="Cadeau"
+        />
+      </figure>
+
+      <div class="volledigbox">
+        <h2>Inserez votre code-barre</h2>
+
+        <form
+          class="code_form"
+          action="lose.html"
+          method="post"
+          name="form"
+          onsubmit="return validated()"
+        >
+          <div class="eerstetekst">Code-barre</div>
+          <input autocomplete="off" type="text" name="debarcode" />
+          <div id="debarcode_error">Introduisez un code-barre valide</div>
+          <button type="bevestig">Confirmer</button>
+        </form>
+      </div>
     </main>
 
-  
-
-
-    <script src="../js/barcode.js"></script>
-
-    <footer class="losefoot">
+    <footer class="footerBarcode">
       <section class="taal">
         <ul>
           <li>
             <!--https://stackoverflow.com/questions/2000656/using-href-links-inside-option-tag-->
             <select name="taal" id="taal" onchange="location = this.value;">
-              <option value="#">NL</option>
-              <option value="../fr/win.html">FR</option>
-              <option value="../en/engels-win.html">EN</option>
+              <option value="../page/barcode.html">NL</option>
+              <option value="#">FR</option>
+              <option value="../en/engels-barcode.html">EN</option>
             </select>
           </li>
           <li id="footerFlo">FLOGÂTEAU</li>
@@ -101,6 +115,17 @@
         </ul>
       </section>
     </footer>
-    
+
+    <script src="../js/barcode.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>

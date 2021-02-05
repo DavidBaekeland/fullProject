@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="FR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,29 +22,31 @@
     <header>
       <nav class="topnav">
         <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
-        <a href="./about.html">Over mij</a>
-        <div id="myLinks">
-          <a href="../index.html">Home</a>
-          <a href="./product.html">Producten</a>
-          <a href="./contact.html">Contact</a>
-          <a href="./winkel.html"><i class="fas fa-shopping-basket"></i></a>
-        </div>
+
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
-      </nav>
-      <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
 
-      <nav class="navDesktop">
+        <div id="myLinks">
+          <a href="./accueil.html">Accueil</a>
+          <a href="./produits.html">Produits</a>
+          <a href="./apropos.html">À propos</a>
+          <a href="./contactfr.html">Contact</a>
+        </div>
+
+        <a href=""><i class="fas fa-shopping-basket"></i></a>
+      </nav>
+
+      <nav class="navDesktop" id="navDesktop">
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./product.html">Producten</a></li>
+          <li><a href="./accueil.html">Accueil</a></li>
+          <li><a href="./produits.html">Produits</a></li>
           <img src="../img/Flogateautransparant.png" alt="Logo transparant" />
-          <li><a href="./lose.html" ">Over mij</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./apropos.html">À propos</a></li>
+          <li><a href="./contactfr.html">Contact</a></li>
         </ul>
         <p>
-          <a href="./winkel.html"
+          <a href="./magasin.html"
             ><i style="margin-right: 25px;" class="fas fa-shopping-basket"></i
           ></a>
         </p>
@@ -52,20 +54,17 @@
     </header>
 
     <main>
-      <h1 class="wintit">Gefeliciteert je hebt gewonnen!</h1>
+      <h1 class="wintit">Félicitations tu as gagnée !</h1>
       <p class="winp">
-         Als geschenk krijgt u gratis bokken pootjes.
+        Voiçi ton cadeau, des bokkenpootjes gratuit;
       </p>
       <a class="winwin" href="../page/winkel.html">
-        Ontvang prijs
+        Récuperer prix
         <i class="fas fa-arrow-right" aria-hidden="true"></i>
       </a>
-      
-      <img class="flowin" src="../illustraties/Flolose.svg" alt="">
+
+      <img class="flowin" src="../illustraties/Flolose.svg" alt="" />
     </main>
-
-  
-
 
     <script src="../js/barcode.js"></script>
 
@@ -75,8 +74,8 @@
           <li>
             <!--https://stackoverflow.com/questions/2000656/using-href-links-inside-option-tag-->
             <select name="taal" id="taal" onchange="location = this.value;">
-              <option value="#">NL</option>
-              <option value="../fr/win.html">FR</option>
+              <option value="../page/win.html">NL</option>
+              <option value="#">FR</option>
               <option value="../en/engels-win.html">EN</option>
             </select>
           </li>
@@ -101,6 +100,5 @@
         </ul>
       </section>
     </footer>
-    
   </body>
 </html>

@@ -133,58 +133,12 @@
                <input type="phone" id="phone" name="phone" required />
              </section>
 
-             <section class="calender">
-               <div class="month">
-                 <ul>
-                   <li> <span class="left">&#10094;</span> </li>
-                   <li>February</li>
-                   <li> <span class="right">&#10095;</span></li>
-                 </ul>
-               </div>
-
-               <ul class="weekdays">
-                 <li>Mo</li>
-                 <li>Tu</li>
-                 <li>We</li>
-                 <li>Th</li>
-                 <li>Fr</li>
-                 <li>Sa</li>
-                 <li>Su</li>
-               </ul>
-
-               <ul class="days">
-                 <li>1</li>
-                 <li>2</li>
-                 <li>3</li>
-                 <li>4</li>
-                 <li>5</li>
-                 <li>6</li>
-                 <li>7</li>
-                 <li>8</li>
-                 <li>9</li>
-                 <li><span class="active">10</span></li>
-                 <li>11</li>
-                 <li>12</li>
-                 <li>13</li>
-                 <li>14</li>
-                 <li>15</li>
-                 <li>16</li>
-                 <li>17</li>
-                 <li>18</li>
-                 <li>19</li>
-                 <li>20</li>
-                 <li>21</li>
-                 <li>22</li>
-                 <li>23</li>
-                 <li>24</li>
-                 <li>25</li>
-                 <li>26</li>
-                 <li>27</li>
-                 <li>28</li>
-                 <li>29</li>
-                 <li>30</li>
-               </ul>
-             </section>
+             <div class="calender">
+              <label for="date">Calender</label>
+              <input type="date" id="date" name="date" required />
+            
+            </div>
+            
              <input type="submit" name="winkelSubmit" id="winkelSubmit" value="Bestellen" />
          </form>
        </section>
@@ -230,7 +184,7 @@
      <section class="taal">
        <ul>
          <li>
-          <!--https://stackoverflow.com/questions/2000656/using-href-links-inside-option-tag-->
+           <!--https://stackoverflow.com/questions/2000656/using-href-links-inside-option-tag-->
           <select name="taal" id="taal" onchange="location = this.value;">
             <option value="../page/winkel.html">NL</option>
             <option value="#">FR</option>

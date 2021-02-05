@@ -1,0 +1,2584 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/444de97735.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+
+      // Script for Mobile version
+      function functionTaartenMobile() {
+        var checkBox = document.getElementById("box1Mobile");
+        var text = document.getElementById("taartenMobile");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      function functionKoekjesMobile() {
+        var checkBox = document.getElementById("box2Mobile");
+        var text = document.getElementById("koekjesMobile");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      function functionGebakMobile() {
+        var checkBox = document.getElementById("box3Mobile");
+        var text = document.getElementById("gebakMobile");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      
+      function functionFeestMobile() {
+        var checkBox = document.getElementById("box4Mobile");
+        var text = document.getElementById("feestMobile");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      
+      function functionLogoMobile() {
+        var checkBox = document.getElementById("box5Mobile");
+        var text = document.getElementById("logoMobile");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      
+      function functionKaartjesMobile() {
+        var checkBox = document.getElementById("box6Mobile");
+        var text = document.getElementById("kaartjesMobile");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      
+      // Script for Desktop version
+      function functionTaarten() {
+        var checkBox = document.getElementById("box1");
+        var text = document.getElementById("taarten");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      function functionKoekjes() {
+        var checkBox = document.getElementById("box2");
+        var text = document.getElementById("koekjes");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      function functionGebak() {
+        var checkBox = document.getElementById("box3");
+        var text = document.getElementById("gebak");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      
+      function functionFeest() {
+        var checkBox = document.getElementById("box4");
+        var text = document.getElementById("feest");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      
+      function functionLogo() {
+        var checkBox = document.getElementById("box5");
+        var text = document.getElementById("logo");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+      
+      function functionKaartjes() {
+        var checkBox = document.getElementById("box6");
+        var text = document.getElementById("kaartjes");
+        if (checkBox.checked == true){
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+          </script>
+          
+    <title>Flogateau</title>
+  </head>
+
+  <body>
+    <header>
+        <nav class="topnav">
+            <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+            <a href="#">Produits</a>
+            <div id="myLinks">
+              <a href="./accueil.html">Accueil</a>
+              <a href="./produits.html">Produits</a>
+              <a href="./apropos.html">À propos</a>
+              <a href="./winkel.html"><i class="fas fa-shopping-basket"></i></a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </nav>
+          <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+      
+          <nav class="navDesktop">
+            <ul>
+              <li><a href="./accueil.html">Accueil</a></li>
+              <li><a class="active" href="./produits.html">Produits</a></li>
+              <img src="../img/Flogateautransparant.png" alt="Logo transparant" />
+              <li><a href="./apropos.html">À propos</a></li>
+              <li><a href="./contactfr.html">Contact</a></li>
+            </ul>
+            <p>
+              <a href="./winkel.html"><i style="margin-right:25px;" class="fas fa-shopping-basket"></i></a>
+            </p>
+          </nav>
+    </header>
+
+    <main class="productMain">
+      <aside>
+        <section>
+          <h2>Filtres</h2>
+          <h3>Assortiment</h3>
+        </section>
+        <label class="container">
+          <input type="checkbox" id="box1Mobile" name="checking" onclick="functionTaartenMobile()">
+          <p>Tartes</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" id="box2Mobile" name="checking" onclick="functionKoekjesMobile()">
+          <p>Biscuits</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" id="box3Mobile" name="checking" onclick="functionGebakMobile()">
+          <p>Pâtisseries</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" id="box4Mobile" name="checking" onclick="functionFeestMobile()">
+          <p>Fête</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" id="box5Mobile" name="checking" onclick="functionLogoMobile()">
+          <p>Logo cupcakes</p>
+        </label>
+        <label class="container">
+          <input type="checkbox" id="box6Mobile" name="checking" onclick="functionKaartjesMobile()">
+          <p>Cartes postales</p>
+        </label>
+      </aside>
+
+      <div class="kaders">
+        <section class="productenlijst">
+          <section id="productenlijst">
+
+            <section id="taartenMobile" style="display:none">
+              <figure data-aos="fade-up">
+                <img
+                  src="../img/Products/Taarten/appel frangipane.jpg"
+                  alt="Appel Frangipane"
+                />
+                <figcaption>
+                  <h3>Frangipane à la pomme</h3>
+                  <section>
+                    <p>4-6 personnes</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personnes</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Cette tarte aux pommes à la saveur subtile d'amande a un
+                    fond de pâte à beurre, rempli de frangipane et de pommes.
+                  </p>
+
+                   
+                  <small>blé, œuf, lactose, noix</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure data-aos="fade-up">
+              <figure>
+                <img
+                  src="../img/Products/Taarten/cheesecake framboos.jpg"
+                  alt="product cheesecake framboos"
+                />
+                <figcaption>
+                  <h3>Cheesecake framboise</h3>
+                  <section>
+                    <p>4 personnes</p>
+                    <p>€10</p>
+                  </section>
+                  <section>
+                    <p>8-10 personnes</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Un cheesecake léger avec du fromage à la crème frais, un croustillant
+                    croûte de pain d'épices et framboises fraîches.
+                  </p>
+
+                
+                  <small>blé, œuf, lactose, gelatine de poisson</small>
+                  <a href="./magasin.html ""               
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure data-aos="fade-up">
+              <figure>
+                <img
+                  src="../img/Products/Taarten/citroen meringue groot.jpg"
+                  alt="product appel frangipane"
+                />
+                <figcaption>
+                  <h3>Citron Meringué</h3>
+                  <section>
+                    <p>4-6 personnes</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personnes</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Une belle base de pâte au beurre croustillante, remplie d'un
+                    crème de citron et fini avec une meringue veloutée.
+                  </p>
+                  <small>blé, œuf, lactose, gelatine de poisson, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure data-aos="fade-up">
+                <img
+                  src="../img/Products/Taarten/carrot cake.jpg"
+                  alt="Carrot Cake"
+                />
+                <figcaption>
+                  <h3>Gâteau à la Carotte</h3>
+                  <section>
+                    <p>4-6 personnes</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personnes</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Une tarte pleine d'épices, de noix hachées et de carottes.
+                    Le gâteau est fini avec une garniture savoureuse au fromage à la crème.
+                  </p>
+                  <small>blé, œuf, lactose, noix, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure data-aos="fade-up">
+                <img
+                  src="../img/Products/Taarten/fraisier 2.jpg"
+                  alt="Fraisier"
+                />
+                <figcaption>
+                  <h3>Fraisier</h3>
+                  <section>
+                    <p>4-6 personnes</p>
+                    <p>€15</p>
+                  </section>
+                  <section>
+                    <p>8-10 personnes</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Le fraisier est un délicieux gâteau au biscuit vanille,
+                    fraises et crème légère de mousseline.
+                  </p>
+                  <small>blé, œuf, lactose, gelatine de poisson, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure data-aos="fade-up">
+                <img
+                  src="../img/Products/Taarten/banaan.jpg"
+                  alt="Bananentaart"
+                />
+                <figcaption>
+                  <h3>Tarte à la Banane</h3>
+                  <section>
+                    <p>4-6 personnes</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personnes</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Un délicieux classique! Un fond croustillant
+                    pâte à beurre, fourrée de crème Suisse et finie avec
+                    savoureuses tranches de banane.
+                  </p>
+                  <small>blé, œuf, lactose, gelatine de poisson, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure data-aos="fade-up">
+                <img
+                  src="../img/Products/Taarten/pavlova.jpg"
+                  alt="Pavlova"
+                />
+                <figcaption>
+                  <h3>Pavlova</h3>
+                  <section>
+                    <p>4-6 personnes</p>
+                    <p>€15</p>
+                  </section>
+                  <section>
+                    <p>8-10 personnes</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Un beau gâteau d'été, mais surtout savoureux. Une délicieuse meringue qui est encore un peu molle à l'intérieur mais croustillante à l'extérieur. Ce gâteau est rempli de chantilly et de fruits rouges.
+                    (D'autres fruits sont possibles sur demande)
+                  </p>
+                  <small>œuf, lactose</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/rabarber.jpg"
+                  alt="Rabarber-Frangipane"
+                />
+                <figcaption>
+                  <h3>Frangipane Rubarbe</h3>
+                  <section>
+                    <p>4-6 personnes</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personnes</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Vous cherchez toujours un gâteau pour terminer un barbecue d'été? Ce gâteau avec
+                    une base croustillante, remplie de frangipane et de rhubarbe fraîche est vivement recommandée!
+                  </p>
+                  <small>blé, œuf, lactose, noix</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/aardbei groot.jpg"
+                  alt="Aardbeientaart"
+                />
+                <figcaption>
+                  <h3>Tarte à la Fraise</h3>
+                  <section>
+                    <p>4-6 personnes</p>
+                    <p>€15</p>
+                  </section>
+                  <section>
+                    <p>8-10 personnes</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Un délicieux classique! Une pâte croustillante au beurre,
+                    rempli de crème pâtissière et fini avec des fraises fraîches.
+                  </p>
+                  <small>blé, œuf, lactose, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/cheesecake aardbei.jpg"
+                  alt="Cheescake Aardbei"
+                />
+                <figcaption>
+                  <h3>Cheescake à la Fraise</h3>
+                  <section>
+                    <p>4 personnes</p>
+                    <p>€10</p>
+                  </section>
+                  <section>
+                    <p>8-10 personnes</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Un cheesecake léger avec du fromage à la crème frais, une base de pain d'épice croustillant et des fraises fraîches.
+                  </p>
+                  <small>blé, œuf, lactose, gelatine de poisson</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/bresillienne.jpg"
+                  alt="Flan bresillienne"
+                />
+                <figcaption>
+                  <h3>Flan Bresilien</h3>
+                  <section>
+                    <p>4-6 personnes</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personnes</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Un gâteau parfait pour le café. Un délicieux flan,
+                    fini avec de la crème fouettée et des noix de bresilien.
+                  </p>
+                  <small>blé, œuf, lactose, noix</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/chocolade bavaroisPNG.png"
+                  alt="Chocolade bavarois"
+                />
+                <figcaption>
+                  <h3>Bavarois au Chocolat</h3>
+                  <section>
+                    <p>4-6 personnes</p>
+                    <p>€15</p>
+                  </section>
+                  <section>
+                    <p>8-10 personnes</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Ce gâteau au chocolat est léger et très riche en goût. La combinaison
+                    génoise au chocolat et bavarois au chocolat crée un bel équilibre!
+                  </p>
+                  <small>blé, œuf, lactose, gelatine de poisson, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/"
+                  alt="Flantaart"
+                />
+                <figcaption>
+                  <h3>Tarte au Flan</h3>
+                  <section>
+                    <p>4-6 personnes</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personnes</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Délicieuse tarte au flan pour une pause café. Egalement disponible sous forme de flan bresilien.
+                  </p>
+                  <small>blé, œuf, lactose </small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/red velvet officieel.jpg"
+                  alt="Red velvet"
+                />
+                <figcaption>
+                  <h3>Red velvet</h3>
+                  <section>
+                    <p>4-6 personnes</p>
+                    <p>€15</p>
+                  </section>
+                  <section>
+                    <p>8-10 personnes</p>
+                    <p>€20</p>
+                  </section>
+                  <p>
+                    Ce gâteau est un classique américain! Le gâteau lui-même a une subtile saveur de chocolat.
+                    La finition se fait avec une garniture de fromage à la crème au chocolat blanc.
+                  </p>
+                  <small>blé, œuf, lactose, noix, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/bretoense appeltaart.jpg"
+                  alt="Bretoense Appeltaart"
+                />
+                <figcaption>
+                  <h3>Tarte aux Pommes Bretonne</h3>
+                  <section>
+                    <p>4-6 personnes</p>
+                    <p>€12</p>
+                  </section>
+                  <section>
+                    <p>8-10 personnes</p>
+                    <p>€18</p>
+                  </section>
+                  <p>
+                    Un de mes favoris! Une délicieuse tarte aux pommes avec l'odeur seule
+                    votre eau à la bouche! Les pommes sont cuites dans une sauce aux pommes et au beurre.
+                  </p>
+                  <small>blé, œuf, lactose, noix</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+            </section>
+
+            <section id="koekjesMobile" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/Bokkenpootjes.jpg"
+                  alt="Bokkenpootjes"
+                />
+                <figcaption>
+                  <h3>Bokkenpootjes</h3>
+                  <section>
+                    <p>8 pièces</p>
+                    <p>€5</p>
+                  </section>
+                  <p>
+                    La spécialité de Flogâteau! 2 biscuits aux amandes remplis de
+                    une délicieuse crème au beurre puis au chocolat
+                    plongé
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose, noix, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/bokkenpootjes vaderdag.jpg"
+                  alt="Mokka Bokkenpootjes"
+                />
+                <figcaption>
+                  <h3>Bokkenpootjes Mokka</h3>
+                  <section>
+                    <p>8 pièces</p>
+                    <p>€6</p>
+                  </section>
+                  <p>
+                    Ces bokkenpootjes sont remplies d'une crème au moka.
+                     Les extrémités sont recouvertes de chocolat blanc pour permettre aux saveurs de s'harmoniser parfaitement.
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose, noix, sojas
+                  </small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/moppen.jpg"
+                  alt="Moppen"
+                />
+                <figcaption>
+                  <h3>Moppen</h3>
+                  <section>
+                    <p>15 pièces</p>
+                    <p>€5</p>
+                  </section>
+                  <p>
+                    Biscuits croustillants et cassants recouverts d'un mélange de vanille
+                    et le chocolat apportent un joli motif.
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose
+                  </small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/madeleines.jpg"
+                  alt="Madeleines"
+                />
+                <figcaption>
+                  <h3>Madeleines</h3>
+                  <section>
+                    <p>6 pièces</p>
+                    <p>€3</p>
+                  </section>
+                  <p>
+                    Ces biscuits moelleux ont un délicieux
+                    goût frais en raison de la teinte subtile des agrumes.
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose
+                  </small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/wafeltjes.jpg"
+                  alt="Wafeltjes"
+                />
+                <figcaption>
+                  <h3>Gaufrettes</h3>
+                  <section>
+                    <p>8 pièces</p>
+                    <p>€3.50</p>
+                  </section>
+                  <p>
+                    Ces délicieuses gaufrettes de rangement sont croustillantes à l'extérieur mais agréables et douces et tendres à l'intérieur.
+                    Vous pouvez les garder fermés jusqu'à une semaine.
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose
+                  </small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Feest/kerstboomkoekjes.jpg"
+                  alt="Kerstkoekjes"
+                />
+                <figcaption>
+                  <h3>Biscuits de Noël</h3>
+                  <section>
+                    <p>8 pièces</p>
+                    <p>€-</p>
+                  </section>
+                  <p>
+                    Les biscuits au pain d'épices classiques pour la saison de Noël! Ces cookies sont bons et croustillants et ont un goût épicé grâce à la cannelle qui a été ajoutée à la pâte.
+                    Délicieux à déguster, mais aussi super amusant à utiliser comme décoration de Noël!
+                  </p>
+
+                  <small>blé, œuf, lactose
+                  </small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/margrietjes.jpg"
+                  alt="Margrietjes"
+                />
+                <figcaption>
+                  <h3>Margrietjes</h3>
+                  <section>
+                    <p>15 pièces</p>
+                    <p>€5</p>
+                  </section>
+                  <p>
+                    Biscuits croustillants et cassants avec un cœur de confiture de framboises.
+                     Ces biscuits peuvent également être remplis d'une autre saveur de confiture sur demande.
+                  </p>
+
+                  <small>beurre, œuf, lactose
+                  </small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/oreo's.jpg"
+                  alt="Oreo's"
+                />
+                <figcaption>
+                  <h3>Oreos</h3>
+                  <section>
+                    <p>8 pièces</p>
+                    <p>€4</p>
+                  </section>
+                  <p>
+                    Ces biscuits croquants aux pépites de chocolat sont remplis d'une garniture sucrée crémeuse.
+                    Ils sont basés sur les biscuits Oreo bien connus d'Amérique.
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose
+                  </small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <img
+                  src="../img/Products/Koekjes/macarons.jpg"
+                  alt="Macarons"
+                />
+                <figcaption>
+                  <h3>Macarons</h3>
+                  <section>
+                    <p>8 pièces</p>
+                    <p>€5</p>
+                  </section>
+                  <p>
+                    Macarons de Paris. Ces biscuits typiquement parisiens se composent de 2 biscuits aux amandes
+                    qui sont collés avec une garniture savoureuse. Les saveurs sont infinies!
+                  </p>
+
+                  
+                  <small>œuf, lactose, noix, soja
+                  </small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              
+
+            </section>
+
+            <section id="gebakMobile" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/chocolade cupcake met karamel.jpg"
+                  alt="Chocolade Cupcakes Met Karamel"
+                />
+                <figcaption>
+                  <h3>Cupcakes au Chocolat avec Caramel</h3>
+                  <section>
+                    <p>1 pièce</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Ces délicieux cupcakes au chocolat
+                    sont finis avec une garniture à base de caramel. Une délicieuse combinaison!
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose, soja </small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/vanille cupcakes.jpg"
+                  alt="Vanille Cupcakes"
+                />
+                <figcaption>
+                  <h3>Cupcakes à la Vanille</h3>
+                  <section>
+                    <p>1 pièce</p>
+                    <p>€1</p>
+                  </section>
+                  <p>
+                    Cupcakes à la vanille à base de cupcakes Magnolia
+                     Boulangerie à New York. Terminé avec une légère garniture à la vanille.
+                  </p>
+                  <small>blé, œuf, lactose</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/red velvet cupcakes.jpg"
+                  alt="Red Velvet Cupcakes"
+                />
+                <figcaption>
+                  <h3>Red Velvet Cupcakes</h3>
+                  <section>
+                    <p>1 pièce</p>
+                    <p>€1</p>
+                  </section>
+                  <p>
+                    Cupcakes américains classiques en velours rouge! Ces cupcakes ont une subtile
+                     saveur de chocolat et fini avec un fromage à la crème - garniture de chocolat blanc.
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/carrot cupcakes.jpg"
+                  alt="Carrot Cupcakes"
+                />
+                <figcaption>
+                  <h3>Cupcakes à la carotte</h3>
+                  <section>
+                    <p>1 pièce</p>
+                    <p>€1</p>
+                  </section>
+                  <p>
+                    Un petit gâteau plein d'épices, dont de la cannelle. Les noix et les carottes hachées offrent une structure agréable.
+                    Ces cupcakes sont finis avec une savoureuse garniture au fromage à la crème.
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose, noix, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/Passie-meringue.jpg"
+                  alt="Passie-meringue Mini Tartelette "
+                />
+                <figcaption>
+                  <h3>Passion Meringue Mini Tartelette (6cm)</h3>
+                  <section>
+                    <p>1 pièce</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Un mini gâteau avec une base de pâte au beurre croustillante. Le gâteau est rempli
+                     à la crème de fruit de la passion et fini avec une meringue veloutée.
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose, gelatine de poisson, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/aardbei.jpg"
+                  alt="Aardbei Mini Tartelette "
+                />
+                <figcaption>
+                  <h3>Mini Tartelette à la Fraise (⌀ 6cm)</h3>
+                  <section>
+                    <p>1 pièce</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Un mini gâteau avec une base de pâte au beurre croustillante.
+                    Le gâteau est rempli de crème pâtissière et fini
+                    avec des fraises fraîches.
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/crunchy chocolate.jpg"
+                  alt="Crunchy Chocolate Mini Tartelette"
+                />
+                <figcaption>
+                  <h3>Crunchy Mini Tartelette au Chocolat (6cm)</h3>
+                  <section>
+                    <p>1 pièce</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Un mini gâteau avec une base de pâte au beurre croustillante. Le gâteau contient une ganache molle au chocolat au lait.
+                    Le gâteau est fini avec une «pierre de chocolat» croustillante.
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/product01.jpg"
+                  alt="Salted Caramel Mini Tartelette"
+                />
+                <figcaption>
+                  <h3>Mini Tartelette Caramel salé (6cm)</h3>
+                  <section>
+                    <p>1 pièce</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                    Un mini gâteau avec une base de pâte au beurre croustillante. La garniture est un caramel doux et salé.
+                    Le gâteau est fini avec des perles croustillantes au caramel salé.
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/"
+                  alt="Bretoens Appel Mini Tartelette"
+                />
+                <figcaption>
+                  <h3>Mini Tartelette Pomme Bretonne (6cm)</h3>
+                  <section>
+                    <p>1 pièce</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                      Un mini gâteau avec une base de pâte au beurre croustillante. Le gâteau est
+                      cuit avec une sauce au beurre de pomme et des cubes de pommes fraîches.
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/citroen meringue.jpg"
+                  alt="Citroen-Meringue Mini Tartelette "
+                />
+                <figcaption>
+                  <h3>Mini Tartelette Citroen Meringué (6cm)</h3>
+                  <section>
+                    <p>1 pièce</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                      Un mini gâteau avec une base de pâte au beurre croustillante. Le gâteau est rempli
+                      à la crème de citron et fini avec une meringue veloutée.
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose, gelatine de poisson, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/test.png"
+                  alt="Tigrés"
+                />
+                <figcaption>
+                  <h3>Tigrés</h3>
+                  <section>
+                    <p>1 pièce</p>
+                    <p>€1.50</p>
+                  </section>
+                  <p>
+                      Ces pâtisseries consistent en une pâte tendre aux amandes avec des morceaux de chocolat.
+                      Il se termine par une savoureuse ganache au chocolat.
+                  </p>
+
+                  
+                  <small>blé, œuf, lactose, noix, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/"
+                  alt="Mini Pavlova's"
+                />
+                <figcaption>
+                  <h3>Mini Pavlova's</h3>
+                  <section>
+                    <p>1 pièce</p>
+                    <p>€2</p>
+                  </section>
+                  <p>
+                      De beaux gâteaux d'été, mais surtout savoureux. Une
+                      délicieuse meringue qui est encore un peu molle à l'intérieur
+                      croustillant à l'extérieur. Ce gâteau est rempli de chantilly et de fruits rouges.
+                      (D'autres fruits sont possibles sur demande)
+                  </p>
+
+                  
+                  <small>œuf, lactose</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/FijnGebak/mini eclairs.jpg"
+                  alt="mini eclairs"
+                />
+                <img
+                  src="../illustraties/red.png"
+                  alt="rode lind"
+                  class="lind"
+                />
+                <figcaption>
+                  <h3>Eclairs</h3>
+                  <section>
+                    <p>1 pièce</p>
+                    <p>€1.80</p>
+                  </section>
+                  <p>
+                      Un classique français. Ces éclairs sont remplis d'un
+                      crème pâtissière traditionnelle et finie avec
+                      ganache au chocolat et pépites.
+                  </p>
+
+                 
+                  <small>blé, œuf, lactose, soja</small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+
+             
+              
+
+            </section>
+
+            <section id="feestMobile" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/Taarten/taart bloemen.jpg"
+                  alt="Themataarten En -Cupcakes"
+                />
+                <figcaption>
+                  <h3>Tartes à Thème et Cupcakes</h3>
+
+                  <p>
+                      Je t'organise une fête (d'anniversaire) et je cherche toujours
+                      des friandises personnalisées? Vous pouvez aussi aller à Flogâteau
+                      Commandez des gâteaux et des cupcakes à thème. Mention
+                      avec votre commande quel thème vous choisissez (éventuellement avec des photos
+                      sur laquelle je peux me baser), puis je vérifie les possibilités!
+                  </p>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/Taarten/taart bloemen.jpg"
+                  alt="Themataarten En -Cupcakes"
+                />
+                <figcaption>
+                  <h3>Tartes à Thème et Cupcakes</h3>
+               
+                  <p>
+                      Number cake vanille - cookie, Number cake chocolat - caramel - cookie, Number cake vanille
+                      - biscuit, Number cake chocolat-caramel - biscuit
+                  </p>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <figcaption>
+                  <h3>Prix Pâtisseries de fêtes</h3>
+                  <section>
+                    <p>Tarte à Thème 6p.</p>
+                    <p>€25</p>
+                  </section>
+                  <section>
+                    <p>Cupcakes à Thème</p>
+                    <p>€3</p>
+                  </section>
+               
+                  <section>
+                    <p>Tartes de Chiffres</p>
+                    <p>€40</p>
+                  </section>
+               
+               
+
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+       
+            </section>
+
+            <section id="logoMobile" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/LogoCupcakes/logo cupcakes.jpg"
+                  alt="Logo Cupcakes"
+                />
+                <figcaption>
+                  <h3>Logo Cupcakes</h3>
+                  <section>
+                    <div>
+                      <p>Mini: min. 50 pièces</p>
+                      <p>Groot: min. 12 pièces</p>
+                    </div>
+                    <div>
+                      <p>€75</p>
+                      <p>€30</p>
+                    </div>
+                  </section>
+                  <p>
+                      Chez Flogâteau vous pouvez également commander des cupcakes avec vous
+                      logo d'entreprise. Ils sont disponibles en vanille, chocolat,
+                      velours rouge et carotte.
+                  </p>
+
+              
+                  <small></small>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+       
+            </section>
+
+            <section id="kaartjesMobile" style="display:none">
+              <figure>
+                <img
+                  src="../img/Products/kaartenPNG.png"
+                  alt="Kaartjes"
+                />
+                <figcaption>
+                  <h3>Cartes postales</h3>
+                  <section>
+
+                      <p>€0.50</p>
+
+                  </section>
+                  <p>
+                      Plusieurs jolies cartes avec un doux message dessus.
+                      Toujours agréable à offrir en cadeau avec un gâteau d'anniversaire!
+                  </p>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/"
+                  alt="Kaartje"
+                />
+                <figcaption>
+                  <h3>Cartes postales</h3>
+                  <section>
+
+                      <p>€0.50</p>
+
+                  </section>
+                  <p>
+                      Plusieurs jolies cartes avec un doux message dessus.
+                      Toujours agréable à offrir en cadeau avec un gâteau d'anniversaire!
+                  </p>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="../img/Products/"
+                  alt="Kaartje"
+                />
+                <figcaption>
+                  <h3>Cartes Postales</h3>
+                  <section>
+
+                      <p>€0.50</p>
+
+                  </section>
+                  <p>
+                      Plusieurs jolies cartes avec un doux message dessus.
+                      Toujours agréable à offrir en cadeau avec un gâteau d'anniversaire!
+                  </p>
+                  <a href="./magasin.html"
+                    >Commander
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i
+                  ></a>
+                </figcaption>
+              </figure>
+       
+            </section>
+
+          </section>
+        </section>
+      </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main class="productMainDesktop">
+        <aside>
+          <h2>Filters</h2>
+          <h3>Assortiment</h3>
+          <label class="container">
+            <input type="checkbox" id="box1" name="checking" onclick="functionTaarten()">
+            <p>Tartes</p>
+          </label>
+          <label class="container">
+            <input type="checkbox" id="box2" name="checking" onclick="functionKoekjes()">
+            <p>Biscuits</p>
+          </label>
+          <label class="container">
+            <input type="checkbox" id="box3" name="checking" onclick="functionGebak()">
+            <p>Pâtisseries</p>
+          </label>
+          <label class="container">
+            <input type="checkbox" id="box4" name="checking" onclick="functionFeest()">
+            <p>Fête</p>
+          </label>
+          <label class="container">
+            <input type="checkbox" id="box5" name="checking" onclick="functionLogo()">
+            <p>Logo cupcakes</p>
+          </label>
+          <label class="container">
+            <input type="checkbox" id="box6" name="checking" onclick="functionKaartjes()">
+            <p>Cartes Postales</p>
+          </label>
+        </aside>
+  
+        <div class="kadersDesktop">
+          <section class="productenlijstDesktop">
+            <section id="productenlijstDesktop">
+  
+              <section id="taarten" style="display:none">
+                <figure data-aos="fade-up" >
+                  <img
+                    src="../img/Products/Taarten/appel frangipane.jpg"
+                    alt="Appel Frangipane"
+                  />
+                  <figcaption>
+                    <h3>Frangipane à la pomme</h3>
+                    <section>
+                      <p>4-6 personnes</p>
+                      <p>€12</p>
+                    </section>
+                    <section>
+                      <p>8-10 personnes</p>
+                      <p>€18</p>
+                    </section>
+                    <p>
+                        Cette tarte aux pommes à la saveur subtile d'amande a un
+                        fond de pâte à beurre, rempli de frangipane et de pommes.
+                    </p>
+  
+                     
+                    <small> blé, oeuf, lactose, noix
+
+                    </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up" >
+                  <img
+                    src="../img/Products/cheesecake framboos.jpg"
+                    alt="product cheesecake framboos"
+                  />
+                  <figcaption>
+                    <h3>Cheesecake framboise</h3>
+                    <section>
+                      <p>4 personnes</p>
+                      <p>€10</p>
+                    </section>
+                    <section>
+                      <p>8-10 personnes</p>
+                      <p>€20</p>
+                    </section>
+                    <p>
+                        Un cheesecake léger avec du fromage à la crème frais, un croustillant
+                        croûte de pain d'épices et framboises fraîches.
+                    </p>
+  
+                  
+                    <small>lactose, oeuf, blé, gelatine (poisson)</small>
+                    <a href="../index.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up" >
+                  <img
+                    src="../img/Products/Taarten/citroen meringue groot.jpg"
+                    alt="product appel frangipane"
+                  />
+                  <figcaption>
+                    <h3>Citron Meringué</h3>
+                    <section>
+                      <p>4-6 personnes</p>
+                      <p>€12</p>
+                    </section>
+                    <section>
+                      <p>8-10 personnes</p>
+                      <p>€18</p>
+                    </section>
+                    <p>
+                        Une belle base de pâte au beurre croustillante, remplie d'un
+                        crème de citron et fini avec une meringue veloutée.
+                    </p>
+                    <small>Lactose, oeuf, blé, soja, gelatine (poisson)</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/carrot cake.jpg"
+                    alt="Carrot Cake"
+                  />
+                  <figcaption>
+                    <h3>Carrot Cake</h3>
+                    <section>
+                      <p>4-6 personnes</p>
+                      <p>€12</p>
+                    </section>
+                    <section>
+                      <p>8-10 personnes</p>
+                      <p>€18</p>
+                    </section>
+                    <p>
+                        Une tarte pleine d'épices, de noix hachées et de carottes. Celui-là
+                        le gâteau est fini avec une garniture savoureuse au fromage à la crème.
+                    </p>
+                    <small>oeuf, lactose, soja, blé, noix
+
+                    </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/fraisier 2.jpg"
+                    alt="Fraisier"
+                  />
+                  <figcaption>
+                    <h3>Fraisier</h3>
+                    <section>
+                      <p>4-6 personnes</p>
+                      <p>€15</p>
+                    </section>
+                    <section>
+                      <p>8-10 personnes</p>
+                      <p>€20</p>
+                    </section>
+                    <p>
+                        Le fraisier est un délicieux gâteau au biscuit vanille,
+                        fraises et crème légère de mousseline.
+                    </p>
+                    <small>blé, oeuf, lactose, gelatine (poisson)</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/banaan.jpg"
+                    alt="Bananentaart"
+                  />
+                  <figcaption>
+                    <h3>Tarte a la Banane</h3>
+                    <section>
+                      <p>4-6 personnes</p>
+                      <p>€12</p>
+                    </section>
+                    <section>
+                      <p>8-10 personnes</p>
+                      <p>€18</p>
+                    </section>
+                    <p>
+                        Un délicieux classique! Un fond croustillant
+                        pâte à beurre, fourrée de crème Suisse et finie avec
+                        savoureuses tranches de banane.
+                    </p>
+                    <small>blé, lactose, oeuf, soja, gelatine (poisson)</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/pavlova.jpg"
+                    alt="Pavlova"
+                  />
+                  <figcaption>
+                    <h3>Pavlova</h3>
+                    <section>
+                      <p>4-6 personnes</p>
+                      <p>€15</p>
+                    </section>
+                    <section>
+                      <p>8-10 personnes</p>
+                      <p>€20</p>
+                    </section>
+                    <p>
+                        Un beau gâteau d'été, mais surtout savoureux. Une délicieuse meringue qui est encore un peu molle à l'intérieur mais croustillante à l'extérieur. Ce gâteau est rempli de chantilly et de fruits rouges.
+                        (D'autres fruits sont possibles sur demande)
+                    </p>
+                    <small>oeuf, Lactose</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/rabarber.jpg"
+                    alt="Rabarber-Frangipane"
+                  />
+                  <figcaption>
+                    <h3>Frangipane a la Rubarbe</h3>
+                    <section>
+                      <p>4-6 personnes</p>
+                      <p>€12</p>
+                    </section>
+                    <section>
+                      <p>8-10 personnes</p>
+                      <p>€18</p>
+                    </section>
+                    <p>
+                        Vous cherchez toujours un gâteau pour terminer un barbecue d'été? Ce gâteau avec
+                        une base croustillante, remplie de frangipane et de rhubarbe fraîche est vivement recommandée! 
+                    </p>
+                    <small>blé, lactose, oeuf, noix
+
+                    </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/aardbei groot.jpg"
+                    alt="Aardbeientaart"
+                  />
+                  <figcaption>
+                    <h3>Tarte à la Fraise</h3>
+                    <section>
+                      <p>4-6 personnes</p>
+                      <p>€15</p>
+                    </section>
+                    <section>
+                      <p>8-10 personnes</p>
+                      <p>€20</p>
+                    </section>
+                    <p>
+                        Un délicieux classique! Une pâte croustillante au beurre,
+                        rempli de crème pâtissière et fini avec des fraises fraîches.
+                    </p>
+                    <small>blé, lactose, oeuf, soja</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/cheesecake aardbei.jpg"
+                    alt="Cheescake Aardbei"
+                  />
+                  <figcaption>
+                    <h3>Cheescake a la Fraise</h3>
+                    <section>
+                      <p>4 personnes</p>
+                      <p>€10</p>
+                    </section>
+                    <section>
+                      <p>8-10 personnes</p>
+                      <p>€20</p>
+                    </section>
+                    <p>
+                        Un cheesecake léger avec du fromage à la crème frais, une base de pain d'épice croustillant et des fraises fraîches.
+                    </p>
+                    <small>Lactose, oeuf, blé, gelatine (poisson)</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/bresillienne.jpg"
+                    alt="Flan bresillienne"
+                  />
+                  <figcaption>
+                    <h3>Flan Bresilien</h3>
+                    <section>
+                      <p>4-6 personnes</p>
+                      <p>€12</p>
+                    </section>
+                    <section>
+                      <p>8-10 personnes</p>
+                      <p>€18</p>
+                    </section>
+                    <p>
+                        Un gâteau parfait pour le café. Un délicieux flan,
+                        fini avec de la crème fouettée et des noix de bresilien.
+                    </p>
+                    <small>blé, lactose, oeuf, noix
+
+                    </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/chocolade bavaroisPNG.png"
+                    alt="Chocolade bavarois"
+                  />
+                  <figcaption>
+                    <h3>Bavarois au Chocolat</h3>
+                    <section>
+                      <p>4-6 personnes</p>
+                      <p>€15</p>
+                    </section>
+                    <section>
+                      <p>8-10 personnes</p>
+                      <p>€20</p>
+                    </section>
+                    <p>
+                        Ce gâteau au chocolat est léger et très riche en goût. La combinaison
+                        génoise au chocolat et bavarois au chocolat crée un bel équilibre!
+                    </p>
+                    <small>oeuf, blé, lactose, soja, gelatine (poisson)</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/flantaart.jpg"
+                    alt="Flantaart"
+                  />
+                  <figcaption>
+                    <h3>Tarte au Flan</h3>
+                    <section>
+                      <p>4-6 personnes</p>
+                      <p>€12</p>
+                    </section>
+                    <section>
+                      <p>8-10 personnes</p>
+                      <p>€18</p>
+                    </section>
+                    <p>
+                        Délicieuse tarte au flan pour une pause café. Egalement disponible sous forme de flan bresilien.
+                    </p>
+                    <small>blé, lactose, oeuf </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/red velvet officieel.jpg"
+                    alt="Red velvet"
+                  />
+                  <figcaption>
+                    <h3>Red velvet</h3>
+                    <section>
+                      <p>4-6 personnes</p>
+                      <p>€15</p>
+                    </section>
+                    <section>
+                      <p>8-10 personnes</p>
+                      <p>€20</p>
+                    </section>
+                    <p>
+                        Ce gâteau est un classique américain! Le gâteau lui-même a une subtile saveur de chocolat.
+                        La finition se fait avec une garniture de fromage à la crème au chocolat blanc.
+                    </p>
+                    <small>blé, oeuf, lactose, soja</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/bretoense appeltaart.jpg"
+                    alt="Bretoense Appeltaart"
+                  />
+                  <figcaption>
+                    <h3>Tarte aux Pommes Bretonnes</h3>
+                    <section>
+                      <p>4-6 personnes</p>
+                      <p>€12</p>
+                    </section>
+                    <section>
+                      <p>8-10 personnes</p>
+                      <p>€18</p>
+                    </section>
+                    <p>
+                        Un de mes favoris! Une délicieuse tarte aux pommes avec l'odeur seule
+                        votre eau à la bouche! Les pommes sont cuites dans une sauce aux pommes et au beurre.
+                    </p>
+                    <small>blé, lactose, oeuf, noix
+
+                    </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+              </section>
+  
+              <section id="koekjes" style="display:none">
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Koekjes/Bokkenpootjes.jpg"
+                    alt="Bokkenpootjes"
+                  />
+                  <figcaption>
+                    <h3>Bokkenpootjes</h3>
+                    <section>
+                      <pièces</p>
+                      <p>€5</p>
+                    </section>
+                    <p>
+                        La spécialité de Flogâteau! 2 biscuits aux amandes remplis de
+                        une délicieuse crème au beurre puis au chocolat
+                        plongé
+                    </p>
+  
+                    
+                    <small>oeuf, noix
+                      , blé, lactose, soja</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Koekjes/bokkenpootjes vaderdag.jpg"
+                    alt="Mokka Bokkenpootjes"
+                  />
+                  <figcaption>
+                    <h3>Bokkenpootjes Mokka</h3>
+                    <section>
+                      <p>8 pièces</p>
+                      <p>€6</p>
+                    </section>
+                    <p>
+                        Ces pattes de chèvre sont remplies d'une crème au moka.
+                        Les extrémités sont recouvertes de chocolat blanc pour permettre aux saveurs de s'harmoniser parfaitement.
+                    </p>
+  
+                    
+                    <small>oeuf, noix
+                      , blé, lactose, soja
+                    </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up"> 
+                  <img
+                    src="../img/Products/Koekjes/moppen.jpg"
+                    alt="Moppen"
+                  />
+                  <figcaption>
+                    <h3>Moppen</h3>
+                    <section>
+                      <p>15 pièces</p>
+                      <p>€5</p>
+                    </section>
+                    <p>
+                        Biscuits croustillants et cassants recouverts d'un mélange de vanille
+                        et le chocolat apportent un joli motif.
+                    </p>
+  
+                    
+                    <small>blé, lactose, oeuf
+                    </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Koekjes/madeleines.jpg"
+                    alt="Madeleines"
+                  />
+                  <figcaption>
+                    <h3>Madeleines</h3>
+                    <section>
+                      <p>6 pièces</p>
+                      <p>€3</p>
+                    </section>
+                    <p>
+                        Ces biscuits moelleux ont un délicieux
+                        goût frais en raison de la teinte subtile des agrumes.
+                    </p>
+  
+                    
+                    <small>oeuf, blé, lactose
+                    </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/wafeltjes.jpg"
+                    alt="Wafeltjes"
+                  />
+                  <figcaption>
+                    <h3>Gaufrettes</h3>
+                    <section>
+                      <p>8 pièces</p>
+                      <p>€3.50</p>
+                    </section>
+                    <p>
+                        Ces délicieuses gaufrettes de rangement sont croustillantes à l'extérieur mais agréables et douces et tendres à l'intérieur.
+                        Vous pouvez les garder fermés jusqu'à une semaine.
+                    </p>
+  
+                    
+                    <small>Lactose, blé, oeuf
+                    </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Feest/kerstboomkoekjes.jpg"
+                    alt="Kerstkoekjes"
+                  />
+                  <figcaption>
+                    <h3>Biscuits de Nöel</h3>
+                    <section>
+                      <p>8 pièces</p>
+                      <p>€-</p>
+                    </section>
+                    <p>
+                        Les biscuits au pain d'épices classiques pour la saison de Noël! Ces cookies sont bons et croustillants et ont un goût épicé grâce à la cannelle qui a été ajoutée à la pâte.
+                        Délicieux à déguster, mais aussi super amusant à utiliser comme décoration de Noël!
+                    </p>
+  
+                    <small>Lactose, oeuf, blé
+                    </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Koekjes/margrietjes.jpg"
+                    alt="Margrietjes"
+                  />
+                  <figcaption>
+                    <h3>Margrietjes</h3>
+                    <section>
+                      <p>15 pièces</p>
+                      <p>€5</p>
+                    </section>
+                    <p>
+                        Biscuits croustillants et cassants avec un cœur de confiture de framboises.
+                        Ces biscuits peuvent également être remplis d'une autre saveur de confiture sur demande.
+                    </p>
+  
+                    <small>beurre, blé, oeuf
+                    </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Koekjes/oreo's.jpg"
+                    alt="Oreo's"
+                  />
+                  <figcaption>
+                    <h3>Oreos</h3>
+                    <section>
+                      <p>8 pièces</p>
+                      <p>€4</p>
+                    </section>
+                    <p>
+                        Ces biscuits croquants aux pépites de chocolat sont remplis d'une garniture sucrée crémeuse.
+                        Ils sont basés sur les biscuits Oreo bien connus d'Amérique.
+                    </p>
+  
+                    
+                    <small>Lactose, blé, eoeuf
+                    </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+  
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Koekjes/macarons.jpg"
+                    alt="Macarons"
+                  />
+                  <figcaption>
+                    <h3>Macarons</h3>
+                    <section>
+                      <p>8 pièces</p>
+                      <p>€5</p>
+                    </section>
+                    <p>
+                        Macarons de Paris. Ces biscuits typiquement parisiens se composent de 2 biscuits aux amandes
+                        qui sont collés avec une garniture savoureuse. Les saveurs sont infinies!
+                    </p>
+  
+                    
+                    <small>oeuf, noix, lactose, soja 
+                    </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                
+  
+              </section>
+  
+              <section id="gebak" style="display:none">
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/FijnGebak/chocolade cupcake met karamel.jpg"
+                    alt="Chocolade Cupcakes Met Karamel"
+                  />
+                  <figcaption>
+                    <h3>Cupcakes au Chocolat avec Caramel</h3>
+                    <section>
+                      <p>1 pièce</p>
+                      <p>€2</p>
+                    </section>
+                    <p>
+                        Ces délicieux cupcakes au chocolat
+                        sont finis avec une garniture à base de caramel. Une délicieuse combinaison!
+                      </p>
+  
+                    
+                    <small>blé, lactose, oeuf, soja </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/FijnGebak/vanille cupcakes.jpg"
+                    alt="Vanille Cupcakes"
+                  />
+                  <figcaption>
+                    <h3>Cupcakes à la Vanille</h3>
+                    <section>
+                      <p>1 pièce</p>
+                      <p>€1</p>
+                    </section>
+                    <p>
+                        Cupcakes à la vanille à base de cupcakes Magnolia
+                        Boulangerie à New York. Terminé avec une légère garniture à la vanille.
+                    <small>blé, oeuf</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/FijnGebak/red velvet cupcakes.jpg"
+                    alt="Red Velvet Cupcakes"
+                  />
+                  <figcaption>
+                    <h3>Red Velvet Cupcakes</h3>
+                    <section>
+                      <p>1 pièce</p>
+                      <p>€1</p>
+                    </section>
+                    <p>
+                        Cupcakes américains classiques en velours rouge! Ces cupcakes ont une subtile
+                        saveur de chocolat et fini avec un fromage à la crème - garniture de chocolat blanc.
+                    </p>
+  
+                    
+                    <small>blé, oeuf, lactose, soja</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/carrot cupcakes.jpg"
+                    alt="Carrot Cupcakes"
+                  />
+                  <figcaption>
+                    <h3>Cupcakes à la carotte</h3>
+                    <section>
+                      <p>1 pièce</p>
+                      <p>€1</p>
+                    </section>
+                    <p>
+                        Un petit gâteau plein d'épices, dont de la cannelle. Les noix et les carottes hachées offrent une structure agréable.
+                        Ces cupcakes sont finis avec une savoureuse garniture au fromage à la crème.
+                    </p>
+  
+                    
+                    <small>oeuf, lactose, soja, blé, noix
+
+                    </small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/FijnGebak/Passie-meringue.jpg"
+                    alt="Passie-meringue Mini Tartelette "
+                  />
+                  <figcaption>
+                    <h3>Passion meringué Mini Tartelette (6cm)</h3>
+                    <section>
+                      <p>1 pièce</p>
+                      <p>€2</p>
+                    </section>
+                    <p>
+                        Un mini gâteau avec une base de pâte au beurre croustillante. Le gâteau est rempli
+                        à la crème de fruit de la passion et fini avec une meringue veloutée.
+                    </p>
+  
+                    
+                    <small>blé, lactose, oeuf, gelatine (poisson), soja</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/aardbei.jpg"
+                    alt="Aardbei Mini Tartelette "
+                  />
+                  <figcaption>
+                    <h3>Mini Tartelette à la Fraise (⌀ 6cm)</h3>
+                    <section>
+                      <p>1 pièce</p>
+                      <p>€2</p>
+                    </section>
+                    <p>
+                        Un mini gâteau avec une base de pâte au beurre croustillante.
+                        Le gâteau est rempli de crème pâtissière et fini
+                        avec des fraises fraîches.
+                    </p>
+  
+                    
+                    <small>blé, lactose, oeuf</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/crunchy chocolate.jpg"
+                    alt="Crunchy Chocolate Mini Tartelette"
+                  />
+                  <figcaption>
+                    <h3>Crunchy Mini Tartelette au Chocolat (6cm)</h3>
+                    <section>
+                      <p>1 pièce</p>
+                      <p>€2</p>
+                    </section>
+                    <p>
+                        Un mini gâteau avec une base de pâte au beurre croustillante. Le gâteau contient une ganache molle au chocolat au lait.
+                        Le gâteau est fini avec une «pierre de chocolat» croustillante.
+                    </p>
+  
+                    
+                    <small>blé, lactose, oeuf, soja</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/product01.jpg"
+                    alt="Salted Caramel Mini Tartelette"
+                  />
+                  <figcaption>
+                    <h3>Mini Tartelette Caramel Salé (6cm)</h3>
+                    <section>
+                      <p>1 pièce</p>
+                      <p>€2</p>
+                    </section>
+                    <p>
+                        Un mini gâteau avec une base de pâte au beurre croustillante. La garniture est un caramel doux et salé.
+                        Le gâteau est fini avec des perles croustillantes au caramel salé.
+                    </p>
+  
+                    
+                    <small>blé, lactose, oeuf, soja</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/FijnGebak/bretoenseminiappel.jpg"
+                    alt="Bretoens Appel Mini Tartelette"
+                  />
+                  <figcaption>
+                    <h3>Mini Tartelette Pomme Bretonne (6cm)</h3>
+                    <section>
+                      <p>1 pièce</p>
+                      <p>€2</p>
+                    </section>
+                    <p>
+                        Un mini gâteau avec une base de pâte au beurre croustillante. Le gâteau est
+                        cuit avec une sauce au beurre de pomme et des cubes de pommes fraîches. 
+                    </p>
+  
+                    
+                    <small>blé, lactose, oeuf</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/Taarten/citroen meringue.jpg"
+                    alt="Citroen-Meringue Mini Tartelette "
+                  />
+                  <figcaption>
+                    <h3>Citron Meringué Mini Tartelette (6cm)</h3>
+                    <section>
+                      <p>1 pièce</p>
+                      <p>€2</p>
+                    </section>
+                    <p>
+                        Un mini gâteau avec une base de pâte au beurre croustillante. Le gâteau est rempli
+                        à la crème de citron et fini avec une meringue veloutée.
+                    </p>
+  
+                    
+                    <small>blé, lactose, oeuf, gelatine (poisson), soja</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/test.png"
+                    alt="Tigrés"
+                  />
+                  <figcaption>
+                    <h3>Tigrés</h3>
+                    <section>
+                      <p>1 pièce</p>
+                      <p>€1.50</p>
+                    </section>
+                    <p>
+                        Ces pâtisseries consistent en une pâte tendre aux amandes avec des morceaux de chocolat.
+                        Il se termine par une savoureuse ganache au chocolat.
+                    </p>
+  
+                    
+                    <small>blé, lactose, oeuf, noix
+                      , soja</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/FijnGebak/minipavlova's.jpg"
+                    alt="Mini Pavlova's"
+                  />
+                  <figcaption>
+                    <h3>Mini Pavlova's</h3>
+                    <section>
+                      <p>1 pièce</p>
+                      <p>€2</p>
+                    </section>
+                    <p>
+                        De beaux gâteaux d'été, mais surtout savoureux. Une
+                        délicieuse meringue qui est encore un peu molle à l'intérieur
+                        croustillant à l'extérieur. Ce gâteau est rempli de chantilly et de fruits rouges.
+                        (D'autres fruits sont possibles sur demande)
+                    </p>
+  
+                    
+                    <small>oeuf, Lactose</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure data-aos="fade-up">
+                  <img
+                    src="../img/Products/FijnGebak/mini eclairs.jpg"
+                    alt="mini eclairs"
+                  />
+                
+                  <figcaption>
+                    <h3>Eclairs</h3>
+                    <section>
+                      <p>1 pièce</p>
+                      <p>€1.80</p>
+                    </section>
+                    <p>
+                        Un classique français. Ces éclairs sont remplis d'un
+                        crème pâtissière traditionnelle et finie avec
+                        ganache au chocolat et pépites.
+                    </p>
+  
+                   
+                    <small>blé, oeuf, lactose, soja</small>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure ->
+  
+               
+                
+  
+              </section>
+  
+              <section id="feest" style="display:none">
+                <figure>
+                  <img
+                    src="../img/Products/Taarten/taart bloemen.jpg"
+                    alt="Themataarten En -Cupcakes"
+                  />
+                  <figcaption>
+                    <h3>Tartes- et Cupcakes à Thème</h3>
+  
+                    <p>
+                        Je t'organise une fête (d'anniversaire) et je cherche toujours
+                        des friandises personnalisées? Vous pouvez aussi aller à Flogâteau
+                        Commandez des gâteaux et des cupcakes à thème. Mention
+                        avec votre commande quel thème vous choisissez (éventuellement avec des photos
+                        sur laquelle je peux compter), puis je vérifie les possibilités!
+                    </p>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="../img/Products/Feest/cijfertaart.jpg"
+                    alt="Cijfertaart"
+                  />
+                  <figcaption>
+                    <h3>Number cake</h3>
+                 
+                    <p>
+                        Number cake vanille - cookie, Number cake chocolat - caramel - cookie, Number cake vanille
+                        - biscuit, Number cake chocolat-caramel - biscuit
+                    </p>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+  
+                <figure>
+                  <figcaption>
+                    <h3>Prix Pâtisserie</h3>
+                    <section>
+                      <p>Tarte à Thème 6p.</p>
+                      <p>€25</p>
+                    </section>
+                    <section>
+                      <p>Cupcake à Thème</p>
+                      <p>€3</p>
+                    </section>
+                 
+                    <section>
+                      <p>Number cake</p>
+                      <p>€40</p>
+                    </section>
+                 
+                 
+  
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+         
+              </section>
+  
+              <section id="logo" style="display:none">
+                <figure>
+                  <img
+                    src="../img/Products/LogoCupcakes/logo cupcakes.jpg"
+                    alt="Logo Cupcakes"
+                  />
+                  <figcaption>
+                    <h3>Logo Cupcakes</h3>
+                    <section>
+                      <div>
+                        <p>Mini: min. 50 pièces</p>
+                        <p>Grand: min. 12 pièces</p>
+                      </div>
+                      <div>
+                        <p>€75</p>
+                        <p>€30</p>
+                      </div>
+                    </section>
+                    <p>
+                        Chez Flogâteau vous pouvez également commander des cupcakes avec vous
+                        logo d'entreprise. Ils sont disponibles en vanille, chocolat,
+                        red velvet et carotte.
+                    </p>
+  
+                
+                    <small></small>
+                    <a href="../page/winkel.html"
+        Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+         
+              </section>
+  
+              <section id="kaartjes" style="display:none">
+                <figure>
+                  <img
+                    src="../img/Products/kaartenPNG.png"
+                    alt="Kaartjes"
+                  />
+                  <figcaption>
+                    <h3>Carte Postale</h3>
+                    <section>
+  
+                        <p>€0.50</p>
+  
+                    </section>
+                    <p>
+                        Plusieurs jolies cartes avec un doux message dessus.
+                        Toujours agréable à offrir en cadeau avec un gâteau d'anniversaire!
+                    </p>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="../img/Products/Kaartjes/kaartje1.jpg"
+                    alt="Kaartje"
+                  />
+                  <figcaption>
+                    <h3>Carte Postale</h3>
+                    <section>
+  
+                        <p>€0.50</p>
+  
+                    </section>
+                    <p>
+                        Plusieurs jolies cartes avec un doux message dessus.
+                      "YOU'RE A BEATIFUL CUPCAKE IN A WORLD FULL OF MUFFINS"
+                    </p>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="../img/Products/Kaartjes/kaartje2.jpg"
+                    alt="Kaartje"
+                  />
+                  <figcaption>
+                    <h3>Carte Postale</h3>
+                    <section>
+  
+                        <p>€0.50</p>
+  
+                    </section>
+                    <p>
+                      Diverses belles cartes avec un doux message dessus.
+                      "FEELING DOWNIE? EAT A BROWNIE"
+                    </p>
+                    <a href="../page/winkel.html"
+                      >Commander
+                      <i class="fas fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+         
+              </section>
+  
+            </section>
+          </section>
+        </div>
+      </main>
+  
+      <footer>
+        <section class="taal">
+          <ul>
+            <li>
+              <!--https://stackoverflow.com/questions/2000656/using-href-links-inside-option-tag-->
+              <select name="taal" id="taal" onchange="location = this.value;">
+                <option value="../page/product.html">NL</option>
+                <option value="#">FR</option>
+                <option value="../en/engels-product.html">EN</option>
+              </select>
+            </li>
+            <li id="footerFlo">FLOGÂTEAU</li>
+            <div class="icons">
+              <li>
+                <a href="www.facebook.com/Flogâteau-1838784923015234/"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/flogateau_/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="mailto:flocroonenberghs@gmail.com"
+                  ><i class="far fa-envelope"></i
+                ></a>
+              </li>
+            </div>
+          </ul>
+        </section>
+      </footer>
+  
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    </body>
+  </html>
+  
