@@ -1921,13 +1921,6 @@ Footer
     padding: 1em 0;
   }
 
-  .footcontact {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0%;
-  }
-
   footer #footerFlo,
   footer select {
     font-size: 1.125em;
